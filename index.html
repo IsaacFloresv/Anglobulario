@@ -3,64 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anglobulario</title>
+    <meta name="description" content="Juego educativo de vocabulario en inglés - Anglobulario">
+    <title>Anglobulario - Reto de Vocabulario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Pantalla de bienvenida -->
+    <section id="welcome-screen" class="screen active">
+        <h1 id="welcome-text" aria-label="Bienvenido al reto"></h1>
+    </section>
+
     <!-- Pantalla de configuración -->
-    <section id="setup-screen" class="screen active">
+    <section id="setup-screen" class="screen">
         <div class="config-container">
-            <h1>Anglobulario</h1>
+            <h2 class="section-title">Configuración del Juego</h2>
             <form id="game-setup">
-                <div class="input-group">
-                    <label for="player1">Jugador 1:</label>
-                    <input type="text" id="player1" required>
+                <div class="players-container">
+                    <div class="input-group">
+                        <label for="player1">Jugador 1:</label>
+                        <input type="text" id="player1" required>
+                    </div>
                 </div>
-                
-                <div class="input-group">
-                    <label for="player2">Jugador 2:</label>
-                    <input type="text" id="player2">
+                <div class="button-group">
+                    <button type="button" id="add-player" class="circle-btn success" aria-label="Añadir jugador">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <button type="button" id="remove-player" class="circle-btn danger" aria-label="Eliminar jugador" disabled>
+                        <i class="fas fa-minus"></i>
+                    </button>
                 </div>
-                
+
                 <div class="input-group">
-                    <label for="player3">Jugador 3:</label>
-                    <input type="text" id="player3">
-                </div>
-                
-                <div class="input-group">
-                    <label for="player4">Jugador 4:</label>
-                    <input type="text" id="player4">
-                </div>
-                
-                <div class="input-group">
-                    <label for="time">Tiempo (segundos):</label>
+                    <label for="time">Tiempo por turno (segundos):</label>
                     <input type="number" id="time" min="5" value="30" required>
                 </div>
-                
+
+                <div class="input-group">
+                    <label for="rounds">Palabras por jugador:</label>
+                    <input type="number" id="rounds" min="1" value="5" required>
+                </div>
+
                 <div class="input-group">
                     <label for="category">Categoría:</label>
                     <select id="category" required></select>
                 </div>
-                
-                <button type="submit">Comenzar Juego</button>
+
+                <button type="submit" class="main-btn">Comenzar Reto</button>
             </form>
         </div>
     </section>
 
+    <!-- Pantalla de transición -->
+    <section id="loading-screen" class="screen">
+        <h2 class="loading-text">Preparando todo...!</h2>
+        <p class="sub-loading-text">Listo para el reto...!!!</p>
+    </section>
+
     <!-- Pantalla de juego -->
     <section id="game-screen" class="screen">
-        <div id="countdown"></div>
+        <div class="game-header">
+            <div id="countdown"></div>
+            <div id="current-player"></div>
+        </div>
+        
         <div id="word-card">
             <h2 id="word"></h2>
             <p id="pronunciation"></p>
             <p id="translation"></p>
+        </div>
+
+        <div class="score-display">
+            <span class="score-item success"><i class="fas fa-check"></i> <span id="correct-count">0</span></span>
+            <span class="score-item danger"><i class="fas fa-times"></i> <span id="wrong-count">0</span></span>
         </div>
     </section>
 
     <!-- Pantalla de resultados -->
     <section id="results-screen" class="screen">
         <div class="results-container">
-            <h2>Resultados</h2>
+            <h2 class="section-title">Resultados Finales</h2>
+            <div id="podium">
+                <div class="podium-item gold">
+                    <i class="fas fa-medal"></i>
+                    <span class="position">1°</span>
+                </div>
+                <div class="podium-item silver">
+                    <i class="fas fa-medal"></i>
+                    <span class="position">2°</span>
+                </div>
+                <div class="podium-item bronze">
+                    <i class="fas fa-medal"></i>
+                    <span class="position">3°</span>
+                </div>
+            </div>
             <table id="results-table">
                 <thead>
                     <tr>
@@ -71,15 +107,12 @@
                 </thead>
                 <tbody></tbody>
             </table>
-            <button id="restart-game">Jugar de Nuevo</button>
+            <button id="restart-game" class="main-btn">Jugar de Nuevo</button>
         </div>
     </section>
 
-    <!-- Pantalla de transición -->
-    <div id="transition-screen" class="screen">
-        <h2>🎮 ¡Listo para jugar!</h2>
-    </div>
-
+    <canvas id="confetti-canvas"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
