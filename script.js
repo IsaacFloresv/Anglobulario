@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const gameSetupForm = document.getElementById('game-setup');
     const categorySelect = document.getElementById('category');
     const countdownDisplay = document.getElementById('countdown');
+    const wordCard = document.getElementById('word-card');
     const wordDisplay = document.getElementById('word');
     const pronunciationDisplay = document.getElementById('pronunciation');
     const translationDisplay = document.getElementById('translation');
@@ -13,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const rejectedDisplay = document.getElementById('rejected');
     const resultsTableBody = document.querySelector('#results-table tbody');
     const restartButton = document.getElementById('restart-game');
-    const wordCard = document.getElementById('word-card');
 
     // Estado del juego
     let players = [];
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let approvedCount = 0;
     let rejectedCount = 0;
     let countdownInterval;
-    let isCurrentWordHandled = false;
+    let isTimeout = false;
 
     // Categorías disponibles
     const categories = [
@@ -46,12 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Manejador de inicio del juego
     gameSetupForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        initializeGame();
-        loadWords();
+        initializeGameState();
+        loadGameData();
     });
 
-    // Lógica principal del juego
-    function initializeGame() {
+    function initializeGameState() {
         players = [
             document.getElementById('player1').value,
             document.getElementById('player2').value,
@@ -63,20 +62,36 @@ document.addEventListener('DOMContentLoaded', () => {
         currentCategory = categorySelect.value;
     }
 
-    async function loadWords() {
+    async function loadGameData() {
         try {
             const response = await fetch('words.json');
             const data = await response.json();
             words = data[currentCategory].sort(() => Math.random() - 0.5).slice(0, 10);
-            startGame();
+            showTransitionScreen();
         } catch (error) {
-            console.error('Error cargando palabras:', error);
+            console.error('Error loading game data:', error);
         }
     }
 
-    function startGame() {
+    function showTransitionScreen() {
         setupScreen.classList.add('hidden');
+        const transitionDiv = document.createElement('div');
+        transitionDiv.className = 'transition-screen';
+        transitionDiv.textContent = 'Listo para Jugar!!!!';
+        document.body.appendChild(transitionDiv);
+
+        setTimeout(() => {
+            transitionDiv.remove();
+            startGameFlow();
+        }, 5000);
+    }
+
+    function startGameFlow() {
         gameScreen.classList.remove('hidden');
+        initializeGameSession();
+    }
+
+    function initializeGameSession() {
         startCountdown();
         showNextWord();
     }
@@ -90,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             updateCountdownDisplay(timeLeft);
             
             if (timeLeft <= 0) {
-                endGame();
+                handleTimeExpiration();
             }
         }, 1000);
     }
@@ -100,15 +115,22 @@ document.addEventListener('DOMContentLoaded', () => {
         countdownDisplay.style.color = time <= 10 ? '#ff4444' : '#333';
     }
 
+    function handleTimeExpiration() {
+        clearInterval(countdownInterval);
+        isTimeout = true;
+        showTranslationForCurrentWord();
+        wordCard.classList.add('rejected');
+    }
+
     function showNextWord() {
         resetCardState();
         
         if (currentWordIndex < words.length) {
             displayCurrentWord();
-            addCardAnimation();
+            applyCardAnimation();
             currentWordIndex++;
         } else {
-            endGame();
+            endGameSession();
         }
     }
 
@@ -116,7 +138,6 @@ document.addEventListener('DOMContentLoaded', () => {
         wordCard.classList.remove('rejected', 'approved', 'flip');
         translationDisplay.classList.remove('show-translation');
         translationDisplay.textContent = '';
-        isCurrentWordHandled = false;
     }
 
     function displayCurrentWord() {
@@ -125,55 +146,63 @@ document.addEventListener('DOMContentLoaded', () => {
         pronunciationDisplay.textContent = currentWord.pronunciation;
     }
 
-    function addCardAnimation() {
+    function applyCardAnimation() {
         void wordCard.offsetWidth; // Trigger reflow
         wordCard.classList.add('flip');
     }
 
-    // Manejador de clics en la tarjeta
-    wordCard.addEventListener('click', handleCardClick);
+    // Manejador de interacción con la tarjeta
+    wordCard.addEventListener('click', handleCardInteraction);
 
-    function handleCardClick(e) {
-        if (isCurrentWordHandled) {
-            showNextWord();
+    function handleCardInteraction(e) {
+        if (isTimeout) {
+            handleTimeoutInteraction();
             return;
         }
 
-        const clickPosition = e.clientX - e.currentTarget.getBoundingClientRect().left;
-        const cardWidth = e.currentTarget.offsetWidth;
+        const clickPosition = e.clientX - wordCard.getBoundingClientRect().left;
+        const cardWidth = wordCard.offsetWidth;
 
         if (clickPosition < cardWidth / 2) {
-            handleRejection();
+            handleIncorrectAnswer();
         } else {
-            handleApproval();
+            handleCorrectAnswer();
         }
     }
 
-    function handleRejection() {
-        wordCard.classList.add('rejected');
-        translationDisplay.textContent = words[currentWordIndex - 1].translation;
-        translationDisplay.classList.add('show-translation');
-        rejectedCount++;
-        rejectedDisplay.textContent = rejectedCount;
-        isCurrentWordHandled = true;
+    function handleTimeoutInteraction() {
+        isTimeout = false;
+        wordCard.classList.remove('rejected');
+        showNextWord();
     }
 
-    function handleApproval() {
+    function handleIncorrectAnswer() {
+        wordCard.classList.add('rejected');
+        showTranslationForCurrentWord();
+        rejectedCount++;
+        rejectedDisplay.textContent = rejectedCount;
+    }
+
+    function handleCorrectAnswer() {
         wordCard.classList.add('approved');
         approvedCount++;
         approvedDisplay.textContent = approvedCount;
         showNextWord();
     }
 
-    // Finalización del juego
-    function endGame() {
+    function showTranslationForCurrentWord() {
+        translationDisplay.textContent = words[currentWordIndex - 1].translation;
+        translationDisplay.classList.add('show-translation');
+    }
+
+    function endGameSession() {
         clearInterval(countdownInterval);
         gameScreen.classList.add('hidden');
         resultsScreen.classList.remove('hidden');
-        displayResults();
+        displayFinalResults();
     }
 
-    function displayResults() {
+    function displayFinalResults() {
         resultsTableBody.innerHTML = '';
         players.forEach(player => {
             const row = document.createElement('tr');
@@ -187,13 +216,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Reinicio del juego
-    restartButton.addEventListener('click', () => {
+    restartButton.addEventListener('click', resetGameState);
+
+    function resetGameState() {
         resultsScreen.classList.add('hidden');
         setupScreen.classList.remove('hidden');
-        resetGame();
-    });
-
-    function resetGame() {
+        
+        // Resetear todas las variables de estado
         players = [];
         timeLimit = 0;
         currentCategory = '';
@@ -201,8 +230,9 @@ document.addEventListener('DOMContentLoaded', () => {
         currentWordIndex = 0;
         approvedCount = 0;
         rejectedCount = 0;
-        isCurrentWordHandled = false;
+        isTimeout = false;
         
+        // Resetear elementos del DOM
         countdownDisplay.textContent = '';
         wordDisplay.textContent = '';
         pronunciationDisplay.textContent = '';
