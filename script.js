@@ -150,3 +150,50 @@ document.addEventListener('DOMContentLoaded', () => {
         showNextWord();
     });
 });
+// Variables nuevas a agregar
+const translationDisplay = document.getElementById('translation');
+
+// Modificar la función showNextWord
+function showNextWord() {
+  const card = document.getElementById('word-card');
+  
+  // Resetear estilos y traducción
+  card.classList.remove('rejected', 'approved');
+  translationDisplay.classList.remove('show-translation');
+  translationDisplay.textContent = '';
+
+  if (currentWordIndex < words.length) {
+    const currentWord = words[currentWordIndex];
+    wordDisplay.textContent = currentWord.word;
+    pronunciationDisplay.textContent = currentWord.pronunciation;
+    
+    // Actualizar lógica de animación
+    card.classList.remove('flip');
+    void card.offsetWidth; // Forzar reflow
+    card.classList.add('flip');
+    
+    currentWordIndex++;
+  } else {
+    endGame();
+  }
+}
+
+// Modificar el event listener del click
+document.getElementById('word-card').addEventListener('click', (e) => {
+  const card = e.currentTarget;
+  const rect = card.getBoundingClientRect();
+  const clickX = e.clientX - rect.left;
+
+  if (clickX < rect.width / 2) { // Lado izquierdo (Rechazar)
+    card.classList.add('rejected');
+    translationDisplay.textContent = words[currentWordIndex - 1].translation;
+    translationDisplay.classList.add('show-translation');
+    rejectedCount++;
+    rejectedDisplay.textContent = rejectedCount;
+  } else { // Lado derecho (Aprobar)
+    card.classList.add('approved');
+    approvedCount++;
+    approvedDisplay.textContent = approvedCount;
+    showNextWord();
+  }
+});
