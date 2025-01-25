@@ -42,20 +42,40 @@ body {
 
 /* Animación de bienvenida */
 #welcome-screen {
-    text-align: center;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--background-gradient);
 }
 
 #welcome-text {
     font-size: 3rem;
     color: var(--text-light);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    animation: textReveal 5s forwards;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: textReveal 3s ease-out forwards;
 }
 
 @keyframes textReveal {
-    0% { letter-spacing: 50px; opacity: 0; }
-    50% { letter-spacing: normal; opacity: 1; }
-    100% { transform: scale(1.1); }
+    0% {
+        opacity: 0;
+        letter-spacing: 50px;
+    }
+    50% {
+        opacity: 1;
+        letter-spacing: normal;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Configuración del juego */
