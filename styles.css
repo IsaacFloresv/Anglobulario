@@ -43,6 +43,12 @@ body {
 /* Animación de bienvenida */
 #welcome-screen {
     display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+#welcome-screen {
+    display: flex !important;
     justify-content: center;
     align-items: center;
     height: 100vh;
