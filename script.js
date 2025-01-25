@@ -1,238 +1,201 @@
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
     // Elementos del DOM
-    const setupScreen = document.getElementById('setup-screen');
-    const gameScreen = document.getElementById('game-screen');
-    const resultsScreen = document.getElementById('results-screen');
+    const screens = {
+        setup: document.getElementById('setup-screen'),
+        game: document.getElementById('game-screen'),
+        results: document.getElementById('results-screen'),
+        transition: document.getElementById('transition-screen')
+    };
+    
     const gameForm = document.getElementById('game-setup');
-    const categorySelect = document.getElementById('category');
-    const countdownDisplay = document.getElementById('countdown');
+    const countdownElement = document.getElementById('countdown');
     const wordCard = document.getElementById('word-card');
-    const wordDisplay = document.getElementById('word');
-    const pronunciationDisplay = document.getElementById('pronunciation');
-    const translationDisplay = document.getElementById('translation');
-    const approvedDisplay = document.getElementById('approved');
-    const rejectedDisplay = document.getElementById('rejected');
+    const wordElement = document.getElementById('word');
+    const pronunciationElement = document.getElementById('pronunciation');
+    const translationElement = document.getElementById('translation');
     const resultsBody = document.querySelector('#results-table tbody');
-    const restartBtn = document.getElementById('restart-game');
+    const restartButton = document.getElementById('restart-game');
 
     // Estado del juego
     let gameState = {
         players: [],
-        timeLimit: 0,
-        category: '',
+        timeLimit: 5,
         words: [],
-        currentIndex: 0,
-        correct: 0,
-        wrong: 0,
-        interval: null,
-        timeout: false
+        currentWordIndex: 0,
+        correctAnswers: 0,
+        wrongAnswers: 0,
+        countdownInterval: null,
+        isTimeout: false
     };
 
-    // Categorías disponibles
-    const categories = [
-        'Adverbios', 'Preposiciones', 'Animales domesticos', 'Animales salvajes',
-        'Partes de la casa', 'Utensilios de cocina', 'Ropa', 'Adjetivos',
-        'Partes del cuerpo', 'Partes del carro', 'Partes de la bicicleta',
-        'Partes de las plantas', 'Saludos comunes en Canada', 'Preguntas clásicas',
-        'Pronombres', 'Oraciones', 'Conjunciones', 'Peces', 'Países', 'Verbos'
-    ];
-
     // Inicializar categorías
-    function initCategories() {
-        categorySelect.innerHTML = categories
-            .map(cat => `<option value="${cat}">${cat}</option>`)
-            .join('');
+    function initializeCategories() {
+        const categories = [
+            'Adverbios', 'Preposiciones', 'Animales domesticos', 
+            'Animales salvajes', 'Partes de la casa', 'Utensilios de cocina',
+            'Ropa', 'Adjetivos', 'Partes del cuerpo', 'Partes del carro',
+            'Partes de la bicicleta', 'Partes de las plantas', 
+            'Saludos comunes en Canada', 'Preguntas clásicas', 
+            'Pronombres', 'Oraciones', 'Conjunciones', 'Peces', 
+            'Países', 'Verbos'
+        ];
+        
+        const categorySelect = document.getElementById('category');
+        categorySelect.innerHTML = categories.map(cat => 
+            `<option value="${cat}">${cat}</option>`
+        ).join('');
     }
-    initCategories();
+    initializeCategories();
 
-    // Manejador de formulario
+    // Manejador del formulario
     gameForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        initializeGame();
-        await loadWords();
-        showTransition();
-    });
+        
+        // Obtener datos del formulario
+        gameState.players = [
+            document.getElementById('player1').value,
+            document.getElementById('player2').value,
+            document.getElementById('player3').value,
+            document.getElementById('player4').value
+        ].filter(name => name.trim() !== '');
+        
+        gameState.timeLimit = parseInt(document.getElementById('time').value) || 5;
+        gameState.timeLimit = Math.max(5, gameState.timeLimit);
+        
+        const category = document.getElementById('category').value;
 
-    function initializeGame() {
-        gameState = {
-            ...gameState,
-            players: [
-                document.getElementById('player1').value,
-                document.getElementById('player2').value,
-                document.getElementById('player3').value,
-                document.getElementById('player4').value
-            ].filter(name => name.trim()),
-            timeLimit: parseInt(document.getElementById('time').value),
-            category: categorySelect.value,
-            currentIndex: 0,
-            correct: 0,
-            wrong: 0
-        };
-    }
-
-    async function loadWords() {
+        // Cargar palabras
         try {
             const response = await fetch('words.json');
             const data = await response.json();
-            gameState.words = data[gameState.category]
-                .sort(() => Math.random() - 0.5)
-                .slice(0, 10);
+            gameState.words = data[category].sort(() => Math.random() - 0.5).slice(0, 10);
+            showTransition();
         } catch (error) {
-            console.error('Error loading words:', error);
+            console.error('Error cargando palabras:', error);
         }
-    }
+    });
 
+    // Transición
     function showTransition() {
-        setupScreen.style.display = 'none';
-        const transition = document.createElement('div');
-        transition.className = 'transition-screen';
-        transition.textContent = '🎮 ¡Listo para jugar!';
-        document.body.appendChild(transition);
-
+        screens.setup.classList.remove('active');
+        screens.transition.style.display = 'flex';
+        
         setTimeout(() => {
-            transition.remove();
+            screens.transition.style.display = 'none';
             startGame();
         }, 5000);
     }
 
+    // Iniciar juego
     function startGame() {
-        gameScreen.style.display = 'block';
-        startTimer();
+        resetGameState();
+        screens.game.classList.add('active');
+        startCountdown();
         showNextWord();
     }
 
-    function startTimer() {
+    function startCountdown() {
         let timeLeft = gameState.timeLimit;
-        updateTimerDisplay(timeLeft);
-
-        gameState.interval = setInterval(() => {
+        updateCountdownDisplay(timeLeft);
+        
+        gameState.countdownInterval = setInterval(() => {
             timeLeft--;
-            updateTimerDisplay(timeLeft);
-
+            updateCountdownDisplay(timeLeft);
+            
             if (timeLeft <= 0) {
-                handleTimeout();
+                endGame(true);
             }
         }, 1000);
     }
 
-    function updateTimerDisplay(time) {
-        countdownDisplay.textContent = `⏳ Tiempo: ${time}s`;
-        countdownDisplay.style.color = time <= 10 ? '#ff4444' : '#fff';
+    function updateCountdownDisplay(time) {
+        countdownElement.textContent = `Tiempo restante: ${time}s`;
+        countdownElement.style.color = time <= 5 ? '#ff4444' : '#fff';
     }
 
-    function handleTimeout() {
-        clearInterval(gameState.interval);
-        gameState.timeout = true;
-        showTranslation();
-        wordCard.classList.add('rejected');
-    }
-
+    // Mostrar palabras
     function showNextWord() {
-        resetCard();
+        if (gameState.currentWordIndex >= gameState.words.length) {
+            endGame(false);
+            return;
+        }
         
-        if (gameState.currentIndex < gameState.words.length) {
-            const currentWord = gameState.words[gameState.currentIndex];
-            wordDisplay.textContent = currentWord.word;
-            pronunciationDisplay.textContent = currentWord.pronunciation;
-            animateCard();
-            gameState.currentIndex++;
+        const currentWord = gameState.words[gameState.currentWordIndex];
+        wordElement.textContent = currentWord.word;
+        pronunciationElement.textContent = currentWord.pronunciation;
+        translationElement.classList.remove('show');
+        
+        gameState.currentWordIndex++;
+    }
+
+    // Finalizar juego
+    function endGame(isTimeout) {
+        clearInterval(gameState.countdownInterval);
+        gameState.isTimeout = isTimeout;
+        
+        if (isTimeout) {
+            showTranslation();
+            wordCard.classList.add('timeout');
         } else {
-            endGame();
+            showResults();
         }
     }
 
-    function resetCard() {
-        wordCard.classList.remove('rejected', 'approved');
-        translationDisplay.classList.remove('show-translation');
-        translationDisplay.textContent = '';
+    // Mostrar resultados
+    function showResults() {
+        screens.game.classList.remove('active');
+        screens.results.classList.add('active');
+        
+        resultsBody.innerHTML = gameState.players.map(player => `
+            <tr>
+                <td>${player}</td>
+                <td>${gameState.correctAnswers}</td>
+                <td>${gameState.wrongAnswers}</td>
+            </tr>
+        `).join('');
     }
 
-    function animateCard() {
-        wordCard.style.animation = 'none';
-        void wordCard.offsetWidth;
-        wordCard.style.animation = 'flip 0.6s ease';
-    }
-
-    // Manejador de clics en la tarjeta
+    // Manejador de clics
     wordCard.addEventListener('click', (e) => {
-        if (gameState.timeout) {
-            gameState.timeout = false;
+        if (gameState.isTimeout) {
+            gameState.isTimeout = false;
+            wordCard.classList.remove('timeout');
             showNextWord();
             return;
         }
-
-        const rect = wordCard.getBoundingClientRect();
-        const clickX = e.clientX - rect.left;
         
-        if (clickX < rect.width / 2) {
-            handleWrong();
+        const rect = wordCard.getBoundingClientRect();
+        const isRightSide = e.clientX - rect.left > rect.width / 2;
+        
+        if (isRightSide) {
+            gameState.correctAnswers++;
+            showNextWord();
         } else {
-            handleCorrect();
+            gameState.wrongAnswers++;
+            showTranslation();
+            wordCard.classList.add('wrong');
         }
     });
 
-    function handleWrong() {
-        gameState.wrong++;
-        rejectedDisplay.textContent = gameState.wrong;
-        showTranslation();
-        wordCard.classList.add('rejected');
-    }
-
-    function handleCorrect() {
-        gameState.correct++;
-        approvedDisplay.textContent = gameState.correct;
-        showNextWord();
-    }
-
     function showTranslation() {
-        const currentWord = gameState.words[gameState.currentIndex - 1];
-        translationDisplay.textContent = currentWord.translation;
-        translationDisplay.classList.add('show-translation');
-    }
-
-    function endGame() {
-        clearInterval(gameState.interval);
-        gameScreen.style.display = 'none';
-        resultsScreen.style.display = 'block';
-        showResults();
-    }
-
-    function showResults() {
-        resultsBody.innerHTML = gameState.players
-            .map(player => `
-                <tr>
-                    <td>${player}</td>
-                    <td>${gameState.correct}</td>
-                    <td>${gameState.wrong}</td>
-                </tr>
-            `)
-            .join('');
+        const currentWord = gameState.words[gameState.currentWordIndex - 1];
+        translationElement.textContent = currentWord.translation;
+        translationElement.classList.add('show');
     }
 
     // Reiniciar juego
-    restartBtn.addEventListener('click', () => {
-        resultsScreen.style.display = 'none';
-        setupScreen.style.display = 'block';
-        resetGame();
+    restartButton.addEventListener('click', () => {
+        screens.results.classList.remove('active');
+        screens.setup.classList.add('active');
+        resetGameState();
     });
 
-    function resetGame() {
-        gameState = {
-            ...gameState,
-            players: [],
-            words: [],
-            currentIndex: 0,
-            correct: 0,
-            wrong: 0
-        };
-        
-        gameForm.reset();
-        countdownDisplay.textContent = '';
-        wordDisplay.textContent = '';
-        pronunciationDisplay.textContent = '';
-        translationDisplay.textContent = '';
-        approvedDisplay.textContent = '0';
-        rejectedDisplay.textContent = '0';
+    function resetGameState() {
+        gameState.currentWordIndex = 0;
+        gameState.correctAnswers = 0;
+        gameState.wrongAnswers = 0;
+        gameState.isTimeout = false;
+        wordCard.classList.remove('wrong', 'timeout');
+        translationElement.classList.remove('show');
     }
 });
