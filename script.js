@@ -38,23 +38,24 @@ document.addEventListener('DOMContentLoaded', () => {
     startWelcomeAnimation();
 
     // Animación de bienvenida
-    function startWelcomeAnimation() {
-        const welcomeText = "Bienvenido al reto!";
-        const welcomeElement = document.getElementById('welcome-text');
-        
-        welcomeText.split('').forEach((char, i) => {
-            setTimeout(() => {
-                welcomeElement.textContent += char;
-                if(i === welcomeText.length - 1) {
-                    triggerConfetti();
-                    setTimeout(() => {
-                        screens.welcome.classList.remove('active');
-                        screens.setup.classList.add('active');
-                    }, 2000);
-                }
-            }, i * 100);
-        });
-    }
+function startWelcomeAnimation() {
+    const welcomeText = "Bienvenido al reto!";
+    const welcomeElement = document.getElementById('welcome-text');
+    
+    // Mostrar texto inmediatamente
+    welcomeElement.textContent = welcomeText;
+    welcomeElement.style.opacity = 1;
+
+    // Animación de revelado
+    setTimeout(() => {
+        triggerConfetti();
+        // Transición a la pantalla de configuración
+        setTimeout(() => {
+            screens.welcome.classList.remove('active');
+            screens.setup.classList.add('active');
+        }, 2000);
+    }, 3000);
+}
 
     // Controles de jugadores
     function setupPlayerControls() {
