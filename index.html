@@ -3,64 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego de Vocabulario en Inglés</title>
+    <title>Anglobulario - Juego de Vocabulario</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Juego interactivo para aprender vocabulario en inglés con múltiples categorías y modos de juego">
 </head>
 <body>
-    <header>
-        <h1>Juego de Vocabulario en Inglés</h1>
-    </header>
-    <main>
-        <section id="setup-screen">
+    <!-- Pantalla de Configuración -->
+    <section id="setup-screen">
+        <div class="config-container">
+            <h1>✨ Anglobulario ✨</h1>
             <form id="game-setup">
-                <label for="player1">Jugador 1:</label>
-                <input type="text" id="player1" name="player1">
-                <label for="player2">Jugador 2:</label>
-                <input type="text" id="player2" name="player2">
-                <label for="player3">Jugador 3:</label>
-                <input type="text" id="player3" name="player3">
-                <label for="player4">Jugador 4:</label>
-                <input type="text" id="player4" name="player4">
-                <label for="time">Tiempo (segundos):</label>
-                <input type="number" id="time" name="time" min="10" max="300">
-                <label for="category">Categoría:</label>
-                <select id="category" name="category">
-                    <select>
-                <button type="submit">Comenzar Juego</button>
+                <div class="input-group">
+                    <label for="player1">Jugador 1:</label>
+                    <input type="text" id="player1" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="player2">Jugador 2:</label>
+                    <input type="text" id="player2">
+                </div>
+                
+                <div class="input-group">
+                    <label for="player3">Jugador 3:</label>
+                    <input type="text" id="player3">
+                </div>
+                
+                <div class="input-group">
+                    <label for="player4">Jugador 4:</label>
+                    <input type="text" id="player4">
+                </div>
+                
+                <div class="input-group">
+                    <label for="time">Tiempo (segundos):</label>
+                    <input type="number" id="time" min="30" max="300" value="60" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="category">Categoría:</label>
+                    <select id="category" required></select>
+                </div>
+                
+                <button type="submit">🎮 ¡Comenzar Juego!</button>
             </form>
-        </section>
-        <section id="game-screen" class="hidden">
-            <div id="countdown"></div>
-            <div id="word-card">
-                <h2 id="word"></h2>
-                <p id="pronunciation"></p>
-                <p id="translation" class="translation-text"></p>
-            </div>
-            <div id="scoreboard">
-                <p>Aprobadas: <span id="approved">0</span></p>
-                <p>No Aprobadas: <span id="rejected">0</span></p>
-            </div>
-        </section>
-        <section id="results-screen" class="hidden">
-            <h2>Resultados</h2>
+        </div>
+    </section>
+
+    <!-- Pantalla de Juego -->
+    <section id="game-screen" class="hidden">
+        <div id="countdown">⏳ 60 segundos</div>
+        
+        <div id="word-card">
+            <h2 id="word"></h2>
+            <p id="pronunciation"></p>
+            <p id="translation"></p>
+        </div>
+        
+        <div id="scoreboard">
+            <p>✅ <span id="approved">0</span></p>
+            <p>❌ <span id="rejected">0</span></p>
+        </div>
+    </section>
+
+    <!-- Pantalla de Resultados -->
+    <section id="results-screen" class="hidden">
+        <div class="results-container">
+            <h2>🏆 Resultados Finales</h2>
             <table id="results-table">
                 <thead>
                     <tr>
                         <th>Jugador</th>
-                        <th>Aprobadas</th>
-                        <th>No Aprobadas</th>
+                        <th>Aciertos</th>
+                        <th>Errores</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <!-- Las filas se llenarán dinámicamente con JavaScript -->
-                </tbody>
+                <tbody></tbody>
             </table>
-            <button id="restart-game">Reiniciar Juego</button>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 Juego de Vocabulario en Inglés</p>
-    </footer>
+            <button id="restart-game">🔄 Jugar de Nuevo</button>
+        </div>
+    </section>
+
+    <!-- Transición Animada -->
+    <div id="transition-overlay" class="hidden">
+        <div class="transition-content">
+            <h2>🎉 ¡Listo para Jugar!</h2>
+            <div class="loader"></div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
