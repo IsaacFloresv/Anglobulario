@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anglobulario - Juego de Vocabulario</title>
+    <title>Anglobulario</title>
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Juego interactivo para aprender vocabulario en inglés con múltiples categorías y modos de juego">
 </head>
 <body>
-    <!-- Pantalla de Configuración -->
-    <section id="setup-screen">
+    <!-- Pantalla de configuración -->
+    <section id="setup-screen" class="screen active">
         <div class="config-container">
-            <h1>✨ Anglobulario ✨</h1>
+            <h1>Anglobulario</h1>
             <form id="game-setup">
                 <div class="input-group">
                     <label for="player1">Jugador 1:</label>
@@ -35,7 +34,7 @@
                 
                 <div class="input-group">
                     <label for="time">Tiempo (segundos):</label>
-                    <input type="number" id="time" min="30" max="300" value="60" required>
+                    <input type="number" id="time" min="5" value="30" required>
                 </div>
                 
                 <div class="input-group">
@@ -43,31 +42,25 @@
                     <select id="category" required></select>
                 </div>
                 
-                <button type="submit">🎮 ¡Comenzar Juego!</button>
+                <button type="submit">Comenzar Juego</button>
             </form>
         </div>
     </section>
 
-    <!-- Pantalla de Juego -->
-    <section id="game-screen" class="hidden">
-        <div id="countdown">⏳ 60 segundos</div>
-        
+    <!-- Pantalla de juego -->
+    <section id="game-screen" class="screen">
+        <div id="countdown"></div>
         <div id="word-card">
             <h2 id="word"></h2>
             <p id="pronunciation"></p>
             <p id="translation"></p>
         </div>
-        
-        <div id="scoreboard">
-            <p>✅ <span id="approved">0</span></p>
-            <p>❌ <span id="rejected">0</span></p>
-        </div>
     </section>
 
-    <!-- Pantalla de Resultados -->
-    <section id="results-screen" class="hidden">
+    <!-- Pantalla de resultados -->
+    <section id="results-screen" class="screen">
         <div class="results-container">
-            <h2>🏆 Resultados Finales</h2>
+            <h2>Resultados</h2>
             <table id="results-table">
                 <thead>
                     <tr>
@@ -78,16 +71,13 @@
                 </thead>
                 <tbody></tbody>
             </table>
-            <button id="restart-game">🔄 Jugar de Nuevo</button>
+            <button id="restart-game">Jugar de Nuevo</button>
         </div>
     </section>
 
-    <!-- Transición Animada -->
-    <div id="transition-overlay" class="hidden">
-        <div class="transition-content">
-            <h2>🎉 ¡Listo para Jugar!</h2>
-            <div class="loader"></div>
-        </div>
+    <!-- Pantalla de transición -->
+    <div id="transition-screen" class="screen">
+        <h2>🎮 ¡Listo para jugar!</h2>
     </div>
 
     <script src="script.js"></script>
