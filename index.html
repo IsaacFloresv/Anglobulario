@@ -25,8 +25,7 @@
                 <input type="number" id="time" name="time" min="10" max="300">
                 <label for="category">Categoría:</label>
                 <select id="category" name="category">
-                    <!-- Las opciones se llenarán dinámicamente con JavaScript -->
-                </select>
+                    <select>
                 <button type="submit">Comenzar Juego</button>
             </form>
         </section>
@@ -35,6 +34,7 @@
             <div id="word-card">
                 <h2 id="word"></h2>
                 <p id="pronunciation"></p>
+                <p id="translation" class="translation-text"></p>
             </div>
             <div id="scoreboard">
                 <p>Aprobadas: <span id="approved">0</span></p>
