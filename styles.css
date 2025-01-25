@@ -1,3 +1,14 @@
+:root {
+    --primary-color: #6c5ce7;
+    --success-color: #4CAF50;
+    --danger-color: #ff4444;
+    --warning-color: #ffc107;
+    --background-gradient: linear-gradient(135deg, #ff758c 0%, #ff7eb3 50%, #a18cd1 100%);
+    --text-dark: #2d3436;
+    --text-light: #ffffff;
+    --transition-time: 0.3s;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,54 +18,69 @@
 body {
     font-family: 'Segoe UI', system-ui, sans-serif;
     min-height: 100vh;
-    background: linear-gradient(135deg, #ff758c, #ff7eb3, #a18cd1);
+    background: var(--background-gradient);
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #2d3436;
+    color: var(--text-dark);
     position: relative;
+    overflow-x: hidden;
 }
 
-/* Pantallas */
 .screen {
     width: 100%;
     max-width: 800px;
     margin: auto;
     padding: 20px;
     display: none;
+    position: relative;
 }
 
 .screen.active {
     display: block;
 }
 
-/* Formulario */
-#setup-screen {
+/* Animación de bienvenida */
+#welcome-screen {
+    text-align: center;
+}
+
+#welcome-text {
+    font-size: 3rem;
+    color: var(--text-light);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: textReveal 5s forwards;
+}
+
+@keyframes textReveal {
+    0% { letter-spacing: 50px; opacity: 0; }
+    50% { letter-spacing: normal; opacity: 1; }
+    100% { transform: scale(1.1); }
+}
+
+/* Configuración del juego */
+.config-container {
     background: rgba(255, 255, 255, 0.98);
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-    margin-top: 50px;
 }
 
-.config-container h1 {
-    text-align: center;
-    color: #2d3436;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-#game-setup {
+.players-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
 }
 
 .input-group label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 600;
-    color: #636e72;
+    color: var(--text-dark);
 }
 
 .input-group input,
@@ -64,41 +90,112 @@ body {
     border: 2px solid #dfe6e9;
     border-radius: 10px;
     font-size: 1rem;
+    transition: border-color var(--transition-time);
 }
 
-#game-setup button {
-    background: #6c5ce7;
-    color: white;
+.input-group input:focus,
+.input-group select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.circle-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     border: none;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 1.1rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform var(--transition-time);
+}
+
+.circle-btn:hover {
+    transform: scale(1.1);
+}
+
+.success {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.danger {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+/* Pantalla de carga */
+#loading-screen {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.98);
+}
+
+.loading-text {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: colorShift 2s infinite alternate;
+}
+
+.sub-loading-text {
+    font-size: 1.5rem;
+    color: var(--text-dark);
     margin-top: 1rem;
 }
 
-/* Juego */
-#countdown {
-    font-size: 1.5rem;
-    text-align: center;
-    color: white;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+@keyframes colorShift {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
 }
 
+/* Juego principal */
 #word-card {
-    background: rgba(255, 255, 255, 0.95);
+    background: white;
     border-radius: 20px;
-    padding: 3rem 2rem;
+    padding: 3rem;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: all var(--transition-time);
+    position: relative;
+    overflow: hidden;
 }
 
-#word-card h2 {
+#word-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity var(--transition-time);
+}
+
+#word-card.approved::before {
+    background: rgba(76, 175, 80, 0.1);
+    opacity: 1;
+}
+
+#word-card.rejected::before {
+    background: rgba(255, 68, 68, 0.1);
+    opacity: 1;
+}
+
+#word {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 1rem;
@@ -113,11 +210,12 @@ body {
 #translation {
     font-size: 2rem;
     text-align: center;
-    color: white;
-    margin-top: 2rem;
+    color: var(--text-light);
+    margin-top: 1rem;
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.3s ease;
+    transition: all var(--transition-time);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 #translation.show {
@@ -126,87 +224,29 @@ body {
 }
 
 /* Resultados */
-#results-screen {
-    background: rgba(255, 255, 255, 0.98);
-    padding: 2rem;
-    border-radius: 20px;
-}
-
-#results-table {
-    width: 100%;
-    margin: 2rem 0;
-    border-collapse: collapse;
-}
-
-#results-table th,
-#results-table td {
-    padding: 1rem;
-    text-align: left;
-    border-bottom: 2px solid #eee;
-}
-
-/* Transición */
-#transition-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    display: none;
-    align-items: center;
+#podium {
+    display: flex;
     justify-content: center;
-    font-size: 3rem;
-    z-index: 1000;
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
-@media (max-width: 768px) {
-    .config-container h1 {
-        font-size: 2rem;
-    }
-    
-    #word-card {
-        padding: 2rem;
-        min-height: 250px;
-    }
-    
-    #word-card h2 {
-        font-size: 2rem;
-    }
+.podium-item {
+    width: 100px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px;
+    padding: 1rem;
 }
 
-/* Añadir estas reglas */
-#translation {
-    font-size: 1.8em;
-    font-weight: 700;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-top: 1rem;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.3s ease-out;
-}
+.gold { background: #ffd700; }
+.silver { background: #c0c0c0; }
+.bronze { background: #cd7f32; }
 
-#translation.show-translation {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-#countdown {
-    font-size: 1.2em;
-    transition: color 0.3s ease;
-}
-
-#word-card.rejected {
-    background-color: #dc3545;
-    animation: shake 0.4s ease;
-}
-
-#word-card.approved {
-    background-color: #28a745;
-    animation: pulse 0.4s ease;
-}
-
+/* Animaciones */
 @keyframes shake {
     0%, 100% { transform: translateX(0); }
     25% { transform: translateX(-10px); }
@@ -218,136 +258,17 @@ body {
     50% { transform: scale(1.05); }
 }
 
-
-/* Estilos para la traducción */
-.translation-text {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #ffffff;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-  margin-top: 15px;
-  display: none; /* Oculto por defecto */
+.approved {
+    animation: pulse 0.4s ease;
 }
 
-/* Animación para mostrar la traducción */
-@keyframes slideIn {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+.rejected {
+    animation: shake 0.4s ease;
 }
 
-.show-translation {
-  display: block;
-  animation: slideIn 0.3s ease-out;
-}
-
-/* Colores para estados de la tarjeta */
-#word-card.rejected {
-  background-color: #ff4444;
-  transition: background-color 0.3s ease;
-}
-
-#word-card.approved {
-  background-color: #4CAF50;
-  transition: background-color 0.3s ease;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-}
-
-.hidden {
-    display: none;
-}
-
-#game-screen, #results-screen {
-    text-align: center;
-}
-
-#word-card {
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-}
-
-#word-card h2 {
-    font-size: 2em;
-}
-
-#word-card p {
-    font-size: 1.2em;
-    color: #555;
-}
-
-#scoreboard {
-    margin-top: 20px;
-}
-
-#results-table {
-    margin: 20px auto;
-    border-collapse: collapse;
-}
-
-#results-table th, #results-table td {
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-}
-
-@keyframes flip {
-    0% { transform: rotateY(0); }
-    50% { transform: rotateY(90deg); }
-    100% { transform: rotateY(0); }
-}
-
-.flip {
-    animation: flip 0.5s ease-in-out;
-}
-
-/* Estilos para la traducción */
-.translation-text {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #ffffff;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-  margin-top: 15px;
-  display: none; /* Oculto por defecto */
-}
-
-/* Animación para mostrar la traducción */
-@keyframes slideIn {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-.show-translation {
-  display: block;
-  animation: slideIn 0.3s ease-out;
-}
-
-/* Colores para estados de la tarjeta */
-#word-card.rejected {
-  background-color: #ff4444;
-  transition: background-color 0.3s ease;
-}
-
-#word-card.approved {
-  background-color: #4CAF50;
-  transition: background-color 0.3s ease;
+/* Responsive */
+@media (max-width: 768px) {
+    #word { font-size: 2rem; }
+    #translation { font-size: 1.5rem; }
+    .config-container { padding: 1rem; }
 }
