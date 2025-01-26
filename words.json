@@ -1,861 +1,1910 @@
 {
   "Adverbios": [
-    {"word": "quickly", "pronunciation": "/ˈkwɪkli/"},
-    {"word": "slowly", "pronunciation": "/ˈsloʊli/"},
-    {"word": "brightly", "pronunciation": "/ˈbraɪtli/"},
-    {"word": "calmly", "pronunciation": "/ˈkɑːmli/"},
-    {"word": "eagerly", "pronunciation": "/ˈiːɡərli/"},
-    {"word": "happily", "pronunciation": "/ˈhæpɪli/"},
-    {"word": "gently", "pronunciation": "/ˈdʒɛntli/"},
-    {"word": "sadly", "pronunciation": "/ˈsædli/"},
-    {"word": "quietly", "pronunciation": "/ˈkwaɪətli/"},
-    {"word": "firmly", "pronunciation": "/ˈfɜːrmli/"},
-    {"word": "angrily", "pronunciation": "/ˈæŋɡrɪli/"},
-    {"word": "beautifully", "pronunciation": "/ˈbjuːtəfəli/"},
-    {"word": "carefully", "pronunciation": "/ˈkɛərfəli/"},
-    {"word": "easily", "pronunciation": "/ˈiːzɪli/"},
-    {"word": "frequently", "pronunciation": "/ˈfriːkwəntli/"},
-    {"word": "generously", "pronunciation": "/ˈdʒɛnərəsli/"},
-    {"word": "heavily", "pronunciation": "/ˈhɛvɪli/"},
-    {"word": "politely", "pronunciation": "/pəˈlaɪtli/"},
-    {"word": "rarely", "pronunciation": "/ˈrɛərli/"},
-    {"word": "rudely", "pronunciation": "/ˈruːdli/"},
-    {"word": "sharply", "pronunciation": "/ˈʃɑːrpli/"},
-    {"word": "smoothly", "pronunciation": "/ˈsmuːðli/"},
-    {"word": "suddenly", "pronunciation": "/ˈsʌdənli/"},
-    {"word": "warmly", "pronunciation": "/ˈwɔːrmli/"},
-    {"word": "weakly", "pronunciation": "/ˈwiːkli/"},
-    {"word": "wisely", "pronunciation": "/ˈwaɪzli/"},
-    {"word": "tenderly", "pronunciation": "/ˈtɛndərli/"},
-    {"word": "silently", "pronunciation": "/ˈsaɪləntli/"},
-    {"word": "angrily", "pronunciation": "/ˈæŋɡrɪli/"}
+    {
+      "word": "quickly",
+      "pronunciation": "/ˈkwɪkli/",
+      "translation": "rápidamente"
+    },
+    {
+      "word": "slowly",
+      "pronunciation": "/ˈsloʊli/",
+      "translation": "lentamente"
+    },
+    {
+      "word": "brightly",
+      "pronunciation": "/ˈbraɪtli/",
+      "translation": "brillantemente"
+    },
+    {
+      "word": "calmly",
+      "pronunciation": "/ˈkɑːmli/",
+      "translation": "calmadamente"
+    },
+    {
+      "word": "eagerly",
+      "pronunciation": "/ˈiːɡərli/",
+      "translation": "ansiosamente"
+    },
+    {
+      "word": "happily",
+      "pronunciation": "/ˈhæpɪli/",
+      "translation": "felizmente"
+    },
+    {
+      "word": "gently",
+      "pronunciation": "/ˈdʒɛntli/",
+      "translation": "suavemente"
+    },
+    {
+      "word": "sadly",
+      "pronunciation": "/ˈsædli/",
+      "translation": "tristemente"
+    },
+    {
+      "word": "quietly",
+      "pronunciation": "/ˈkwaɪətli/",
+      "translation": "calladamente"
+    },
+    {
+      "word": "firmly",
+      "pronunciation": "/ˈfɜːrmli/",
+      "translation": "firmemente"
+    },
+    {
+      "word": "angrily",
+      "pronunciation": "/ˈæŋɡrɪli/",
+      "translation": "enfurecidamente"
+    },
+    {
+      "word": "beautifully",
+      "pronunciation": "/ˈbjuːtəfəli/",
+      "translation": "hermosamente"
+    },
+    {
+      "word": "carefully",
+      "pronunciation": "/ˈkɛərfəli/",
+      "translation": "cuidadosamente"
+    },
+    {
+      "word": "easily",
+      "pronunciation": "/ˈiːzɪli/",
+      "translation": "fácilmente"
+    },
+    {
+      "word": "frequently",
+      "pronunciation": "/ˈfriːkwəntli/",
+      "translation": "frecuentemente"
+    },
+    {
+      "word": "generously",
+      "pronunciation": "/ˈdʒɛnərəsli/",
+      "translation": "generosamente"
+    },
+    {
+      "word": "heavily",
+      "pronunciation": "/ˈhɛvɪli/",
+      "translation": "pesadamente"
+    },
+    {
+      "word": "politely",
+      "pronunciation": "/pəˈlaɪtli/",
+      "translation": "educadamente"
+    },
+    {
+      "word": "rarely",
+      "pronunciation": "/ˈrɛərli/",
+      "translation": "raramente"
+    },
+    {
+      "word": "rudely",
+      "pronunciation": "/ˈruːdli/",
+      "translation": "groseramente"
+    },
+    {
+      "word": "sharply",
+      "pronunciation": "/ˈʃɑːrpli/",
+      "translation": "agudamente"
+    },
+    {
+      "word": "smoothly",
+      "pronunciation": "/ˈsmuːðli/",
+      "translation": "suavemente"
+    },
+    {
+      "word": "suddenly",
+      "pronunciation": "/ˈsʌdənli/",
+      "translation": "repentinamente"
+    },
+    {
+      "word": "warmly",
+      "pronunciation": "/ˈwɔːrmli/",
+      "translation": "calurosamente"
+    },
+    {
+      "word": "weakly",
+      "pronunciation": "/ˈwiːkli/",
+      "translation": "débilmente"
+    },
+    {
+      "word": "wisely",
+      "pronunciation": "/ˈwaɪzli/",
+      "translation": "sabiamente"
+    },
+    {
+      "word": "tenderly",
+      "pronunciation": "/ˈtɛndərli/",
+      "translation": "tiernamente"
+    },
+    {
+      "word": "silently",
+      "pronunciation": "/ˈsaɪləntli/",
+      "translation": "silenciosamente"
+    },
+    {
+      "word": "angrily",
+      "pronunciation": "/ˈæŋɡrɪli/",
+      "translation": "enfurecidamente"
+    }
   ],
   "Preposiciones": [
-    {"word": "above", "pronunciation": "/əˈbʌv/"},
-    {"word": "across", "pronunciation": "/əˈkrɒs/"},
-    {"word": "against", "pronunciation": "/əˈɡɛnst/"},
-    {"word": "along", "pronunciation": "/əˈlɒŋ/"},
-    {"word": "among", "pronunciation": "/əˈmʌŋ/"},
-    {"word": "around", "pronunciation": "/əˈraʊnd/"},
-    {"word": "before", "pronunciation": "/bɪˈfɔːr/"},
-    {"word": "behind", "pronunciation": "/bɪˈhaɪnd/"},
-    {"word": "below", "pronunciation": "/bɪˈloʊ/"},
-    {"word": "beneath", "pronunciation": "/bɪˈniːθ/"},
-    {"word": "beside", "pronunciation": "/bɪˈsaɪd/"},
-    {"word": "between", "pronunciation": "/bɪˈtwiːn/"},
-    {"word": "beyond", "pronunciation": "/bɪˈjɒnd/"},
-    {"word": "despite", "pronunciation": "/dɪˈspaɪt/"},
-    {"word": "during", "pronunciation": "/ˈdjʊərɪŋ/"},
-    {"word": "except", "pronunciation": "/ɪkˈsɛpt/"},
-    {"word": "inside", "pronunciation": "/ɪnˈsaɪd/"},
-    {"word": "near", "pronunciation": "/nɪər/"},
-    {"word": "onto", "pronunciation": "/ˈɒntuː/"},
-    {"word": "outside", "pronunciation": "/ˌaʊtˈsaɪd/"},
-    {"word": "over", "pronunciation": "/ˈoʊvər/"},
-    {"word": "past", "pronunciation": "/pæst/"},
-    {"word": "through", "pronunciation": "/θruː/"},
-    {"word": "toward", "pronunciation": "/təˈwɔːrd/"},
-    {"word": "under", "pronunciation": "/ˈʌndər/"},
-    {"word": "underneath", "pronunciation": "/ˌʌndərˈniːθ/"},
-    {"word": "until", "pronunciation": "/ʌnˈtɪl/"},
-    {"word": "upon", "pronunciation": "/əˈpɒn/"},
-    {"word": "within", "pronunciation": "/wɪðˈɪn/"}
+    { "word": "above", "pronunciation": "/əˈbʌv/", "translation": "encima" },
+    {
+      "word": "across",
+      "pronunciation": "/əˈkrɒs/",
+      "translation": "a través de"
+    },
+    {
+      "word": "against",
+      "pronunciation": "/əˈɡɛnst/",
+      "translation": "contra"
+    },
+    {
+      "word": "along",
+      "pronunciation": "/əˈlɒŋ/",
+      "translation": "a lo largo de"
+    },
+    { "word": "among", "pronunciation": "/əˈmʌŋ/", "translation": "entre" },
+    {
+      "word": "around",
+      "pronunciation": "/əˈraʊnd/",
+      "translation": "alrededor de"
+    },
+    {
+      "word": "before",
+      "pronunciation": "/bɪˈfɔːr/",
+      "translation": "antes de"
+    },
+    {
+      "word": "behind",
+      "pronunciation": "/bɪˈhaɪnd/",
+      "translation": "detrás de"
+    },
+    {
+      "word": "below",
+      "pronunciation": "/bɪˈloʊ/",
+      "translation": "debajo de"
+    },
+    {
+      "word": "beneath",
+      "pronunciation": "/bɪˈniːθ/",
+      "translation": "debajo de"
+    },
+    {
+      "word": "beside",
+      "pronunciation": "/bɪˈsaɪd/",
+      "translation": "al lado de"
+    },
+    {
+      "word": "between",
+      "pronunciation": "/bɪˈtwiːn/",
+      "translation": "entre"
+    },
+    {
+      "word": "beyond",
+      "pronunciation": "/bɪˈjɒnd/",
+      "translation": "más allá de"
+    },
+    {
+      "word": "despite",
+      "pronunciation": "/dɪˈspaɪt/",
+      "translation": "a pesar de"
+    },
+    {
+      "word": "during",
+      "pronunciation": "/ˈdjʊərɪŋ/",
+      "translation": "durante"
+    },
+    {
+      "word": "except",
+      "pronunciation": "/ɪkˈsɛpt/",
+      "translation": "excepto"
+    },
+    {
+      "word": "inside",
+      "pronunciation": "/ɪnˈsaɪd/",
+      "translation": "dentro de"
+    },
+    { "word": "near", "pronunciation": "/nɪər/", "translation": "cerca de" },
+    { "word": "onto", "pronunciation": "/ˈɒntuː/", "translation": "sobre" },
+    {
+      "word": "outside",
+      "pronunciation": "/ˌaʊtˈsaɪd/",
+      "translation": "fuera de"
+    },
+    { "word": "over", "pronunciation": "/ˈoʊvər/", "translation": "sobre" },
+    { "word": "past", "pronunciation": "/pæst/", "translation": "más allá de" },
+    {
+      "word": "through",
+      "pronunciation": "/θruː/",
+      "translation": "a través de"
+    },
+    { "word": "toward", "pronunciation": "/təˈwɔːrd/", "translation": "hacia" },
+    {
+      "word": "under",
+      "pronunciation": "/ˈʌndər/",
+      "translation": "debajo de"
+    },
+    {
+      "word": "underneath",
+      "pronunciation": "/ˌʌndərˈniːθ/",
+      "translation": "debajo de"
+    },
+    { "word": "until", "pronunciation": "/ʌnˈtɪl/", "translation": "hasta" },
+    { "word": "upon", "pronunciation": "/əˈpɒn/", "translation": "sobre" },
+    {
+      "word": "within",
+      "pronunciation": "/wɪðˈɪn/",
+      "translation": "dentro de"
+    }
   ],
   "Animales_domésticos": [
-    {"word": "dog", "pronunciation": "/dɔːɡ/"},
-    {"word": "cat", "pronunciation": "/kæt/"},
-    {"word": "parrot", "pronunciation": "/ˈpærət/"},
-    {"word": "hamster", "pronunciation": "/ˈhæmstər/"},
-    {"word": "goldfish", "pronunciation": "/ˈɡoʊldˌfɪʃ/"},
-    {"word": "rabbit", "pronunciation": "/ˈræbɪt/"},
-    {"word": "canary", "pronunciation": "/kəˈneəri/"},
-    {"word": "turtle", "pronunciation": "/ˈtɜːrtl/"},
-    {"word": "guinea pig", "pronunciation": "/ˈɡɪni pɪɡ/"},
-    {"word": "chicken", "pronunciation": "/ˈtʃɪkɪn/"},
-    {"word": "duck", "pronunciation": "/dʌk/"},
-    {"word": "goat", "pronunciation": "/ɡoʊt/"},
-    {"word": "sheep", "pronunciation": "/ʃiːp/"},
-    {"word": "cow", "pronunciation": "/kaʊ/"},
-    {"word": "horse", "pronunciation": "/hɔːrs/"},
-    {"word": "donkey", "pronunciation": "/ˈdɒŋki/"},
-    {"word": "pig", "pronunciation": "/pɪɡ/"},
-    {"word": "gecko", "pronunciation": "/ˈɡɛkoʊ/"},
-    {"word": "ferret", "pronunciation": "/ˈfɛrɪt/"},
-    {"word": "mouse", "pronunciation": "/maʊs/"},
-    {"word": "budgie", "pronunciation": "/ˈbʌdʒi/"},
-    {"word": "pigeon", "pronunciation": "/ˈpɪdʒɪn/"},
-    {"word": "peacock", "pronunciation": "/ˈpiːkɒk/"},
-    {"word": "quail", "pronunciation": "/kweɪl/"},
-    {"word": "llama", "pronunciation": "/ˈlɑːmə/"},
-    {"word": "alpaca", "pronunciation": "/ælˈpækə/"},
-    {"word": "hedgehog", "pronunciation": "/ˈhɛdʒhɒɡ/"},
-    {"word": "turkey", "pronunciation": "/ˈtɜːrki/"},
-    {"word": "bee", "pronunciation": "/biː/"},
-    {"word": "finch", "pronunciation": "/fɪntʃ/"},
-    {"word": "cockatiel", "pronunciation": "/ˌkɒkəˈtiːl/"},
-    {"word": "cockatoo", "pronunciation": "/ˌkɒkəˈtuː/"},
-    {"word": "lovebird", "pronunciation": "/ˈlʌvbɜːrd/"},
-    {"word": "swan", "pronunciation": "/swɒn/"},
-    {"word": "dove", "pronunciation": "/dʌv/"},
-    {"word": "owl", "pronunciation": "/aʊl/"},
-    {"word": "mule", "pronunciation": "/mjuːl/"},
-    {"word": "fish", "pronunciation": "/fɪʃ/"},
-    {"word": "frog", "pronunciation": "/frɒɡ/"},
-    {"word": "toad", "pronunciation": "/toʊd/"},
-    {"word": "crab", "pronunciation": "/kræb/"},
-    {"word": "snail", "pronunciation": "/sneɪl/"},
-    {"word": "goose", "pronunciation": "/ɡuːs/"},
-    {"word": "silkworm", "pronunciation": "/ˈsɪlkˌwɜːrm/"},
-    {"word": "ox", "pronunciation": "/ɒks/"},
-    {"word": "stag", "pronunciation": "/stæɡ/"},
-    {"word": "yak", "pronunciation": "/jæk/"},
-    {"word": "antelope", "pronunciation": "/ˈæntɪloʊp/"},
-    {"word": "buffalo", "pronunciation": "/ˈbʌfəˌloʊ/"}
+    { "word": "dog", "pronunciation": "/dɔːɡ/" },
+    { "word": "cat", "pronunciation": "/kæt/" },
+    { "word": "parrot", "pronunciation": "/ˈpærət/" },
+    { "word": "hamster", "pronunciation": "/ˈhæmstər/" },
+    { "word": "goldfish", "pronunciation": "/ˈɡoʊldˌfɪʃ/" },
+    { "word": "rabbit", "pronunciation": "/ˈræbɪt/" },
+    { "word": "canary", "pronunciation": "/kəˈneəri/" },
+    { "word": "turtle", "pronunciation": "/ˈtɜːrtl/" },
+    { "word": "guinea pig", "pronunciation": "/ˈɡɪni pɪɡ/" },
+    { "word": "chicken", "pronunciation": "/ˈtʃɪkɪn/" },
+    { "word": "duck", "pronunciation": "/dʌk/" },
+    { "word": "goat", "pronunciation": "/ɡoʊt/" },
+    { "word": "sheep", "pronunciation": "/ʃiːp/" },
+    { "word": "cow", "pronunciation": "/kaʊ/" },
+    { "word": "horse", "pronunciation": "/hɔːrs/" },
+    { "word": "donkey", "pronunciation": "/ˈdɒŋki/" },
+    { "word": "pig", "pronunciation": "/pɪɡ/" },
+    { "word": "gecko", "pronunciation": "/ˈɡɛkoʊ/" },
+    { "word": "ferret", "pronunciation": "/ˈfɛrɪt/" },
+    { "word": "mouse", "pronunciation": "/maʊs/" },
+    { "word": "budgie", "pronunciation": "/ˈbʌdʒi/" },
+    { "word": "pigeon", "pronunciation": "/ˈpɪdʒɪn/" },
+    { "word": "peacock", "pronunciation": "/ˈpiːkɒk/" },
+    { "word": "quail", "pronunciation": "/kweɪl/" },
+    { "word": "llama", "pronunciation": "/ˈlɑːmə/" },
+    { "word": "alpaca", "pronunciation": "/ælˈpækə/" },
+    { "word": "hedgehog", "pronunciation": "/ˈhɛdʒhɒɡ/" },
+    { "word": "turkey", "pronunciation": "/ˈtɜːrki/" },
+    { "word": "bee", "pronunciation": "/biː/" },
+    { "word": "finch", "pronunciation": "/fɪntʃ/" },
+    { "word": "cockatiel", "pronunciation": "/ˌkɒkəˈtiːl/" },
+    { "word": "cockatoo", "pronunciation": "/ˌkɒkəˈtuː/" },
+    { "word": "lovebird", "pronunciation": "/ˈlʌvbɜːrd/" },
+    { "word": "swan", "pronunciation": "/swɒn/" },
+    { "word": "dove", "pronunciation": "/dʌv/" },
+    { "word": "owl", "pronunciation": "/aʊl/" },
+    { "word": "mule", "pronunciation": "/mjuːl/" },
+    { "word": "fish", "pronunciation": "/fɪʃ/" },
+    { "word": "frog", "pronunciation": "/frɒɡ/" },
+    { "word": "toad", "pronunciation": "/toʊd/" },
+    { "word": "crab", "pronunciation": "/kræb/" },
+    { "word": "snail", "pronunciation": "/sneɪl/" },
+    { "word": "goose", "pronunciation": "/ɡuːs/" },
+    { "word": "silkworm", "pronunciation": "/ˈsɪlkˌwɜːrm/" },
+    { "word": "ox", "pronunciation": "/ɒks/" },
+    { "word": "stag", "pronunciation": "/stæɡ/" },
+    { "word": "yak", "pronunciation": "/jæk/" },
+    { "word": "antelope", "pronunciation": "/ˈæntɪloʊp/" },
+    { "word": "buffalo", "pronunciation": "/ˈbʌfəˌloʊ/" }
   ],
   "Animales_salvajes": [
-    {"word": "lion", "pronunciation": "/ˈlaɪən/"},
-    {"word": "tiger", "pronunciation": "/ˈtaɪɡər/"},
-    {"word": "elephant", "pronunciation": "/ˈɛləfənt/"},
-    {"word": "giraffe", "pronunciation": "/dʒəˈræf/"},
-    {"word": "zebra", "pronunciation": "/ˈziːbrə/"},
-    {"word": "leopard", "pronunciation": "/ˈlɛpərd/"},
-    {"word": "cheetah", "pronunciation": "/ˈtʃiːtə/"},
-    {"word": "panther", "pronunciation": "/ˈpænθər/"},
-    {"word": "bear", "pronunciation": "/bɛr/"},
-    {"word": "wolf", "pronunciation": "/wʊlf/"},
-    {"word": "fox", "pronunciation": "/fɒks/"},
-    {"word": "crocodile", "pronunciation": "/ˈkrɒkəˌdaɪl/"},
-    {"word": "alligator", "pronunciation": "/ˈælɪˌɡeɪtər/"},
-    {"word": "hippopotamus", "pronunciation": "/ˌhɪpəˈpɒtəməs/"},
-    {"word": "rhinoceros", "pronunciation": "/raɪˈnɒsərəs/"},
-    {"word": "deer", "pronunciation": "/dɪər/"},
-    {"word": "kangaroo", "pronunciation": "/ˌkæŋɡəˈruː/"},
-    {"word": "koala", "pronunciation": "/koʊˈɑːlə/"},
-    {"word": "gorilla", "pronunciation": "/ɡəˈrɪlə/"},
-    {"word": "chimpanzee", "pronunciation": "/ˌʧɪmpænˈziː/"},
-    {"word": "baboon", "pronunciation": "/bəˈbuːn/"},
-    {"word": "hyena", "pronunciation": "/haɪˈiːnə/"},
-    {"word": "antelope", "pronunciation": "/ˈæntɪˌloʊp/"},
-    {"word": "buffalo", "pronunciation": "/ˈbʌfəˌloʊ/"},
-    {"word": "jaguar", "pronunciation": "/ˈdʒæɡjuːər/"},
-    {"word": "sloth", "pronunciation": "/sloʊθ/"},
-    {"word": "tapir", "pronunciation": "/ˈteɪpɪər/"},
-    {"word": "puma", "pronunciation": "/ˈpjuːmə/"},
-    {"word": "meerkat", "pronunciation": "/ˈmɪərˌkæt/"},
-    {"word": "mongoose", "pronunciation": "/ˈmɒŋˌɡuːs/"},
-    {"word": "otter", "pronunciation": "/ˈɒtər/"},
-    {"word": "beaver", "pronunciation": "/ˈbiːvər/"},
-    {"word": "platypus", "pronunciation": "/ˈplætɪpəs/"},
-    {"word": "armadillo", "pronunciation": "/ˌɑːrməˈdɪloʊ/"},
-    {"word": "hedgehog", "pronunciation": "/ˈhɛʤhɒɡ/"},
-    {"word": "moose", "pronunciation": "/muːs/"},
-    {"word": "lynx", "pronunciation": "/lɪŋks/"},
-    {"word": "opossum", "pronunciation": "/əˈpɒsəm/"},
-    {"word": "skunk", "pronunciation": "/skʌŋk/"},
-    {"word": "badger", "pronunciation": "/ˈbæʤər/"},
-    {"word": "gazelle", "pronunciation": "/ɡəˈzɛl/"},
-    {"word": "porcupine", "pronunciation": "/ˈpɔːrkjʊˌpaɪn/"},
-    {"word": "raccoon", "pronunciation": "/rəˈkuːn/"},
-    {"word": "caribou", "pronunciation": "/ˈkærɪˌbuː/"},
-    {"word": "cougar", "pronunciation": "/ˈkuːɡər/"},
-    {"word": "wolverine", "pronunciation": "/ˈwʊlvəriːn/"},
-    {"word": "bison", "pronunciation": "/ˈbaɪsən/"},
-    {"word": "dingo", "pronunciation": "/ˈdɪŋɡoʊ/"}
+    { "word": "lion", "pronunciation": "/ˈlaɪən/" },
+    { "word": "tiger", "pronunciation": "/ˈtaɪɡər/" },
+    { "word": "elephant", "pronunciation": "/ˈɛləfənt/" },
+    { "word": "giraffe", "pronunciation": "/dʒəˈræf/" },
+    { "word": "zebra", "pronunciation": "/ˈziːbrə/" },
+    { "word": "leopard", "pronunciation": "/ˈlɛpərd/" },
+    { "word": "cheetah", "pronunciation": "/ˈtʃiːtə/" },
+    { "word": "panther", "pronunciation": "/ˈpænθər/" },
+    { "word": "bear", "pronunciation": "/bɛr/" },
+    { "word": "wolf", "pronunciation": "/wʊlf/" },
+    { "word": "fox", "pronunciation": "/fɒks/" },
+    { "word": "crocodile", "pronunciation": "/ˈkrɒkəˌdaɪl/" },
+    { "word": "alligator", "pronunciation": "/ˈælɪˌɡeɪtər/" },
+    { "word": "hippopotamus", "pronunciation": "/ˌhɪpəˈpɒtəməs/" },
+    { "word": "rhinoceros", "pronunciation": "/raɪˈnɒsərəs/" },
+    { "word": "deer", "pronunciation": "/dɪər/" },
+    { "word": "kangaroo", "pronunciation": "/ˌkæŋɡəˈruː/" },
+    { "word": "koala", "pronunciation": "/koʊˈɑːlə/" },
+    { "word": "gorilla", "pronunciation": "/ɡəˈrɪlə/" },
+    { "word": "chimpanzee", "pronunciation": "/ˌʧɪmpænˈziː/" },
+    { "word": "baboon", "pronunciation": "/bəˈbuːn/" },
+    { "word": "hyena", "pronunciation": "/haɪˈiːnə/" },
+    { "word": "antelope", "pronunciation": "/ˈæntɪˌloʊp/" },
+    { "word": "buffalo", "pronunciation": "/ˈbʌfəˌloʊ/" },
+    { "word": "jaguar", "pronunciation": "/ˈdʒæɡjuːər/" },
+    { "word": "sloth", "pronunciation": "/sloʊθ/" },
+    { "word": "tapir", "pronunciation": "/ˈteɪpɪər/" },
+    { "word": "puma", "pronunciation": "/ˈpjuːmə/" },
+    { "word": "meerkat", "pronunciation": "/ˈmɪərˌkæt/" },
+    { "word": "mongoose", "pronunciation": "/ˈmɒŋˌɡuːs/" },
+    { "word": "otter", "pronunciation": "/ˈɒtər/" },
+    { "word": "beaver", "pronunciation": "/ˈbiːvər/" },
+    { "word": "platypus", "pronunciation": "/ˈplætɪpəs/" },
+    { "word": "armadillo", "pronunciation": "/ˌɑːrməˈdɪloʊ/" },
+    { "word": "hedgehog", "pronunciation": "/ˈhɛʤhɒɡ/" },
+    { "word": "moose", "pronunciation": "/muːs/" },
+    { "word": "lynx", "pronunciation": "/lɪŋks/" },
+    { "word": "opossum", "pronunciation": "/əˈpɒsəm/" },
+    { "word": "skunk", "pronunciation": "/skʌŋk/" },
+    { "word": "badger", "pronunciation": "/ˈbæʤər/" },
+    { "word": "gazelle", "pronunciation": "/ɡəˈzɛl/" },
+    { "word": "porcupine", "pronunciation": "/ˈpɔːrkjʊˌpaɪn/" },
+    { "word": "raccoon", "pronunciation": "/rəˈkuːn/" },
+    { "word": "caribou", "pronunciation": "/ˈkærɪˌbuː/" },
+    { "word": "cougar", "pronunciation": "/ˈkuːɡər/" },
+    { "word": "wolverine", "pronunciation": "/ˈwʊlvəriːn/" },
+    { "word": "bison", "pronunciation": "/ˈbaɪsən/" },
+    { "word": "dingo", "pronunciation": "/ˈdɪŋɡoʊ/" }
   ],
   "Partes_de_la_casa": [
-    {"word": "kitchen", "pronunciation": "/ˈkɪtʃɪn/"},
-    {"word": "living room", "pronunciation": "/ˈlɪvɪŋ ruːm/"},
-    {"word": "bedroom", "pronunciation": "/ˈbɛdruːm/"},
-    {"word": "bathroom", "pronunciation": "/ˈbæθruːm/"},
-    {"word": "hallway", "pronunciation": "/ˈhɔːlweɪ/"},
-    {"word": "garage", "pronunciation": "/ɡəˈrɑːʒ/"},
-    {"word": "attic", "pronunciation": "/ˈætɪk/"},
-    {"word": "basement", "pronunciation": "/ˈbeɪsmənt/"},
-    {"word": "dining room", "pronunciation": "/ˈdaɪnɪŋ ruːm/"},
-    {"word": "study", "pronunciation": "/ˈstʌdi/"},
-    {"word": "laundry room", "pronunciation": "/ˈlɔːndri ruːm/"},
-    {"word": "closet", "pronunciation": "/ˈklɒzɪt/"},
-    {"word": "balcony", "pronunciation": "/ˈbælkəni/"},
-    {"word": "patio", "pronunciation": "/ˈpætiˌoʊ/"},
-    {"word": "garden", "pronunciation": "/ˈɡɑːrdən/"},
-    {"word": "porch", "pronunciation": "/pɔːrtʃ/"},
-    {"word": "fence", "pronunciation": "/fɛns/"},
-    {"word": "roof", "pronunciation": "/ruːf/"},
-    {"word": "floor", "pronunciation": "/flɔːr/"},
-    {"word": "wall", "pronunciation": "/wɔːl/"},
-    {"word": "ceiling", "pronunciation": "/ˈsiːlɪŋ/"},
-    {"word": "window", "pronunciation": "/ˈwɪndoʊ/"},
-    {"word": "door", "pronunciation": "/dɔːr/"},
-    {"word": "staircase", "pronunciation": "/ˈstɛərkeɪs/"},
-    {"word": "fireplace", "pronunciation": "/ˈfaɪəˌpleɪs/"},
-    {"word": "counter", "pronunciation": "/ˈkaʊntər/"},
-    {"word": "sink", "pronunciation": "/sɪŋk/"},
-    {"word": "bathtub", "pronunciation": "/ˈbæθtʌb/"},
-    {"word": "toilet", "pronunciation": "/ˈtɔɪlɪt/"},
-    {"word": "shower", "pronunciation": "/ˈʃaʊər/"},
-    {"word": "mirror", "pronunciation": "/ˈmɪrər/"},
-    {"word": "cabinet", "pronunciation": "/ˈkæbɪnət/"}
+    { "word": "kitchen", "pronunciation": "/ˈkɪtʃɪn/" },
+    { "word": "living room", "pronunciation": "/ˈlɪvɪŋ ruːm/" },
+    { "word": "bedroom", "pronunciation": "/ˈbɛdruːm/" },
+    { "word": "bathroom", "pronunciation": "/ˈbæθruːm/" },
+    { "word": "hallway", "pronunciation": "/ˈhɔːlweɪ/" },
+    { "word": "garage", "pronunciation": "/ɡəˈrɑːʒ/" },
+    { "word": "attic", "pronunciation": "/ˈætɪk/" },
+    { "word": "basement", "pronunciation": "/ˈbeɪsmənt/" },
+    { "word": "dining room", "pronunciation": "/ˈdaɪnɪŋ ruːm/" },
+    { "word": "study", "pronunciation": "/ˈstʌdi/" },
+    { "word": "laundry room", "pronunciation": "/ˈlɔːndri ruːm/" },
+    { "word": "closet", "pronunciation": "/ˈklɒzɪt/" },
+    { "word": "balcony", "pronunciation": "/ˈbælkəni/" },
+    { "word": "patio", "pronunciation": "/ˈpætiˌoʊ/" },
+    { "word": "garden", "pronunciation": "/ˈɡɑːrdən/" },
+    { "word": "porch", "pronunciation": "/pɔːrtʃ/" },
+    { "word": "fence", "pronunciation": "/fɛns/" },
+    { "word": "roof", "pronunciation": "/ruːf/" },
+    { "word": "floor", "pronunciation": "/flɔːr/" },
+    { "word": "wall", "pronunciation": "/wɔːl/" },
+    { "word": "ceiling", "pronunciation": "/ˈsiːlɪŋ/" },
+    { "word": "window", "pronunciation": "/ˈwɪndoʊ/" },
+    { "word": "door", "pronunciation": "/dɔːr/" },
+    { "word": "staircase", "pronunciation": "/ˈstɛərkeɪs/" },
+    { "word": "fireplace", "pronunciation": "/ˈfaɪəˌpleɪs/" },
+    { "word": "counter", "pronunciation": "/ˈkaʊntər/" },
+    { "word": "sink", "pronunciation": "/sɪŋk/" },
+    { "word": "bathtub", "pronunciation": "/ˈbæθtʌb/" },
+    { "word": "toilet", "pronunciation": "/ˈtɔɪlɪt/" },
+    { "word": "shower", "pronunciation": "/ˈʃaʊər/" },
+    { "word": "mirror", "pronunciation": "/ˈmɪrər/" },
+    { "word": "cabinet", "pronunciation": "/ˈkæbɪnət/" }
   ],
   "Utensilios_de_cocina": [
-    {"word": "knife", "pronunciation": "/naɪf/"},
-    {"word": "fork", "pronunciation": "/fɔːrk/"},
-    {"word": "spoon", "pronunciation": "/spuːn/"},
-    {"word": "plate", "pronunciation": "/pleɪt/"},
-    {"word": "bowl", "pronunciation": "/boʊl/"},
-    {"word": "cup", "pronunciation": "/kʌp/"},
-    {"word": "mug", "pronunciation": "/mʌɡ/"},
-    {"word": "glass", "pronunciation": "/ɡlæs/"},
-    {"word": "pot", "pronunciation": "/pɒt/"},
-    {"word": "pan", "pronunciation": "/pæn/"},
-    {"word": "frying pan", "pronunciation": "/ˈfraɪɪŋ pæn/"},
-    {"word": "saucepan", "pronunciation": "/ˈsɔːspən/"},
-    {"word": "cutting board", "pronunciation": "/ˈkʌtɪŋ bɔːrd/"},
-    {"word": "strainer", "pronunciation": "/ˈstreɪnər/"},
-    {"word": "colander", "pronunciation": "/ˈkɒləndər/"},
-    {"word": "grater", "pronunciation": "/ˈɡreɪtər/"},
-    {"word": "whisk", "pronunciation": "/wɪsk/"},
-    {"word": "peeler", "pronunciation": "/ˈpiːlər/"},
-    {"word": "grill", "pronunciation": "/ɡrɪl/"},
-    {"word": "blender", "pronunciation": "/ˈblɛndər/"},
-    {"word": "microwave", "pronunciation": "/ˈmaɪkrəweɪv/"},
-    {"word": "oven", "pronunciation": "/ˈʌvən/"},
-    {"word": "toaster", "pronunciation": "/ˈtoʊstər/"},
-    {"word": "stove", "pronunciation": "/stoʊv/"},
-    {"word": "dishwasher", "pronunciation": "/ˈdɪʃˌwɔːʃər/"},
-    {"word": "refrigerator", "pronunciation": "/rɪˈfrɪdʒəˌreɪtər/"},
-    {"word": "freezer", "pronunciation": "/ˈfriːzər/"},
-    {"word": "tongs", "pronunciation": "/tɔːŋz/"},
-    {"word": "ladle", "pronunciation": "/ˈleɪdəl/"}
+    { "word": "knife", "pronunciation": "/naɪf/" },
+    { "word": "fork", "pronunciation": "/fɔːrk/" },
+    { "word": "spoon", "pronunciation": "/spuːn/" },
+    { "word": "plate", "pronunciation": "/pleɪt/" },
+    { "word": "bowl", "pronunciation": "/boʊl/" },
+    { "word": "cup", "pronunciation": "/kʌp/" },
+    { "word": "mug", "pronunciation": "/mʌɡ/" },
+    { "word": "glass", "pronunciation": "/ɡlæs/" },
+    { "word": "pot", "pronunciation": "/pɒt/" },
+    { "word": "pan", "pronunciation": "/pæn/" },
+    { "word": "frying pan", "pronunciation": "/ˈfraɪɪŋ pæn/" },
+    { "word": "saucepan", "pronunciation": "/ˈsɔːspən/" },
+    { "word": "cutting board", "pronunciation": "/ˈkʌtɪŋ bɔːrd/" },
+    { "word": "strainer", "pronunciation": "/ˈstreɪnər/" },
+    { "word": "colander", "pronunciation": "/ˈkɒləndər/" },
+    { "word": "grater", "pronunciation": "/ˈɡreɪtər/" },
+    { "word": "whisk", "pronunciation": "/wɪsk/" },
+    { "word": "peeler", "pronunciation": "/ˈpiːlər/" },
+    { "word": "grill", "pronunciation": "/ɡrɪl/" },
+    { "word": "blender", "pronunciation": "/ˈblɛndər/" },
+    { "word": "microwave", "pronunciation": "/ˈmaɪkrəweɪv/" },
+    { "word": "oven", "pronunciation": "/ˈʌvən/" },
+    { "word": "toaster", "pronunciation": "/ˈtoʊstər/" },
+    { "word": "stove", "pronunciation": "/stoʊv/" },
+    { "word": "dishwasher", "pronunciation": "/ˈdɪʃˌwɔːʃər/" },
+    { "word": "refrigerator", "pronunciation": "/rɪˈfrɪdʒəˌreɪtər/" },
+    { "word": "freezer", "pronunciation": "/ˈfriːzər/" },
+    { "word": "tongs", "pronunciation": "/tɔːŋz/" },
+    { "word": "ladle", "pronunciation": "/ˈleɪdəl/" }
   ],
   "Ropa_y_zapatos": [
-    {"word": "shirt", "pronunciation": "/ʃɜːrt/"},
-    {"word": "pants", "pronunciation": "/pænts/"},
-    {"word": "dress", "pronunciation": "/drɛs/"},
-    {"word": "skirt", "pronunciation": "/skɜːrt/"},
-    {"word": "jacket", "pronunciation": "/ˈdʒækɪt/"},
-    {"word": "coat", "pronunciation": "/koʊt/"},
-    {"word": "sweater", "pronunciation": "/ˈswɛtər/"},
-    {"word": "blouse", "pronunciation": "/blaʊz/"},
-    {"word": "jeans", "pronunciation": "/dʒiːnz/"},
-    {"word": "shorts", "pronunciation": "/ʃɔːrts/"},
-    {"word": "t-shirt", "pronunciation": "/ˈtiːˌʃɜːrt/"},
-    {"word": "socks", "pronunciation": "/sɒks/"},
-    {"word": "shoes", "pronunciation": "/ʃuːz/"},
-    {"word": "boots", "pronunciation": "/buːts/"},
-    {"word": "sandals", "pronunciation": "/ˈsændəlz/"},
-    {"word": "flip-flops", "pronunciation": "/ˈflɪp flɒps/"},
-    {"word": "sneakers", "pronunciation": "/ˈsniːkərz/"},
-    {"word": "cap", "pronunciation": "/kæp/"},
-    {"word": "hat", "pronunciation": "/hæt/"},
-    {"word": "scarf", "pronunciation": "/skɑːrf/"},
-    {"word": "gloves", "pronunciation": "/ɡlʌvz/"},
-    {"word": "tie", "pronunciation": "/taɪ/"},
-    {"word": "belt", "pronunciation": "/bɛlt/"},
-    {"word": "suit", "pronunciation": "/suːt/"},
-    {"word": "pajamas", "pronunciation": "/pəˈdʒɑːməz/"},
-    {"word": "lingerie", "pronunciation": "/ˈlɪnʒəri/"},
-    {"word": "sweatpants", "pronunciation": "/ˈswɛtˌpænts/"},
-    {"word": "sweatshirt", "pronunciation": "/ˈswɛtˌʃɜːrt/"},
-    {"word": "underwear", "pronunciation": "/ˈʌndərwɛr/"},
-    {"word": "braces", "pronunciation": "/ˈbreɪsɪz/"},
-    {"word": "leggings", "pronunciation": "/ˈlɛɡɪŋz/"}
+    { "word": "shirt", "pronunciation": "/ʃɜːrt/" },
+    { "word": "pants", "pronunciation": "/pænts/" },
+    { "word": "dress", "pronunciation": "/drɛs/" },
+    { "word": "skirt", "pronunciation": "/skɜːrt/" },
+    { "word": "jacket", "pronunciation": "/ˈdʒækɪt/" },
+    { "word": "coat", "pronunciation": "/koʊt/" },
+    { "word": "sweater", "pronunciation": "/ˈswɛtər/" },
+    { "word": "blouse", "pronunciation": "/blaʊz/" },
+    { "word": "jeans", "pronunciation": "/dʒiːnz/" },
+    { "word": "shorts", "pronunciation": "/ʃɔːrts/" },
+    { "word": "t-shirt", "pronunciation": "/ˈtiːˌʃɜːrt/" },
+    { "word": "socks", "pronunciation": "/sɒks/" },
+    { "word": "shoes", "pronunciation": "/ʃuːz/" },
+    { "word": "boots", "pronunciation": "/buːts/" },
+    { "word": "sandals", "pronunciation": "/ˈsændəlz/" },
+    { "word": "flip-flops", "pronunciation": "/ˈflɪp flɒps/" },
+    { "word": "sneakers", "pronunciation": "/ˈsniːkərz/" },
+    { "word": "cap", "pronunciation": "/kæp/" },
+    { "word": "hat", "pronunciation": "/hæt/" },
+    { "word": "scarf", "pronunciation": "/skɑːrf/" },
+    { "word": "gloves", "pronunciation": "/ɡlʌvz/" },
+    { "word": "tie", "pronunciation": "/taɪ/" },
+    { "word": "belt", "pronunciation": "/bɛlt/" },
+    { "word": "suit", "pronunciation": "/suːt/" },
+    { "word": "pajamas", "pronunciation": "/pəˈdʒɑːməz/" },
+    { "word": "lingerie", "pronunciation": "/ˈlɪnʒəri/" },
+    { "word": "sweatpants", "pronunciation": "/ˈswɛtˌpænts/" },
+    { "word": "sweatshirt", "pronunciation": "/ˈswɛtˌʃɜːrt/" },
+    { "word": "underwear", "pronunciation": "/ˈʌndərwɛr/" },
+    { "word": "braces", "pronunciation": "/ˈbreɪsɪz/" },
+    { "word": "leggings", "pronunciation": "/ˈlɛɡɪŋz/" }
   ],
   "Adjetivos": [
-    {"word": "happy", "pronunciation": "/ˈhæpi/"},
-    {"word": "sad", "pronunciation": "/sæd/"},
-    {"word": "big", "pronunciation": "/bɪɡ/"},
-    {"word": "small", "pronunciation": "/smɔːl/"},
-    {"word": "tall", "pronunciation": "/tɔːl/"},
-    {"word": "short", "pronunciation": "/ʃɔːrt/"},
-    {"word": "young", "pronunciation": "/jʌŋ/"},
-    {"word": "old", "pronunciation": "/oʊld/"},
-    {"word": "strong", "pronunciation": "/strɔːŋ/"},
-    {"word": "weak", "pronunciation": "/wiːk/"},
-    {"word": "beautiful", "pronunciation": "/ˈbjuːtɪfəl/"},
-    {"word": "ugly", "pronunciation": "/ˈʌɡli/"},
-    {"word": "fast", "pronunciation": "/fæst/"},
-    {"word": "slow", "pronunciation": "/sloʊ/"},
-    {"word": "brave", "pronunciation": "/breɪv/"},
-    {"word": "cowardly", "pronunciation": "/ˈkaʊərdli/"},
-    {"word": "intelligent", "pronunciation": "/ɪnˈtɛlɪdʒənt/"},
-    {"word": "dumb", "pronunciation": "/dʌm/"},
-    {"word": "rich", "pronunciation": "/rɪʧ/"},
-    {"word": "poor", "pronunciation": "/pʊr/"},
-    {"word": "kind", "pronunciation": "/kaɪnd/"},
-    {"word": "cruel", "pronunciation": "/kruːəl/"},
-    {"word": "generous", "pronunciation": "/ˈdʒɛnərəs/"},
-    {"word": "selfish", "pronunciation": "/ˈsɛlfɪʃ/"},
-    {"word": "polite", "pronunciation": "/pəˈlaɪt/"},
-    {"word": "rude", "pronunciation": "/ruːd/"},
-    {"word": "honest", "pronunciation": "/ˈɒnɪst/"},
-    {"word": "dishonest", "pronunciation": "/dɪsˈɒnɪst/"},
-    {"word": "confident", "pronunciation": "/ˈkɒnfɪdənt/"}
+    { "word": "happy", "pronunciation": "/ˈhæpi/" },
+    { "word": "sad", "pronunciation": "/sæd/" },
+    { "word": "big", "pronunciation": "/bɪɡ/" },
+    { "word": "small", "pronunciation": "/smɔːl/" },
+    { "word": "tall", "pronunciation": "/tɔːl/" },
+    { "word": "short", "pronunciation": "/ʃɔːrt/" },
+    { "word": "young", "pronunciation": "/jʌŋ/" },
+    { "word": "old", "pronunciation": "/oʊld/" },
+    { "word": "strong", "pronunciation": "/strɔːŋ/" },
+    { "word": "weak", "pronunciation": "/wiːk/" },
+    { "word": "beautiful", "pronunciation": "/ˈbjuːtɪfəl/" },
+    { "word": "ugly", "pronunciation": "/ˈʌɡli/" },
+    { "word": "fast", "pronunciation": "/fæst/" },
+    { "word": "slow", "pronunciation": "/sloʊ/" },
+    { "word": "brave", "pronunciation": "/breɪv/" },
+    { "word": "cowardly", "pronunciation": "/ˈkaʊərdli/" },
+    { "word": "intelligent", "pronunciation": "/ɪnˈtɛlɪdʒənt/" },
+    { "word": "dumb", "pronunciation": "/dʌm/" },
+    { "word": "rich", "pronunciation": "/rɪʧ/" },
+    { "word": "poor", "pronunciation": "/pʊr/" },
+    { "word": "kind", "pronunciation": "/kaɪnd/" },
+    { "word": "cruel", "pronunciation": "/kruːəl/" },
+    { "word": "generous", "pronunciation": "/ˈdʒɛnərəs/" },
+    { "word": "selfish", "pronunciation": "/ˈsɛlfɪʃ/" },
+    { "word": "polite", "pronunciation": "/pəˈlaɪt/" },
+    { "word": "rude", "pronunciation": "/ruːd/" },
+    { "word": "honest", "pronunciation": "/ˈɒnɪst/" },
+    { "word": "dishonest", "pronunciation": "/dɪsˈɒnɪst/" },
+    { "word": "confident", "pronunciation": "/ˈkɒnfɪdənt/" }
   ],
   "Partes_del_cuerpo": [
-    {"word": "head", "pronunciation": "/hɛd/"},
-    {"word": "eye", "pronunciation": "/aɪ/"},
-    {"word": "ear", "pronunciation": "/ɪər/"},
-    {"word": "nose", "pronunciation": "/noʊz/"},
-    {"word": "mouth", "pronunciation": "/maʊθ/"},
-    {"word": "teeth", "pronunciation": "/tiːθ/"},
-    {"word": "tongue", "pronunciation": "/tʌŋ/"},
-    {"word": "neck", "pronunciation": "/nɛk/"},
-    {"word": "shoulder", "pronunciation": "/ˈʃoʊldər/"},
-    {"word": "arm", "pronunciation": "/ɑːrm/"},
-    {"word": "elbow", "pronunciation": "/ˈɛlboʊ/"},
-    {"word": "hand", "pronunciation": "/hænd/"},
-    {"word": "finger", "pronunciation": "/ˈfɪŋɡər/"},
-    {"word": "thumb", "pronunciation": "/θʌm/"},
-    {"word": "chest", "pronunciation": "/tʃɛst/"},
-    {"word": "back", "pronunciation": "/bæk/"},
-    {"word": "stomach", "pronunciation": "/ˈstʌmək/"},
-    {"word": "waist", "pronunciation": "/weɪst/"},
-    {"word": "leg", "pronunciation": "/lɛɡ/"},
-    {"word": "knee", "pronunciation": "/niː/"},
-    {"word": "foot", "pronunciation": "/fʊt/"},
-    {"word": "toe", "pronunciation": "/toʊ/"},
-    {"word": "skin", "pronunciation": "/skɪn/"},
-    {"word": "hair", "pronunciation": "/hɛər/"},
-    {"word": "lip", "pronunciation": "/lɪp/"},
-    {"word": "chin", "pronunciation": "/tʃɪn/"},
-    {"word": "cheek", "pronunciation": "/ʧiːk/"},
-    {"word": "forehead", "pronunciation": "/ˈfɔːrˌhɛd/"},
-    {"word": "ankle", "pronunciation": "/ˈæŋkəl/"},
-    {"word": "heel", "pronunciation": "/hiːl/"}
+    { "word": "head", "pronunciation": "/hɛd/" },
+    { "word": "eye", "pronunciation": "/aɪ/" },
+    { "word": "ear", "pronunciation": "/ɪər/" },
+    { "word": "nose", "pronunciation": "/noʊz/" },
+    { "word": "mouth", "pronunciation": "/maʊθ/" },
+    { "word": "teeth", "pronunciation": "/tiːθ/" },
+    { "word": "tongue", "pronunciation": "/tʌŋ/" },
+    { "word": "neck", "pronunciation": "/nɛk/" },
+    { "word": "shoulder", "pronunciation": "/ˈʃoʊldər/" },
+    { "word": "arm", "pronunciation": "/ɑːrm/" },
+    { "word": "elbow", "pronunciation": "/ˈɛlboʊ/" },
+    { "word": "hand", "pronunciation": "/hænd/" },
+    { "word": "finger", "pronunciation": "/ˈfɪŋɡər/" },
+    { "word": "thumb", "pronunciation": "/θʌm/" },
+    { "word": "chest", "pronunciation": "/tʃɛst/" },
+    { "word": "back", "pronunciation": "/bæk/" },
+    { "word": "stomach", "pronunciation": "/ˈstʌmək/" },
+    { "word": "waist", "pronunciation": "/weɪst/" },
+    { "word": "leg", "pronunciation": "/lɛɡ/" },
+    { "word": "knee", "pronunciation": "/niː/" },
+    { "word": "foot", "pronunciation": "/fʊt/" },
+    { "word": "toe", "pronunciation": "/toʊ/" },
+    { "word": "skin", "pronunciation": "/skɪn/" },
+    { "word": "hair", "pronunciation": "/hɛər/" },
+    { "word": "lip", "pronunciation": "/lɪp/" },
+    { "word": "chin", "pronunciation": "/tʃɪn/" },
+    { "word": "cheek", "pronunciation": "/ʧiːk/" },
+    { "word": "forehead", "pronunciation": "/ˈfɔːrˌhɛd/" },
+    { "word": "ankle", "pronunciation": "/ˈæŋkəl/" },
+    { "word": "heel", "pronunciation": "/hiːl/" }
   ],
   "Partes_del_carro": [
-    {"word": "engine", "pronunciation": "/ˈɛn.dʒɪn/"},
-    {"word": "wheel", "pronunciation": "/wiːl/"},
-    {"word": "tire", "pronunciation": "/ˈtaɪər/"},
-    {"word": "brake", "pronunciation": "/breɪk/"},
-    {"word": "steering wheel", "pronunciation": "/ˈstɪə.rɪŋ wɪəl/"},
-    {"word": "gear", "pronunciation": "/ɡɪər/"},
-    {"word": "headlights", "pronunciation": "/ˈhɛdˌlaɪts/"},
-    {"word": "taillight", "pronunciation": "/ˈteɪlˌlaɪt/"},
-    {"word": "bumper", "pronunciation": "/ˈbʌmpər/"},
-    {"word": "hood", "pronunciation": "/hʊd/"},
-    {"word": "trunk", "pronunciation": "/trʌŋk/"},
-    {"word": "windshield", "pronunciation": "/ˈwɪndʃiːld/"},
-    {"word": "mirror", "pronunciation": "/ˈmɪrər/"},
-    {"word": "door", "pronunciation": "/dɔːr/"},
-    {"word": "window", "pronunciation": "/ˈwɪndoʊ/"},
-    {"word": "seat", "pronunciation": "/siːt/"},
-    {"word": "seatbelt", "pronunciation": "/ˈsiːtˌbɛlt/"},
-    {"word": "dashboard", "pronunciation": "/ˈdæʃˌbɔːrd/"},
-    {"word": "windshield wiper", "pronunciation": "/ˈwɪndʃiːld ˈwaɪpər/"},
-    {"word": "exhaust", "pronunciation": "/ɪɡˈzɔːst/"},
-    {"word": "radiator", "pronunciation": "/ˈreɪdiˌeɪtər/"},
-    {"word": "suspension", "pronunciation": "/səˈspɛnʃən/"},
-    {"word": "clutch", "pronunciation": "/klʌtʃ/"},
-    {"word": "accelerator", "pronunciation": "/əkˈsɛləˌreɪtər/"},
-    {"word": "battery", "pronunciation": "/ˈbætəri/"},
-    {"word": "fuel tank", "pronunciation": "/fjuːəl tæŋk/"},
-    {"word": "axle", "pronunciation": "/ˈæksəl/"},
-    {"word": "shock absorber", "pronunciation": "/ʃɒk əbˈzɔːrbər/"}
+    { "word": "engine", "pronunciation": "/ˈɛn.dʒɪn/" },
+    { "word": "wheel", "pronunciation": "/wiːl/" },
+    { "word": "tire", "pronunciation": "/ˈtaɪər/" },
+    { "word": "brake", "pronunciation": "/breɪk/" },
+    { "word": "steering wheel", "pronunciation": "/ˈstɪə.rɪŋ wɪəl/" },
+    { "word": "gear", "pronunciation": "/ɡɪər/" },
+    { "word": "headlights", "pronunciation": "/ˈhɛdˌlaɪts/" },
+    { "word": "taillight", "pronunciation": "/ˈteɪlˌlaɪt/" },
+    { "word": "bumper", "pronunciation": "/ˈbʌmpər/" },
+    { "word": "hood", "pronunciation": "/hʊd/" },
+    { "word": "trunk", "pronunciation": "/trʌŋk/" },
+    { "word": "windshield", "pronunciation": "/ˈwɪndʃiːld/" },
+    { "word": "mirror", "pronunciation": "/ˈmɪrər/" },
+    { "word": "door", "pronunciation": "/dɔːr/" },
+    { "word": "window", "pronunciation": "/ˈwɪndoʊ/" },
+    { "word": "seat", "pronunciation": "/siːt/" },
+    { "word": "seatbelt", "pronunciation": "/ˈsiːtˌbɛlt/" },
+    { "word": "dashboard", "pronunciation": "/ˈdæʃˌbɔːrd/" },
+    { "word": "windshield wiper", "pronunciation": "/ˈwɪndʃiːld ˈwaɪpər/" },
+    { "word": "exhaust", "pronunciation": "/ɪɡˈzɔːst/" },
+    { "word": "radiator", "pronunciation": "/ˈreɪdiˌeɪtər/" },
+    { "word": "suspension", "pronunciation": "/səˈspɛnʃən/" },
+    { "word": "clutch", "pronunciation": "/klʌtʃ/" },
+    { "word": "accelerator", "pronunciation": "/əkˈsɛləˌreɪtər/" },
+    { "word": "battery", "pronunciation": "/ˈbætəri/" },
+    { "word": "fuel tank", "pronunciation": "/fjuːəl tæŋk/" },
+    { "word": "axle", "pronunciation": "/ˈæksəl/" },
+    { "word": "shock absorber", "pronunciation": "/ʃɒk əbˈzɔːrbər/" }
   ],
   "Partes_de_la_bicicleta": [
-    {"word": "frame", "pronunciation": "/freɪm/"},
-    {"word": "handlebars", "pronunciation": "/ˈhændəlˌbɑːrz/"},
-    {"word": "brake", "pronunciation": "/breɪk/"},
-    {"word": "pedal", "pronunciation": "/ˈpɛdəl/"},
-    {"word": "chain", "pronunciation": "/ʧeɪn/"},
-    {"word": "wheel", "pronunciation": "/wiːl/"},
-    {"word": "tire", "pronunciation": "/ˈtaɪər/"},
-    {"word": "spoke", "pronunciation": "/spoʊk/"},
-    {"word": "rim", "pronunciation": "/rɪm/"},
-    {"word": "seat", "pronunciation": "/siːt/"},
-    {"word": "seatpost", "pronunciation": "/ˈsiːtpoʊst/"},
-    {"word": "fork", "pronunciation": "/fɔːrk/"},
-    {"word": "brake lever", "pronunciation": "/ˈbreɪk ˈlɛvər/"},
-    {"word": "gear", "pronunciation": "/ɡɪər/"},
-    {"word": "derailleur", "pronunciation": "/dɪˈreɪljər/"},
-    {"word": "crankset", "pronunciation": "/ˈkræŋkˌsɛt/"},
-    {"word": "bottom bracket", "pronunciation": "/ˈbɒtəm ˈbrækɪt/"},
-    {"word": "hub", "pronunciation": "/hʌb/"},
-    {"word": "kickstand", "pronunciation": "/ˈkɪkˌstænd/"},
-    {"word": "bell", "pronunciation": "/bɛl/"},
-    {"word": "reflector", "pronunciation": "/rɪˈflɛktər/"},
-    {"word": "light", "pronunciation": "/laɪt/"},
-    {"word": "fender", "pronunciation": "/ˈfɛndər/"},
-    {"word": "pedal strap", "pronunciation": "/ˈpɛdəl stræp/"},
-    {"word": "saddle", "pronunciation": "/ˈsædl/"},
-    {"word": "frame protector", "pronunciation": "/freɪm prəˈtɛktər/"}
+    { "word": "frame", "pronunciation": "/freɪm/" },
+    { "word": "handlebars", "pronunciation": "/ˈhændəlˌbɑːrz/" },
+    { "word": "brake", "pronunciation": "/breɪk/" },
+    { "word": "pedal", "pronunciation": "/ˈpɛdəl/" },
+    { "word": "chain", "pronunciation": "/ʧeɪn/" },
+    { "word": "wheel", "pronunciation": "/wiːl/" },
+    { "word": "tire", "pronunciation": "/ˈtaɪər/" },
+    { "word": "spoke", "pronunciation": "/spoʊk/" },
+    { "word": "rim", "pronunciation": "/rɪm/" },
+    { "word": "seat", "pronunciation": "/siːt/" },
+    { "word": "seatpost", "pronunciation": "/ˈsiːtpoʊst/" },
+    { "word": "fork", "pronunciation": "/fɔːrk/" },
+    { "word": "brake lever", "pronunciation": "/ˈbreɪk ˈlɛvər/" },
+    { "word": "gear", "pronunciation": "/ɡɪər/" },
+    { "word": "derailleur", "pronunciation": "/dɪˈreɪljər/" },
+    { "word": "crankset", "pronunciation": "/ˈkræŋkˌsɛt/" },
+    { "word": "bottom bracket", "pronunciation": "/ˈbɒtəm ˈbrækɪt/" },
+    { "word": "hub", "pronunciation": "/hʌb/" },
+    { "word": "kickstand", "pronunciation": "/ˈkɪkˌstænd/" },
+    { "word": "bell", "pronunciation": "/bɛl/" },
+    { "word": "reflector", "pronunciation": "/rɪˈflɛktər/" },
+    { "word": "light", "pronunciation": "/laɪt/" },
+    { "word": "fender", "pronunciation": "/ˈfɛndər/" },
+    { "word": "pedal strap", "pronunciation": "/ˈpɛdəl stræp/" },
+    { "word": "saddle", "pronunciation": "/ˈsædl/" },
+    { "word": "frame protector", "pronunciation": "/freɪm prəˈtɛktər/" }
   ],
   "Partes_de_las_plantas": [
-    {"word": "root", "pronunciation": "/ruːt/"},
-    {"word": "stem", "pronunciation": "/stɛm/"},
-    {"word": "leaf", "pronunciation": "/liːf/"},
-    {"word": "flower", "pronunciation": "/ˈflaʊər/"},
-    {"word": "petal", "pronunciation": "/ˈpɛtl/"},
-    {"word": "seed", "pronunciation": "/siːd/"},
-    {"word": "branch", "pronunciation": "/bræntʃ/"},
-    {"word": "trunk", "pronunciation": "/trʌŋk/"},
-    {"word": "bark", "pronunciation": "/bɑːrk/"},
-    {"word": "fruit", "pronunciation": "/fruːt/"},
-    {"word": "pollen", "pronunciation": "/ˈpɒlən/"},
-    {"word": "chlorophyll", "pronunciation": "/ˈklɔːrəˌfɪl/"},
-    {"word": "soil", "pronunciation": "/sɔɪl/"},
-    {"word": "vines", "pronunciation": "/vaɪnz/"},
-    {"word": "buds", "pronunciation": "/bʌdz/"},
-    {"word": "garden", "pronunciation": "/ˈɡɑːrdən/"},
-    {"word": "pot", "pronunciation": "/pɒt/"},
-    {"word": "compost", "pronunciation": "/ˈkɑːmpɒst/"},
-    {"word": "fertilizer", "pronunciation": "/ˈfɜːrtəˌlaɪzər/"},
-    {"word": "greenhouse", "pronunciation": "/ˈɡriːnˌhaʊs/"},
-    {"word": "watering can", "pronunciation": "/ˈwɔːtərɪŋ kæn/"},
-    {"word": "pruning shears", "pronunciation": "/ˈpruːnɪŋ ʃɪərz/"},
-    {"word": "planter", "pronunciation": "/ˈplæntər/"},
-    {"word": "mulch", "pronunciation": "/mʌltʃ/"},
-    {"word": "greenery", "pronunciation": "/ˈɡriːnəri/"},
-    {"word": "succulent", "pronunciation": "/ˈsʌkjələnt/"}
+    { "word": "root", "pronunciation": "/ruːt/" },
+    { "word": "stem", "pronunciation": "/stɛm/" },
+    { "word": "leaf", "pronunciation": "/liːf/" },
+    { "word": "flower", "pronunciation": "/ˈflaʊər/" },
+    { "word": "petal", "pronunciation": "/ˈpɛtl/" },
+    { "word": "seed", "pronunciation": "/siːd/" },
+    { "word": "branch", "pronunciation": "/bræntʃ/" },
+    { "word": "trunk", "pronunciation": "/trʌŋk/" },
+    { "word": "bark", "pronunciation": "/bɑːrk/" },
+    { "word": "fruit", "pronunciation": "/fruːt/" },
+    { "word": "pollen", "pronunciation": "/ˈpɒlən/" },
+    { "word": "chlorophyll", "pronunciation": "/ˈklɔːrəˌfɪl/" },
+    { "word": "soil", "pronunciation": "/sɔɪl/" },
+    { "word": "vines", "pronunciation": "/vaɪnz/" },
+    { "word": "buds", "pronunciation": "/bʌdz/" },
+    { "word": "garden", "pronunciation": "/ˈɡɑːrdən/" },
+    { "word": "pot", "pronunciation": "/pɒt/" },
+    { "word": "compost", "pronunciation": "/ˈkɑːmpɒst/" },
+    { "word": "fertilizer", "pronunciation": "/ˈfɜːrtəˌlaɪzər/" },
+    { "word": "greenhouse", "pronunciation": "/ˈɡriːnˌhaʊs/" },
+    { "word": "watering can", "pronunciation": "/ˈwɔːtərɪŋ kæn/" },
+    { "word": "pruning shears", "pronunciation": "/ˈpruːnɪŋ ʃɪərz/" },
+    { "word": "planter", "pronunciation": "/ˈplæntər/" },
+    { "word": "mulch", "pronunciation": "/mʌltʃ/" },
+    { "word": "greenery", "pronunciation": "/ˈɡriːnəri/" },
+    { "word": "succulent", "pronunciation": "/ˈsʌkjələnt/" }
   ],
   "Formas_de_saludar_comunes_en_Canada": [
-    {"word": "hello", "pronunciation": "/həˈloʊ/"},
-    {"word": "hi", "pronunciation": "/haɪ/"},
-    {"word": "good morning", "pronunciation": "/ɡʊd ˈmɔːrnɪŋ/"},
-    {"word": "good afternoon", "pronunciation": "/ɡʊd ˌæftərˈnuːn/"},
-    {"word": "good evening", "pronunciation": "/ɡʊd ˈiːvnɪŋ/"},
-    {"word": "hey", "pronunciation": "/heɪ/"},
-    {"word": "what's up?", "pronunciation": "/wɒts ʌp/"},
-    {"word": "how's it going?", "pronunciation": "/haʊz ɪt ˈɡoʊɪŋ/"},
-    {"word": "how are you?", "pronunciation": "/haʊ ɑːr juː/"},
-    {"word": "what's new?", "pronunciation": "/wɒts njuː/"},
-    {"word": "long time no see", "pronunciation": "/lɔːŋ taɪm noʊ siː/"},
-    {"word": "nice to meet you", "pronunciation": "/naɪs tə miːt juː/"},
-    {"word": "how have you been?", "pronunciation": "/haʊ hæv juː bɪn/"},
-    {"word": "it's been a while", "pronunciation": "/ɪts bɪn ə waɪl/"},
-    {"word": "how's everything?", "pronunciation": "/haʊz ˈɛvrɪθɪŋ/"},
-    {"word": "good to see you", "pronunciation": "/ɡʊd tə siː juː/"},
-    {"word": "howdy", "pronunciation": "/ˈhaʊdi/"},
-    {"word": "bonjour", "pronunciation": "/bɒ̃ʒʊːr/"},
-    {"word": "g'day", "pronunciation": "/ɡəˈdeɪ/"},
-    {"word": "what's up, eh?", "pronunciation": "/wɒts ʌp, eɪ/"},
-    {"word": "yo", "pronunciation": "/joʊ/"},
-    {"word": "what's cracking?", "pronunciation": "/wɒts ˈkrækɪŋ/"},
-    {"word": "sup", "pronunciation": "/sʌp/"},
-    {"word": "how's life?", "pronunciation": "/haʊz laɪf/"},
-    {"word": "how's it going, eh?", "pronunciation": "/haʊz ɪt ˈɡoʊɪŋ, eɪ/"},
-    {"word": "hey there", "pronunciation": "/heɪ ðɛr/"}
+    { "word": "hello", "pronunciation": "/həˈloʊ/" },
+    { "word": "hi", "pronunciation": "/haɪ/" },
+    { "word": "good morning", "pronunciation": "/ɡʊd ˈmɔːrnɪŋ/" },
+    { "word": "good afternoon", "pronunciation": "/ɡʊd ˌæftərˈnuːn/" },
+    { "word": "good evening", "pronunciation": "/ɡʊd ˈiːvnɪŋ/" },
+    { "word": "hey", "pronunciation": "/heɪ/" },
+    { "word": "what's up?", "pronunciation": "/wɒts ʌp/" },
+    { "word": "how's it going?", "pronunciation": "/haʊz ɪt ˈɡoʊɪŋ/" },
+    { "word": "how are you?", "pronunciation": "/haʊ ɑːr juː/" },
+    { "word": "what's new?", "pronunciation": "/wɒts njuː/" },
+    { "word": "long time no see", "pronunciation": "/lɔːŋ taɪm noʊ siː/" },
+    { "word": "nice to meet you", "pronunciation": "/naɪs tə miːt juː/" },
+    { "word": "how have you been?", "pronunciation": "/haʊ hæv juː bɪn/" },
+    { "word": "it's been a while", "pronunciation": "/ɪts bɪn ə waɪl/" },
+    { "word": "how's everything?", "pronunciation": "/haʊz ˈɛvrɪθɪŋ/" },
+    { "word": "good to see you", "pronunciation": "/ɡʊd tə siː juː/" },
+    { "word": "howdy", "pronunciation": "/ˈhaʊdi/" },
+    { "word": "bonjour", "pronunciation": "/bɒ̃ʒʊːr/" },
+    { "word": "g'day", "pronunciation": "/ɡəˈdeɪ/" },
+    { "word": "what's up, eh?", "pronunciation": "/wɒts ʌp, eɪ/" },
+    { "word": "yo", "pronunciation": "/joʊ/" },
+    { "word": "what's cracking?", "pronunciation": "/wɒts ˈkrækɪŋ/" },
+    { "word": "sup", "pronunciation": "/sʌp/" },
+    { "word": "how's life?", "pronunciation": "/haʊz laɪf/" },
+    { "word": "how's it going, eh?", "pronunciation": "/haʊz ɪt ˈɡoʊɪŋ, eɪ/" },
+    { "word": "hey there", "pronunciation": "/heɪ ðɛr/" }
   ],
   "Preguntas_clásicas": [
-    {"word": "What is your name?", "pronunciation": "/wʌt ɪz jɔːr neɪm/"},
-    {"word": "How old are you?", "pronunciation": "/haʊ oʊld ɑːr juː/"},
-    {"word": "Where are you from?", "pronunciation": "/wɛr ɑːr juː frɒm/"},
-    {"word": "What do you do?", "pronunciation": "/wʌt duː juː duː/"},
-    {"word": "How are you?", "pronunciation": "/haʊ ɑːr juː/"},
-    {"word": "Where do you live?", "pronunciation": "/wɛr duː juː lɪv/"},
-    {"word": "What time is it?", "pronunciation": "/wʌt taɪm ɪz ɪt/"},
-    {"word": "Do you speak English?", "pronunciation": "/duː juː spiːk ˈɪŋɡlɪʃ/"},
-    {"word": "How much does it cost?", "pronunciation": "/haʊ mʌʧ dʌz ɪt kɔːst/"},
-    {"word": "Can you help me?", "pronunciation": "/kæn juː hɛlp miː/"},
-    {"word": "What are you doing?", "pronunciation": "/wʌt ɑːr juː duːɪŋ/"},
-    {"word": "Where are you going?", "pronunciation": "/wɛr ɑːr juː ˈɡoʊɪŋ/"},
-    {"word": "What do you think?", "pronunciation": "/wʌt duː juː θɪŋk/"},
-    {"word": "Why are you upset?", "pronunciation": "/waɪ ɑːr juː ʌpˈsɛt/"},
-    {"word": "Is everything okay?", "pronunciation": "/ɪz ˈɛvrɪθɪŋ oʊˈkeɪ/"},
-    {"word": "How do you feel?", "pronunciation": "/haʊ duː juː fiːl/"},
-    {"word": "What happened?", "pronunciation": "/wʌt ˈhæpənd/"},
-    {"word": "Where is it?", "pronunciation": "/wɛr ɪz ɪt/"},
-    {"word": "Do you like it?", "pronunciation": "/duː juː laɪk ɪt/"},
-    {"word": "What happened to you?", "pronunciation": "/wʌt ˈhæpənd tə juː/"},
-    {"word": "What did you say?", "pronunciation": "/wʌt dɪd juː seɪ/"},
-    {"word": "What’s wrong?", "pronunciation": "/wɒts rɒŋ/"},
-    {"word": "Why is that?", "pronunciation": "/waɪ ɪz ðæt/"},
-    {"word": "Can I ask you something?", "pronunciation": "/kæn aɪ æsk juː ˈsʌmθɪŋ/"},
-    {"word": "Can I help you?", "pronunciation": "/kæn aɪ hɛlp juː/"},
-    {"word": "What does that mean?", "pronunciation": "/wʌt dʌz ðæt miːn/"},
-    {"word": "What’s your phone number?", "pronunciation": "/wɒts jɔːr fəʊn ˈnʌmbər/"}
+    { "word": "What is your name?", "pronunciation": "/wʌt ɪz jɔːr neɪm/" },
+    { "word": "How old are you?", "pronunciation": "/haʊ oʊld ɑːr juː/" },
+    { "word": "Where are you from?", "pronunciation": "/wɛr ɑːr juː frɒm/" },
+    { "word": "What do you do?", "pronunciation": "/wʌt duː juː duː/" },
+    { "word": "How are you?", "pronunciation": "/haʊ ɑːr juː/" },
+    { "word": "Where do you live?", "pronunciation": "/wɛr duː juː lɪv/" },
+    { "word": "What time is it?", "pronunciation": "/wʌt taɪm ɪz ɪt/" },
+    {
+      "word": "Do you speak English?",
+      "pronunciation": "/duː juː spiːk ˈɪŋɡlɪʃ/"
+    },
+    {
+      "word": "How much does it cost?",
+      "pronunciation": "/haʊ mʌʧ dʌz ɪt kɔːst/"
+    },
+    { "word": "Can you help me?", "pronunciation": "/kæn juː hɛlp miː/" },
+    { "word": "What are you doing?", "pronunciation": "/wʌt ɑːr juː duːɪŋ/" },
+    { "word": "Where are you going?", "pronunciation": "/wɛr ɑːr juː ˈɡoʊɪŋ/" },
+    { "word": "What do you think?", "pronunciation": "/wʌt duː juː θɪŋk/" },
+    { "word": "Why are you upset?", "pronunciation": "/waɪ ɑːr juː ʌpˈsɛt/" },
+    { "word": "Is everything okay?", "pronunciation": "/ɪz ˈɛvrɪθɪŋ oʊˈkeɪ/" },
+    { "word": "How do you feel?", "pronunciation": "/haʊ duː juː fiːl/" },
+    { "word": "What happened?", "pronunciation": "/wʌt ˈhæpənd/" },
+    { "word": "Where is it?", "pronunciation": "/wɛr ɪz ɪt/" },
+    { "word": "Do you like it?", "pronunciation": "/duː juː laɪk ɪt/" },
+    {
+      "word": "What happened to you?",
+      "pronunciation": "/wʌt ˈhæpənd tə juː/"
+    },
+    { "word": "What did you say?", "pronunciation": "/wʌt dɪd juː seɪ/" },
+    { "word": "What’s wrong?", "pronunciation": "/wɒts rɒŋ/" },
+    { "word": "Why is that?", "pronunciation": "/waɪ ɪz ðæt/" },
+    {
+      "word": "Can I ask you something?",
+      "pronunciation": "/kæn aɪ æsk juː ˈsʌmθɪŋ/"
+    },
+    { "word": "Can I help you?", "pronunciation": "/kæn aɪ hɛlp juː/" },
+    { "word": "What does that mean?", "pronunciation": "/wʌt dʌz ðæt miːn/" },
+    {
+      "word": "What’s your phone number?",
+      "pronunciation": "/wɒts jɔːr fəʊn ˈnʌmbər/"
+    }
   ],
   "Pronombres": [
-    {"word": "I", "pronunciation": "/aɪ/"},
-    {"word": "you", "pronunciation": "/juː/"},
-    {"word": "he", "pronunciation": "/hiː/"},
-    {"word": "she", "pronunciation": "/ʃiː/"},
-    {"word": "it", "pronunciation": "/ɪt/"},
-    {"word": "we", "pronunciation": "/wiː/"},
-    {"word": "they", "pronunciation": "/ðeɪ/"},
-    {"word": "me", "pronunciation": "/miː/"},
-    {"word": "him", "pronunciation": "/hɪm/"},
-    {"word": "her", "pronunciation": "/hɜːr/"},
-    {"word": "us", "pronunciation": "/ʌs/"},
-    {"word": "them", "pronunciation": "/ðɛm/"},
-    {"word": "my", "pronunciation": "/maɪ/"},
-    {"word": "your", "pronunciation": "/jɔːr/"},
-    {"word": "his", "pronunciation": "/hɪz/"},
-    {"word": "her", "pronunciation": "/hɜːr/"},
-    {"word": "its", "pronunciation": "/ɪts/"},
-    {"word": "our", "pronunciation": "/aʊər/"},
-    {"word": "their", "pronunciation": "/ðɛər/"},
-    {"word": "mine", "pronunciation": "/maɪn/"},
-    {"word": "yours", "pronunciation": "/jɔːrz/"},
-    {"word": "his", "pronunciation": "/hɪz/"},
-    {"word": "hers", "pronunciation": "/hɜːrz/"},
-    {"word": "ours", "pronunciation": "/aʊərz/"},
-    {"word": "theirs", "pronunciation": "/ðɛərz/"},
-    {"word": "whose", "pronunciation": "/huːz/"}
+    { "word": "I", "pronunciation": "/aɪ/" },
+    { "word": "you", "pronunciation": "/juː/" },
+    { "word": "he", "pronunciation": "/hiː/" },
+    { "word": "she", "pronunciation": "/ʃiː/" },
+    { "word": "it", "pronunciation": "/ɪt/" },
+    { "word": "we", "pronunciation": "/wiː/" },
+    { "word": "they", "pronunciation": "/ðeɪ/" },
+    { "word": "me", "pronunciation": "/miː/" },
+    { "word": "him", "pronunciation": "/hɪm/" },
+    { "word": "her", "pronunciation": "/hɜːr/" },
+    { "word": "us", "pronunciation": "/ʌs/" },
+    { "word": "them", "pronunciation": "/ðɛm/" },
+    { "word": "my", "pronunciation": "/maɪ/" },
+    { "word": "your", "pronunciation": "/jɔːr/" },
+    { "word": "his", "pronunciation": "/hɪz/" },
+    { "word": "her", "pronunciation": "/hɜːr/" },
+    { "word": "its", "pronunciation": "/ɪts/" },
+    { "word": "our", "pronunciation": "/aʊər/" },
+    { "word": "their", "pronunciation": "/ðɛər/" },
+    { "word": "mine", "pronunciation": "/maɪn/" },
+    { "word": "yours", "pronunciation": "/jɔːrz/" },
+    { "word": "his", "pronunciation": "/hɪz/" },
+    { "word": "hers", "pronunciation": "/hɜːrz/" },
+    { "word": "ours", "pronunciation": "/aʊərz/" },
+    { "word": "theirs", "pronunciation": "/ðɛərz/" },
+    { "word": "whose", "pronunciation": "/huːz/" }
   ],
   "Oraciones_en_tiempos_verbales": [
-    {"sentence": "I am going to the store.", "tense": "Present Continuous"},
-    {"sentence": "She was reading a book.", "tense": "Past Continuous"},
-    {"sentence": "They have visited that place before.", "tense": "Present Perfect"},
-    {"sentence": "We had finished dinner when they arrived.", "tense": "Past Perfect"},
-    {"sentence": "He will be leaving tomorrow.", "tense": "Future Continuous"},
-    {"sentence": "I will have completed the task by then.", "tense": "Future Perfect"},
-    {"sentence": "She reads books every day.", "tense": "Present Simple"},
-    {"sentence": "They worked hard yesterday.", "tense": "Past Simple"},
-    {"sentence": "He has been working here for 5 years.", "tense": "Present Perfect Continuous"},
-    {"sentence": "I had been waiting for an hour when the train arrived.", "tense": "Past Perfect Continuous"},
-    {"sentence": "We will have been living here for a year next month.", "tense": "Future Perfect Continuous"},
-    {"sentence": "She doesn't like coffee.", "tense": "Present Simple (Negative)"},
-    {"sentence": "I didn't see you at the party.", "tense": "Past Simple (Negative)"},
-    {"sentence": "They won't come to the meeting.", "tense": "Future Simple (Negative)"},
-    {"sentence": "I have not finished my homework yet.", "tense": "Present Perfect (Negative)"},
-    {"sentence": "He had not left when I called.", "tense": "Past Perfect (Negative)"},
-    {"sentence": "We will not be attending the event.", "tense": "Future Continuous (Negative)"},
-    {"sentence": "They will not have completed the project by Friday.", "tense": "Future Perfect (Negative)"},
-    {"sentence": "I had been playing for two hours when the power went out.", "tense": "Past Perfect Continuous (Negative)"},
-    {"sentence": "She hasn't been working recently.", "tense": "Present Perfect Continuous (Negative)"},
-    {"sentence": "Will you help me?", "tense": "Future Simple (Interrogative)"},
-    {"sentence": "Did you enjoy the movie?", "tense": "Past Simple (Interrogative)"},
-    {"sentence": "Are they coming with us?", "tense": "Present Continuous (Interrogative)"},
-    {"sentence": "Have you finished your dinner?", "tense": "Present Perfect (Interrogative)"},
-    {"sentence": "Had you left when I called?", "tense": "Past Perfect (Interrogative)"},
-    {"sentence": "Will he be working tomorrow?", "tense": "Future Continuous (Interrogative)"}
+    { "sentence": "I am going to the store.", "tense": "Present Continuous" },
+    { "sentence": "She was reading a book.", "tense": "Past Continuous" },
+    {
+      "sentence": "They have visited that place before.",
+      "tense": "Present Perfect"
+    },
+    {
+      "sentence": "We had finished dinner when they arrived.",
+      "tense": "Past Perfect"
+    },
+    {
+      "sentence": "He will be leaving tomorrow.",
+      "tense": "Future Continuous"
+    },
+    {
+      "sentence": "I will have completed the task by then.",
+      "tense": "Future Perfect"
+    },
+    { "sentence": "She reads books every day.", "tense": "Present Simple" },
+    { "sentence": "They worked hard yesterday.", "tense": "Past Simple" },
+    {
+      "sentence": "He has been working here for 5 years.",
+      "tense": "Present Perfect Continuous"
+    },
+    {
+      "sentence": "I had been waiting for an hour when the train arrived.",
+      "tense": "Past Perfect Continuous"
+    },
+    {
+      "sentence": "We will have been living here for a year next month.",
+      "tense": "Future Perfect Continuous"
+    },
+    {
+      "sentence": "She doesn't like coffee.",
+      "tense": "Present Simple (Negative)"
+    },
+    {
+      "sentence": "I didn't see you at the party.",
+      "tense": "Past Simple (Negative)"
+    },
+    {
+      "sentence": "They won't come to the meeting.",
+      "tense": "Future Simple (Negative)"
+    },
+    {
+      "sentence": "I have not finished my homework yet.",
+      "tense": "Present Perfect (Negative)"
+    },
+    {
+      "sentence": "He had not left when I called.",
+      "tense": "Past Perfect (Negative)"
+    },
+    {
+      "sentence": "We will not be attending the event.",
+      "tense": "Future Continuous (Negative)"
+    },
+    {
+      "sentence": "They will not have completed the project by Friday.",
+      "tense": "Future Perfect (Negative)"
+    },
+    {
+      "sentence": "I had been playing for two hours when the power went out.",
+      "tense": "Past Perfect Continuous (Negative)"
+    },
+    {
+      "sentence": "She hasn't been working recently.",
+      "tense": "Present Perfect Continuous (Negative)"
+    },
+    {
+      "sentence": "Will you help me?",
+      "tense": "Future Simple (Interrogative)"
+    },
+    {
+      "sentence": "Did you enjoy the movie?",
+      "tense": "Past Simple (Interrogative)"
+    },
+    {
+      "sentence": "Are they coming with us?",
+      "tense": "Present Continuous (Interrogative)"
+    },
+    {
+      "sentence": "Have you finished your dinner?",
+      "tense": "Present Perfect (Interrogative)"
+    },
+    {
+      "sentence": "Had you left when I called?",
+      "tense": "Past Perfect (Interrogative)"
+    },
+    {
+      "sentence": "Will he be working tomorrow?",
+      "tense": "Future Continuous (Interrogative)"
+    }
   ],
   "Conjunciones": [
-    {"word": "and", "pronunciation": "/ænd/"},
-    {"word": "but", "pronunciation": "/bʌt/"},
-    {"word": "or", "pronunciation": "/ɔːr/"},
-    {"word": "because", "pronunciation": "/bɪˈkɔːz/"},
-    {"word": "so", "pronunciation": "/soʊ/"},
-    {"word": "although", "pronunciation": "/ɔːlˈðoʊ/"},
-    {"word": "while", "pronunciation": "/waɪl/"},
-    {"word": "if", "pronunciation": "/ɪf/"},
-    {"word": "unless", "pronunciation": "/ʌnˈlɛs/"},
-    {"word": "until", "pronunciation": "/ʌnˈtɪl/"},
-    {"word": "yet", "pronunciation": "/jɛt/"},
-    {"word": "for", "pronunciation": "/fɔːr/"},
-    {"word": "nor", "pronunciation": "/nɔːr/"},
-    {"word": "either", "pronunciation": "/ˈaɪðər/"},
-    {"word": "neither", "pronunciation": "/ˈniːðər/"},
-    {"word": "as", "pronunciation": "/æz/"},
-    {"word": "than", "pronunciation": "/ðæn/"},
-    {"word": "because of", "pronunciation": "/bɪˈkɔːz əv/"},
-    {"word": "due to", "pronunciation": "/djuː tuː/"},
-    {"word": "in case", "pronunciation": "/ɪn keɪs/"},
-    {"word": "even though", "pronunciation": "/ˈiːvən ðoʊ/"},
-    {"word": "whether", "pronunciation": "/ˈwɛðər/"},
-    {"word": "in order to", "pronunciation": "/ɪn ˈɔːrdər tuː/"},
-    {"word": "as long as", "pronunciation": "/æz lɔːŋ æz/"},
-    {"word": "provided that", "pronunciation": "/prəˈvaɪdɪd ðæt/"}
+    { "word": "and", "pronunciation": "/ænd/" },
+    { "word": "but", "pronunciation": "/bʌt/" },
+    { "word": "or", "pronunciation": "/ɔːr/" },
+    { "word": "because", "pronunciation": "/bɪˈkɔːz/" },
+    { "word": "so", "pronunciation": "/soʊ/" },
+    { "word": "although", "pronunciation": "/ɔːlˈðoʊ/" },
+    { "word": "while", "pronunciation": "/waɪl/" },
+    { "word": "if", "pronunciation": "/ɪf/" },
+    { "word": "unless", "pronunciation": "/ʌnˈlɛs/" },
+    { "word": "until", "pronunciation": "/ʌnˈtɪl/" },
+    { "word": "yet", "pronunciation": "/jɛt/" },
+    { "word": "for", "pronunciation": "/fɔːr/" },
+    { "word": "nor", "pronunciation": "/nɔːr/" },
+    { "word": "either", "pronunciation": "/ˈaɪðər/" },
+    { "word": "neither", "pronunciation": "/ˈniːðər/" },
+    { "word": "as", "pronunciation": "/æz/" },
+    { "word": "than", "pronunciation": "/ðæn/" },
+    { "word": "because of", "pronunciation": "/bɪˈkɔːz əv/" },
+    { "word": "due to", "pronunciation": "/djuː tuː/" },
+    { "word": "in case", "pronunciation": "/ɪn keɪs/" },
+    { "word": "even though", "pronunciation": "/ˈiːvən ðoʊ/" },
+    { "word": "whether", "pronunciation": "/ˈwɛðər/" },
+    { "word": "in order to", "pronunciation": "/ɪn ˈɔːrdər tuː/" },
+    { "word": "as long as", "pronunciation": "/æz lɔːŋ æz/" },
+    { "word": "provided that", "pronunciation": "/prəˈvaɪdɪd ðæt/" }
   ],
   "Peces": [
-    {"word": "salmon", "pronunciation": "/ˈsælmən/"},
-    {"word": "tuna", "pronunciation": "/ˈtuːnə/"},
-    {"word": "trout", "pronunciation": "/traʊt/"},
-    {"word": "bass", "pronunciation": "/bæs/"},
-    {"word": "cod", "pronunciation": "/kɒd/"},
-    {"word": "herring", "pronunciation": "/ˈhɛrɪŋ/"},
-    {"word": "mackerel", "pronunciation": "/ˈmækərəl/"},
-    {"word": "carp", "pronunciation": "/kɑːrp/"},
-    {"word": "flounder", "pronunciation": "/ˈflaʊndər/"},
-    {"word": "perch", "pronunciation": "/pɜːrtʃ/"},
-    {"word": "sardine", "pronunciation": "/ˈsɑːdiːn/"},
-    {"word": "catfish", "pronunciation": "/ˈkætˌfɪʃ/"},
-    {"word": "eel", "pronunciation": "/iːl/"},
-    {"word": "angelfish", "pronunciation": "/ˈeɪndʒəlfɪʃ/"},
-    {"word": "guppy", "pronunciation": "/ˈɡʌpi/"},
-    {"word": "goldfish", "pronunciation": "/ˈɡoʊldfɪʃ/"},
-    {"word": "tilapia", "pronunciation": "/tɪˈlæpiə/"},
-    {"word": "snapper", "pronunciation": "/ˈsnæpər/"},
-    {"word": "betta", "pronunciation": "/ˈbɛtə/"},
-    {"word": "piranha", "pronunciation": "/pɪˈrɑːnə/"},
-    {"word": "sturgeon", "pronunciation": "/ˈstɜːrdʒən/"},
-    {"word": "lobster", "pronunciation": "/ˈlɒbstər/"},
-    {"word": "shrimp", "pronunciation": "/ʃrɪmp/"},
-    {"word": "octopus", "pronunciation": "/ˈɒktəpəs/"},
-    {"word": "squid", "pronunciation": "/skwɪd/"},
-    {"word": "clownfish", "pronunciation": "/ˈklaʊnˌfɪʃ/"},
-    {"word": "sea bass", "pronunciation": "/siː bæz/"},
-    {"word": "mullet", "pronunciation": "/ˈmʌlɪt/"}
+    { "word": "salmon", "pronunciation": "/ˈsælmən/" },
+    { "word": "tuna", "pronunciation": "/ˈtuːnə/" },
+    { "word": "trout", "pronunciation": "/traʊt/" },
+    { "word": "bass", "pronunciation": "/bæs/" },
+    { "word": "cod", "pronunciation": "/kɒd/" },
+    { "word": "herring", "pronunciation": "/ˈhɛrɪŋ/" },
+    { "word": "mackerel", "pronunciation": "/ˈmækərəl/" },
+    { "word": "carp", "pronunciation": "/kɑːrp/" },
+    { "word": "flounder", "pronunciation": "/ˈflaʊndər/" },
+    { "word": "perch", "pronunciation": "/pɜːrtʃ/" },
+    { "word": "sardine", "pronunciation": "/ˈsɑːdiːn/" },
+    { "word": "catfish", "pronunciation": "/ˈkætˌfɪʃ/" },
+    { "word": "eel", "pronunciation": "/iːl/" },
+    { "word": "angelfish", "pronunciation": "/ˈeɪndʒəlfɪʃ/" },
+    { "word": "guppy", "pronunciation": "/ˈɡʌpi/" },
+    { "word": "goldfish", "pronunciation": "/ˈɡoʊldfɪʃ/" },
+    { "word": "tilapia", "pronunciation": "/tɪˈlæpiə/" },
+    { "word": "snapper", "pronunciation": "/ˈsnæpər/" },
+    { "word": "betta", "pronunciation": "/ˈbɛtə/" },
+    { "word": "piranha", "pronunciation": "/pɪˈrɑːnə/" },
+    { "word": "sturgeon", "pronunciation": "/ˈstɜːrdʒən/" },
+    { "word": "lobster", "pronunciation": "/ˈlɒbstər/" },
+    { "word": "shrimp", "pronunciation": "/ʃrɪmp/" },
+    { "word": "octopus", "pronunciation": "/ˈɒktəpəs/" },
+    { "word": "squid", "pronunciation": "/skwɪd/" },
+    { "word": "clownfish", "pronunciation": "/ˈklaʊnˌfɪʃ/" },
+    { "word": "sea bass", "pronunciation": "/siː bæz/" },
+    { "word": "mullet", "pronunciation": "/ˈmʌlɪt/" }
   ],
   "Países": [
-  {"word": "Afghanistan", "pronunciation": "/æfˈɡænɪstæn/", "translation": "Afganistán"},
-  {"word": "Albania", "pronunciation": "/ælˈbeɪnɪə/", "translation": "Albania"},
-  {"word": "Algeria", "pronunciation": "/ælˈdʒɪəɹɪə/", "translation": "Argelia"},
-  {"word": "Andorra", "pronunciation": "/ænˈdɔːrə/", "translation": "Andorra"},
-  {"word": "Angola", "pronunciation": "/æŋˈɡəʊlə/", "translation": "Angola"},
-  {"word": "Antigua and Barbuda", "pronunciation": "/ænˈtiːɡwə ənd bɑːˈbjuːdə/", "translation": "Antigua y Barbuda"},
-  {"word": "Argentina", "pronunciation": "/ˌɑːdʒənˈtiːnə/", "translation": "Argentina"},
-  {"word": "Armenia", "pronunciation": "/ɑːˈmiːnɪə/", "translation": "Armenia"},
-  {"word": "Australia", "pronunciation": "/ɔːˈstreɪlɪə/", "translation": "Australia"},
-  {"word": "Austria", "pronunciation": "/ˈɒstrɪə/", "translation": "Austria"},
-  {"word": "Azerbaijan", "pronunciation": "/ˌæzərbaɪˈdʒɑːn/", "translation": "Azerbaiyán"},
-  {"word": "Bahamas", "pronunciation": "/bəˈhɑːməs/", "translation": "Bahamas"},
-  {"word": "Bahrain", "pronunciation": "/bəˈreɪn/", "translation": "Baréin"},
-  {"word": "Bangladesh", "pronunciation": "/ˌbæŋɡləˈdɛʃ/", "translation": "Bangladesh"},
-  {"word": "Barbados", "pronunciation": "/bɑːˈbeɪdəs/", "translation": "Barbados"},
-  {"word": "Belarus", "pronunciation": "/ˈbɛləˌrʊs/", "translation": "Bielorrusia"},
-  {"word": "Belgium", "pronunciation": "/ˈbɛldʒəm/", "translation": "Bélgica"},
-  {"word": "Belize", "pronunciation": "/bəˈliːz/", "translation": "Belice"},
-  {"word": "Benin", "pronunciation": "/ˈbɛnɪn/", "translation": "Benín"},
-  {"word": "Bhutan", "pronunciation": "/buːˈtɑːn/", "translation": "Bután"},
-  {"word": "Bolivia", "pronunciation": "/bəˈlɪvɪə/", "translation": "Bolivia"},
-  {"word": "Bosnia and Herzegovina", "pronunciation": "/ˈbɒzniə ənd hɜːdʒəˈɡəʊvɪnə/", "translation": "Bosnia y Herzegovina"},
-  {"word": "Botswana", "pronunciation": "/bɒtˈswɑːnə/", "translation": "Botsuana"},
-  {"word": "Brazil", "pronunciation": "/brəˈzɪl/", "translation": "Brasil"},
-  {"word": "Brunei", "pronunciation": "/bruːˈnaɪ/", "translation": "Brunéi"},
-  {"word": "Bulgaria", "pronunciation": "/bʌlˈɡɛəɹɪə/", "translation": "Bulgaria"},
-  {"word": "Burkina Faso", "pronunciation": "/ˈbɜːrkɪnə ˈfɑːsəʊ/", "translation": "Burkina Faso"},
-  {"word": "Burundi", "pronunciation": "/buˈrʊndi/", "translation": "Burundi"},
-  {"word": "Cambodia", "pronunciation": "/kæmˈbəʊdɪə/", "translation": "Camboya"},
-  {"word": "Cameroon", "pronunciation": "/ˌkæməˈruːn/", "translation": "Camerún"},
-  {"word": "Canada", "pronunciation": "/ˈkænədə/", "translation": "Canadá"},
-  {"word": "Cape Verde", "pronunciation": "/keɪp vɜːd/", "translation": "Cabo Verde"},
-  {"word": "Central African Republic", "pronunciation": "/ˈsɛntrəl ˈæfrɪkən rɪˈpʌblɪk/", "translation": "República Centroafricana"},
-  {"word": "Chad", "pronunciation": "/tʃæd/", "translation": "Chad"},
-  {"word": "Chile", "pronunciation": "/ˈtʃɪli/", "translation": "Chile"},
-  {"word": "China", "pronunciation": "/ˈʧaɪnə/", "translation": "China"},
-  {"word": "Colombia", "pronunciation": "/kəˈlɒmbɪə/", "translation": "Colombia"},
-  {"word": "Comoros", "pronunciation": "/kəˈmɔːrɒs/", "translation": "Comoras"},
-  {"word": "Congo", "pronunciation": "/ˈkɒŋɡəʊ/", "translation": "Congo"},
-  {"word": "Costa Rica", "pronunciation": "/ˈkəʊstə ˈriːkə/", "translation": "Costa Rica"},
-  {"word": "Croatia", "pronunciation": "/krəʊˈeɪʃə/", "translation": "Croacia"},
-  {"word": "Cuba", "pronunciation": "/ˈkjuːbə/", "translation": "Cuba"},
-  {"word": "Cyprus", "pronunciation": "/ˈsaɪprəs/", "translation": "Chipre"},
-  {"word": "Czech Republic", "pronunciation": "/ʧɛk rɪˈpʌblɪk/", "translation": "República Checa"},
-  {"word": "Denmark", "pronunciation": "/ˈdɛnmɑːrk/", "translation": "Dinamarca"},
-  {"word": "Djibouti", "pronunciation": "/dʒɪˈbuːti/", "translation": "Yibuti"},
-  {"word": "Dominica", "pronunciation": "/ˌdɒmɪˈnɪkə/", "translation": "Dominica"},
-  {"word": "Dominican Republic", "pronunciation": "/dəˈmɪnɪkən rɪˈpʌblɪk/", "translation": "República Dominicana"},
-  {"word": "Ecuador", "pronunciation": "/ˈɛkwədɔːr/", "translation": "Ecuador"},
-  {"word": "Egypt", "pronunciation": "/ˈiːdʒɪpt/", "translation": "Egipto"},
-  {"word": "El Salvador", "pronunciation": "/ɛl ˈsælˌvɑːdɔːr/", "translation": "El Salvador"},
-  {"word": "Equatorial Guinea", "pronunciation": "/ˌekwəˈtɔːrɪəl ˈɡɪniə/", "translation": "Guinea Ecuatorial"},
-  {"word": "Eritrea", "pronunciation": "/ˌɛrɪˈtreɪə/", "translation": "Eritrea"},
-  {"word": "Estonia", "pronunciation": "/ɛsˈtəʊnɪə/", "translation": "Estonia"},
-  {"word": "Eswatini", "pronunciation": "/ˌɛswɑːˈtiːni/", "translation": "Esuatini"},
-  {"word": "Ethiopia", "pronunciation": "/ˌiːθiˈəʊpɪə/", "translation": "Etiopía"},
-  {"word": "Qatar", "pronunciation": "/ˈkætɑːr/", "translation": "Catar"},
-  {"word": "Romania", "pronunciation": "/rəʊˈmeɪnɪə/", "translation": "Rumania"},
-  {"word": "Russia", "pronunciation": "/ˈrʌʃə/", "translation": "Rusia"},
-  {"word": "Rwanda", "pronunciation": "/ruːˈɑːndə/", "translation": "Ruanda"},
-  {"word": "Saint Kitts and Nevis", "pronunciation": "/seɪnt ˈkɪts ənd ˈniːvɪs/", "translation": "San Cristóbal y Nieves"},
-  {"word": "Saint Lucia", "pronunciation": "/seɪnt ˈluːʃə/", "translation": "Santa Lucía"},
-  {"word": "Saint Vincent and the Grenadines", "pronunciation": "/seɪnt ˈvɪnsənt ənd ðə ˌɡrɛnəˈdiːnz/", "translation": "San Vicente y las Granadinas"},
-  {"word": "Samoa", "pronunciation": "/səˈməʊə/", "translation": "Samoa"},
-  {"word": "San Marino", "pronunciation": "/ˌsæn məˈriːnəʊ/", "translation": "San Marino"},
-  {"word": "Sao Tome and Principe", "pronunciation": "/ˈsaʊ təˈmeɪ ənd ˈprɪnsɪpeɪ/", "translation": "Santo Tomé y Príncipe"},
-  {"word": "Saudi Arabia", "pronunciation": "/ˈsaʊdi əˈreɪbiə/", "translation": "Arabia Saudita"},
-  {"word": "Senegal", "pronunciation": "/ˈsɛnɪɡɔːl/", "translation": "Senegal"},
-  {"word": "Serbia", "pronunciation": "/ˈsɜːrbiə/", "translation": "Serbia"},
-  {"word": "Seychelles", "pronunciation": "/ˈseɪʃɛlz/", "translation": "Seychelles"},
-  {"word": "Sierra Leone", "pronunciation": "/sɪˈɛrə lɪˈoʊn/", "translation": "Sierra Leona"},
-  {"word": "Singapore", "pronunciation": "/ˈsɪŋəpɔːr/", "translation": "Singapur"},
-  {"word": "Slovakia", "pronunciation": "/sləˈvækɪə/", "translation": "Eslovaquia"},
-  {"word": "Slovenia", "pronunciation": "/sləʊˈviːnɪə/", "translation": "Eslovenia"},
-  {"word": "Solomon Islands", "pronunciation": "/ˈsɒləmən ˈaɪləndz/", "translation": "Islas Salomón"},
-  {"word": "Somalia", "pronunciation": "/səˈmɑːliə/", "translation": "Somalia"},
-  {"word": "South Africa", "pronunciation": "/saʊθ ˈæfrɪkə/", "translation": "Sudáfrica"},
-  {"word": "South Sudan", "pronunciation": "/saʊθ suːˈdæn/", "translation": "Sudán del Sur"},
-  {"word": "Spain", "pronunciation": "/speɪn/", "translation": "España"},
-  {"word": "Sri Lanka", "pronunciation": "/ˈʃriː ˈlæŋkə/", "translation": "Sri Lanka"},
-  {"word": "Sudan", "pronunciation": "/suːˈdæn/", "translation": "Sudán"},
-  {"word": "Suriname", "pronunciation": "/ˈsʊrɪnæm/", "translation": "Surinam"},
-  {"word": "Sweden", "pronunciation": "/ˈswiːdən/", "translation": "Suecia"},
-  {"word": "Switzerland", "pronunciation": "/ˈswɪtsələnd/", "translation": "Suiza"},
-  {"word": "Syria", "pronunciation": "/ˈsɪrɪə/", "translation": "Siria"},
-  {"word": "Taiwan", "pronunciation": "/ˈtaɪwɑːn/", "translation": "Taiwán"},
-  {"word": "Tajikistan", "pronunciation": "/ˌtɑːdʒɪˈkɪstæn/", "translation": "Tayikistán"},
-  {"word": "Tanzania", "pronunciation": "/ˌtænzəˈniə/", "translation": "Tanzania"},
-  {"word": "Thailand", "pronunciation": "/ˈtaɪlænd/", "translation": "Tailandia"},
-  {"word": "Timor-Leste", "pronunciation": "/ˌtiːmɔːr ˈlɛsteɪ/", "translation": "Timor Oriental"},
-  {"word": "Togo", "pronunciation": "/ˈtoʊɡoʊ/", "translation": "Togo"},
-  {"word": "Tonga", "pronunciation": "/ˈtɒŋɡə/", "translation": "Tonga"},
-  {"word": "Trinidad and Tobago", "pronunciation": "/ˈtrɪnɪdæd ənd təˈbɑːɡəʊ/", "translation": "Trinidad y Tobago"},
-  {"word": "Tunisia", "pronunciation": "/tjuːˈnɪzɪə/", "translation": "Túnez"},
-  {"word": "Turkey", "pronunciation": "/ˈtɜːki/", "translation": "Turquía"},
-  {"word": "Turkmenistan", "pronunciation": "/ˌtɜːkməˈnɪstæn/", "translation": "Turkmenistán"},
-  {"word": "Tuvalu", "pronunciation": "/ˈtuːvəluː/", "translation": "Tuvalu"},
-  {"word": "Uganda", "pronunciation": "/juːˈɡændə/", "translation": "Uganda"},
-  {"word": "Ukraine", "pronunciation": "/juːˈkreɪn/", "translation": "Ucrania"},
-  {"word": "United Arab Emirates", "pronunciation": "/juːˈnaɪtɪd ˈærəb ˈɛmɪrətz/", "translation": "Emiratos Árabes Unidos"},
-  {"word": "United Kingdom", "pronunciation": "/juːˈnaɪtɪd ˈkɪŋdəm/", "translation": "Reino Unido"},
-  {"word": "United States", "pronunciation": "/juːˈnaɪtɪd steɪts/", "translation": "Estados Unidos"},
-  {"word": "Uruguay", "pronunciation": "/ˈʊərʊɡwaɪ/", "translation": "Uruguay"},
-  {"word": "Uzbekistan", "pronunciation": "/ʊzˈbɛkɪstæn/", "translation": "Uzbekistán"},
-  {"word": "Vanuatu", "pronunciation": "/ˌvænəˈuːətuː/", "translation": "Vanuatu"},
-  {"word": "Vatican City", "pronunciation": "/ˈvætɪkən ˈsɪti/", "translation": "Ciudad del Vaticano"},
-  {"word": "Venezuela", "pronunciation": "/ˌvɛnəˈzweɪlə/", "translation": "Venezuela"},
-  {"word": "Vietnam", "pronunciation": "/ˈvjetnæm/", "translation": "Vietnam"},
-  {"word": "Yemen", "pronunciation": "/ˈjɛmən/", "translation": "Yemen"},
-  {"word": "Zambia", "pronunciation": "/ˈzæmbɪə/", "translation": "Zambia"},
-  {"word": "Zimbabwe", "pronunciation": "/zɪmˈbɑːbweɪ/", "translation": "Zimbabue"},
-  {"word": "Guinea", "pronunciation": "/ˈɡɪniə/", "translation": "Guinea"},
-  {"word": "Guinea-Bissau", "pronunciation": "/ɡɪˈniːə bɪˈsaʊ/", "translation": "Guinea-Bisáu"},
-  {"word": "Guyana", "pronunciation": "/ɡʌɪˈɑːnə/", "translation": "Guyana"},
-  {"word": "Haiti", "pronunciation": "/ˈheɪti/", "translation": "Haití"},
-  {"word": "Honduras", "pronunciation": "/hɒnˈdjʊərəs/", "translation": "Honduras"},
-  {"word": "Hungary", "pronunciation": "/ˈhʌŋɡəri/", "translation": "Hungría"},
-  {"word": "Iceland", "pronunciation": "/ˈaɪslənd/", "translation": "Islandia"},
-  {"word": "India", "pronunciation": "/ˈɪndiə/", "translation": "India"},
-  {"word": "Indonesia", "pronunciation": "/ˌɪndəˈniːʒə/", "translation": "Indonesia"},
-  {"word": "Iran", "pronunciation": "/ɪˈrɑːn/", "translation": "Irán"},
-  {"word": "Iraq", "pronunciation": "/ɪˈræk/", "translation": "Irak"},
-  {"word": "Ireland", "pronunciation": "/ˈaɪərlənd/", "translation": "Irlanda"},
-  {"word": "Israel", "pronunciation": "/ˈɪzreɪəl/", "translation": "Israel"},
-  {"word": "Italy", "pronunciation": "/ˈɪtəli/", "translation": "Italia"},
-  {"word": "Jamaica", "pronunciation": "/dʒəˈmeɪkə/", "translation": "Jamaica"},
-  {"word": "Japan", "pronunciation": "/dʒəˈpæn/", "translation": "Japón"},
-  {"word": "Jordan", "pronunciation": "/ˈdʒɔːdən/", "translation": "Jordania"},
-  {"word": "Kazakhstan", "pronunciation": "/ˈkæzəkstæn/", "translation": "Kazajistán"},
-  {"word": "Kenya", "pronunciation": "/ˈkɛnjə/", "translation": "Kenia"},
-  {"word": "Kiribati", "pronunciation": "/ˈkɪrɪˌbɑːti/", "translation": "Kiribati"},
-  {"word": "Korea, North", "pronunciation": "/kəˈriːə nɔːθ/", "translation": "Corea del Norte"},
-  {"word": "Korea, South", "pronunciation": "/kəˈriːə saʊθ/", "translation": "Corea del Sur"},
-  {"word": "Kuwait", "pronunciation": "/kwəˈweɪt/", "translation": "Kuwait"},
-  {"word": "Kyrgyzstan", "pronunciation": "/ˈkɪrɡɪzstæn/", "translation": "Kirguistán"},
-  {"word": "Laos", "pronunciation": "/ˈlaʊɒs/", "translation": "Laos"},
-  {"word": "Latvia", "pronunciation": "/ˈlætvɪə/", "translation": "Letonia"},
-  {"word": "Lebanon", "pronunciation": "/ˈlɛbənən/", "translation": "Líbano"},
-  {"word": "Lesotho", "pronunciation": "/lɪˈsəʊθəʊ/", "translation": "Lesoto"},
-  {"word": "Liberia", "pronunciation": "/laɪˈbɪəɹɪə/", "translation": "Liberia"},
-  {"word": "Libya", "pronunciation": "/ˈlɪbiə/", "translation": "Libia"},
-  {"word": "Liechtenstein", "pronunciation": "/ˈlɪktənˌstaɪn/", "translation": "Liechtenstein"},
-  {"word": "Lithuania", "pronunciation": "/ˌlɪθjuˈeɪnɪə/", "translation": "Lituania"},
-  {"word": "Luxembourg", "pronunciation": "/ˈlʌksəmbɜːɡ/", "translation": "Luxemburgo"},
-  {"word": "Madagascar", "pronunciation": "/ˌmædæˈɡæskə/", "translation": "Madagascar"},
-  {"word": "Malawi", "pronunciation": "/məˈlɑːwi/", "translation": "Malawi"},
-  {"word": "Malaysia", "pronunciation": "/məˈleɪʒə/", "translation": "Malasia"},
-  {"word": "Maldives", "pronunciation": "/ˈmɑːldiːvz/", "translation": "Maldivas"},
-  {"word": "Mali", "pronunciation": "/ˈmɑːli/", "translation": "Mali"},
-  {"word": "Malta", "pronunciation": "/ˈmɔːltə/", "translation": "Malta"},
-  {"word": "Marshall Islands", "pronunciation": "/ˈmɑːrʃəl ˈaɪləndz/", "translation": "Islas Marshall"},
-  {"word": "Mauritania", "pronunciation": "/ˌmɔːrɪˈteɪnɪə/", "translation": "Mauritania"},
-  {"word": "Mauritius", "pronunciation": "/mɔːˈrɪʃəs/", "translation": "Mauricio"},
-  {"word": "Mexico", "pronunciation": "/ˈmɛksɪkəʊ/", "translation": "México"},
-  {"word": "Micronesia", "pronunciation": "/ˌmaɪkrəʊˈniːʒə/", "translation": "Micronesia"},
-  {"word": "Moldova", "pronunciation": "/mɒlˈdəʊvə/", "translation": "Moldavia"},
-  {"word": "Monaco", "pronunciation": "/ˈmɒnəkəʊ/", "translation": "Mónaco"},
-  {"word": "Mongolia", "pronunciation": "/mɒnˈɡəʊliə/", "translation": "Mongolia"},
-  {"word": "Montenegro", "pronunciation": "/ˌmɒntɪˈnɛɡrəʊ/", "translation": "Montenegro"},
-  {"word": "Morocco", "pronunciation": "/məˈrɒkəʊ/", "translation": "Marruecos"},
-  {"word": "Mozambique", "pronunciation": "/ˌməʊzæmˈbiːk/", "translation": "Mozambique"},
-  {"word": "Myanmar", "pronunciation": "/ˈmjænˌmɑː/", "translation": "Birmania"},
-  {"word": "Namibia", "pronunciation": "/nəˈmɪbiə/", "translation": "Namibia"},
-  {"word": "Nauru", "pronunciation": "/ˈnɔːruː/", "translation": "Naurú"},
-  {"word": "Nepal", "pronunciation": "/nɪˈpɔːl/", "translation": "Nepal"},
-  {"word": "Netherlands", "pronunciation": "/ˈnɛðələndz/", "translation": "Países Bajos"},
-  {"word": "New Zealand", "pronunciation": "/njuː ˈziːlənd/", "translation": "Nueva Zelanda"},
-  {"word": "Nicaragua", "pronunciation": "/ˌnɪkəˈræɡwə/", "translation": "Nicaragua"},
-  {"word": "Niger", "pronunciation": "/ˈniːdʒɛr/", "translation": "Níger"},
-  {"word": "Nigeria", "pronunciation": "/naɪˈdʒɪəɹɪə/", "translation": "Nigeria"},
-  {"word": "North Macedonia", "pronunciation": "/nɔːθ ˌmæsɪˈdəʊnɪə/", "translation": "Macedonia del Norte"},
-  {"word": "Norway", "pronunciation": "/ˈnɔːweɪ/", "translation": "Noruega"},
-  {"word": "Oman", "pronunciation": "/oʊˈmɑːn/", "translation": "Omán"},
-  {"word": "Pakistan", "pronunciation": "/ˈpækɪstæn/", "translation": "Pakistán"},
-  {"word": "Palau", "pronunciation": "/pəˈlaʊ/", "translation": "Palaos"},
-  {"word": "Panama", "pronunciation": "/ˈpænəˌmɑː/", "translation": "Panamá"},
-  {"word": "Papua New Guinea", "pronunciation": "/ˈpæpʊə nuː ˈɡɪniə/", "translation": "Papúa Nueva Guinea"},
-  {"word": "Paraguay", "pronunciation": "/ˈpærəɡweɪ/", "translation": "Paraguay"},
-  {"word": "Peru", "pronunciation": "/pəˈruː/", "translation": "Perú"},
-  {"word": "Philippines", "pronunciation": "/ˈfɪlɪpiːnz/", "translation": "Filipinas"},
-  {"word": "Poland", "pronunciation": "/ˈpəʊlənd/", "translation": "Polonia"},
-  {"word": "Portugal", "pronunciation": "/ˈpɔːtʃʊɡəl/", "translation":"Portugal"},
-  {"word": "Afghanistan", "pronunciation": "/æfˈɡænɪstæn/", "translation": "Afganistán"},
-  {"word": "Albania", "pronunciation": "/ælˈbeɪniə/", "translation": "Albania"},
-  {"word": "Algeria", "pronunciation": "/ælˈdʒɪəreə/", "translation": "Argelia"},
-  {"word": "Andorra", "pronunciation": "/ænˈdɔːrə/", "translation": "Andorra"},
-  {"word": "Angola", "pronunciation": "/æŋˈɡəʊlə/", "translation": "Angola"},
-  {"word": "Antigua and Barbuda", "pronunciation": "/ænˈtiɡʊə ənd bɑːrˈbjuːdə/", "translation": "Antigua y Barbuda"},
-  {"word": "Argentina", "pronunciation": "/ˌɑːdʒənˈtiːnə/", "translation": "Argentina"},
-  {"word": "Armenia", "pronunciation": "/ɑːˈmiːniə/", "translation": "Armenia"},
-  {"word": "Australia", "pronunciation": "/ɒsˈtreɪliə/", "translation": "Australia"},
-  {"word": "Austria", "pronunciation": "/ˈɒstrɪə/", "translation": "Austria"},
-  {"word": "Azerbaijan", "pronunciation": "/ˌæzəˈbaɪˈdʒɑːn/", "translation": "Azerbaiyán"},
-  {"word": "Bahamas", "pronunciation": "/bəˈhɑːməz/", "translation": "Bahamas"},
-  {"word": "Bahrain", "pronunciation": "/ˈbɑːreɪn/", "translation": "Baréin"},
-  {"word": "Bangladesh", "pronunciation": "/ˈbæŋɡlədɛʃ/", "translation": "Bangladés"},
-  {"word": "Barbados", "pronunciation": "/bɑːˈbeɪdəs/", "translation": "Barbados"},
-  {"word": "Belarus", "pronunciation": "/ˈbɛləˌrʊs/", "translation": "Bielorrusia"},
-  {"word": "Belgium", "pronunciation": "/ˈbɛldʒəm/", "translation": "Bélgica"},
-  {"word": "Belize", "pronunciation": "/bəˈliːz/", "translation": "Belice"},
-  {"word": "Benin", "pronunciation": "/ˈbɛnɪn/", "translation": "Benín"},
-  {"word": "Bhutan", "pronunciation": "/ˈbʊtɑːn/", "translation": "Bután"},
-  {"word": "Bolivia", "pronunciation": "/bəˈlɪviə/", "translation": "Bolivia"},
-  {"word": "Bosnia and Herzegovina", "pronunciation": "/ˈbɒzniə ənd hɛrdzəˈɡəvɪnə/", "translation": "Bosnia y Herzegovina"},
-  {"word": "Botswana", "pronunciation": "/bɒtsˈwɑːnə/", "translation": "Botsuana"},
-  {"word": "Brazil", "pronunciation": "/brəˈzɪl/", "translation": "Brasil"},
-  {"word": "Brunei", "pronunciation": "/bruːˈneɪ/", "translation": "Brunéi"},
-  {"word": "Bulgaria", "pronunciation": "/bʌlˈɡɛəɹɪə/", "translation": "Bulgaria"},
-  {"word": "Burkina Faso", "pronunciation": "/ˈbɜːrkɪnə ˈfɑːsəʊ/", "translation": "Burkina Faso"},
-  {"word": "Burundi", "pronunciation": "/bʊˈrʊndi/", "translation": "Burundi"},
-  {"word": "Cabo Verde", "pronunciation": "/ˈkɑːbəʊ ˈvɜːd/", "translation": "Cabo Verde"},
-  {"word": "Cambodia", "pronunciation": "/kæmˈbəʊdiə/", "translation": "Camboya"},
-  {"word": "Cameroon", "pronunciation": "/ˌkæməˈruːn/", "translation": "Camerún"},
-  {"word": "Canada", "pronunciation": "/ˈkænədə/", "translation": "Canadá"},
-  {"word": "Central African Republic", "pronunciation": "/ˈsɛntrəl ˈæfrɪkən rɪˈpʌblɪk/", "translation": "República Centroafricana"},
-  {"word": "Chad", "pronunciation": "/tʃæd/", "translation": "Chad"},
-  {"word": "Chile", "pronunciation": "/ˈtʃɪli/", "translation": "Chile"},
-  {"word": "China", "pronunciation": "/ˈtʃaɪnə/", "translation": "China"},
-  {"word": "Colombia", "pronunciation": "/kəˈlɒmbɪə/", "translation": "Colombia"},
-  {"word": "Comoros", "pronunciation": "/kəˈmɔːrɒs/", "translation": "Comoras"},
-  {"word": "Congo", "pronunciation": "/ˈkɒŋɡəʊ/", "translation": "Congo"},
-  {"word": "Congo (Democratic Republic)", "pronunciation": "/ˈkɒŋɡəʊ (ˌdɛməˈkrætɪk rɪˈpʌblɪk)/", "translation": "República Democrática del Congo"},
-  {"word": "Costa Rica", "pronunciation": "/ˈkəʊstə ˈriːkə/", "translation": "Costa Rica"},
-  {"word": "Croatia", "pronunciation": "/krəʊˈeɪʃə/", "translation": "Croacia"},
-  {"word": "Cuba", "pronunciation": "/ˈkjuːbə/", "translation": "Cuba"},
-  {"word": "Cyprus", "pronunciation": "/ˈsaɪprəs/", "translation": "Chipre"},
-  {"word": "Czech Republic", "pronunciation": "/ˈtʃɛk rɪˈpʌblɪk/", "translation": "República Checa"},
-  {"word": "Denmark", "pronunciation": "/ˈdɛnmɑːrk/", "translation": "Dinamarca"},
-  {"word": "Djibouti", "pronunciation": "/dʒɪˈbuːti/", "translation": "Yibuti"},
-  {"word": "Dominica", "pronunciation": "/ˌdɒmɪˈniːkə/", "translation": "Dominica"},
-  {"word": "Dominican Republic", "pronunciation": "/dəˈmɪnɪkən rɪˈpʌblɪk/", "translation": "República Dominicana"},
-  {"word": "Ecuador", "pronunciation": "/ˈekwədɔːr/", "translation": "Ecuador"},
-  {"word": "Egypt", "pronunciation": "/ˈiːdʒɪpt/", "translation": "Egipto"},
-  {"word": "El Salvador", "pronunciation": "/ɛl sælvəˈdɔːr/", "translation": "El Salvador"},
-  {"word": "Equatorial Guinea", "pronunciation": "/ˌekwəˈtɔːriəl ˈɡɪniə/", "translation": "Guinea Ecuatorial"},
-  {"word": "Eritrea", "pronunciation": "/ˌɛrɪˈtrɪə/", "translation": "Eritrea"},
-  {"word": "Estonia", "pronunciation": "/ɛsˈtəʊniə/", "translation": "Estonia"},
-  {"word": "Eswatini", "pronunciation": "/ɛsˈwɑːtɪni/", "translation": "Esuatini"},
-  {"word": "Ethiopia", "pronunciation": "/ˌiːθɪˈəʊpiə/", "translation": "Etiopía"},
-  {"word": "Fiji", "pronunciation": "/ˈfɪdʒi/", "translation": "Fiyi"},
-  {"word": "Finland", "pronunciation": "/ˈfɪnlənd/", "translation": "Finlandia"},
-  {"word": "France", "pronunciation": "/fræns/", "translation": "Francia"},
-  {"word": "Gabon", "pronunciation": "/ˈɡæbɒn/", "translation": "Gabón"},
-  {"word": "Gambia", "pronunciation": "/ˈɡæmbɪə/", "translation": "Gambia"},
-  {"word": "Georgia", "pronunciation": "/ˈdʒɔːdʒə/", "translation": "Georgia"},
-  {"word": "Germany", "pronunciation": "/ˈdʒɜːməni/", "translation": "Alemania"},
-  {"word": "Ghana", "pronunciation": "/ˈɡɑːnə/", "translation": "Ghana"},
-  {"word": "Greece", "pronunciation": "/ɡriːs/", "translation": "Grecia"},
-  {"word": "Grenada", "pronunciation": "/ɡrɪˈneɪdə/", "translation": "Granada"},
-  {"word": "Guatemala", "pronunciation": "/ˌɡwɑːtəˈmɑːlə/", "translation": "Guatemala"},
-    {"word": "Canada", "pronunciation": "/ˈkænədə/"},
-    {"word": "USA", "pronunciation": "/ˌjuːˌɛsˈeɪ/"},
-    {"word": "Mexico", "pronunciation": "/ˈmɛksɪkoʊ/"},
-    {"word": "Brazil", "pronunciation": "/brəˈzɪl/"},
-    {"word": "Argentina", "pronunciation": "/ˌɑːrdʒənˈtiːnə/"},
-    {"word": "China", "pronunciation": "/ˈtʃaɪnə/"},
-    {"word": "India", "pronunciation": "/ˈɪndiə/"},
-    {"word": "Russia", "pronunciation": "/ˈrʌʃə/"},
-    {"word": "Japan", "pronunciation": "/dʒəˈpæn/"},
-    {"word": "Australia", "pronunciation": "/ɔːˈstreɪliə/"},
-    {"word": "Germany", "pronunciation": "/ˈdʒɜːrməni/"},
-    {"word": "France", "pronunciation": "/fræns/"},
-    {"word": "Italy", "pronunciation": "/ˈɪtəli/"},
-    {"word": "Spain", "pronunciation": "/speɪn/"},
-    {"word": "England", "pronunciation": "/ˈɪŋɡlənd/"},
-    {"word": "Italy", "pronunciation": "/ˈɪtəli/"},
-    {"word": "Egypt", "pronunciation": "/ˈiːdʒɪpt/"},
-    {"word": "Turkey", "pronunciation": "/ˈtɜːrki/"},
-    {"word": "South Africa", "pronunciation": "/ˈsaʊθ ˈæfrɪkə/"},
-    {"word": "Sweden", "pronunciation": "/ˈswiːdən/"},
-    {"word": "Norway", "pronunciation": "/ˈnɔːrweɪ/"},
-    {"word": "Finland", "pronunciation": "/ˈfɪnlənd/"},
-    {"word": "Belgium", "pronunciation": "/ˈbɛldʒəm/"},
-    {"word": "Netherlands", "pronunciation": "/ˈnɛðərləndz/"},
-    {"word": "Switzerland", "pronunciation": "/ˈswɪtsərlənd/"},
-    {"word": "Poland", "pronunciation": "/ˈpoʊlənd/"}
+    {
+      "word": "Afghanistan",
+      "pronunciation": "/æfˈɡænɪstæn/",
+      "translation": "Afganistán"
+    },
+    {
+      "word": "Albania",
+      "pronunciation": "/ælˈbeɪnɪə/",
+      "translation": "Albania"
+    },
+    {
+      "word": "Algeria",
+      "pronunciation": "/ælˈdʒɪəɹɪə/",
+      "translation": "Argelia"
+    },
+    {
+      "word": "Andorra",
+      "pronunciation": "/ænˈdɔːrə/",
+      "translation": "Andorra"
+    },
+    {
+      "word": "Angola",
+      "pronunciation": "/æŋˈɡəʊlə/",
+      "translation": "Angola"
+    },
+    {
+      "word": "Antigua and Barbuda",
+      "pronunciation": "/ænˈtiːɡwə ənd bɑːˈbjuːdə/",
+      "translation": "Antigua y Barbuda"
+    },
+    {
+      "word": "Argentina",
+      "pronunciation": "/ˌɑːdʒənˈtiːnə/",
+      "translation": "Argentina"
+    },
+    {
+      "word": "Armenia",
+      "pronunciation": "/ɑːˈmiːnɪə/",
+      "translation": "Armenia"
+    },
+    {
+      "word": "Australia",
+      "pronunciation": "/ɔːˈstreɪlɪə/",
+      "translation": "Australia"
+    },
+    {
+      "word": "Austria",
+      "pronunciation": "/ˈɒstrɪə/",
+      "translation": "Austria"
+    },
+    {
+      "word": "Azerbaijan",
+      "pronunciation": "/ˌæzərbaɪˈdʒɑːn/",
+      "translation": "Azerbaiyán"
+    },
+    {
+      "word": "Bahamas",
+      "pronunciation": "/bəˈhɑːməs/",
+      "translation": "Bahamas"
+    },
+    {
+      "word": "Bahrain",
+      "pronunciation": "/bəˈreɪn/",
+      "translation": "Baréin"
+    },
+    {
+      "word": "Bangladesh",
+      "pronunciation": "/ˌbæŋɡləˈdɛʃ/",
+      "translation": "Bangladesh"
+    },
+    {
+      "word": "Barbados",
+      "pronunciation": "/bɑːˈbeɪdəs/",
+      "translation": "Barbados"
+    },
+    {
+      "word": "Belarus",
+      "pronunciation": "/ˈbɛləˌrʊs/",
+      "translation": "Bielorrusia"
+    },
+    {
+      "word": "Belgium",
+      "pronunciation": "/ˈbɛldʒəm/",
+      "translation": "Bélgica"
+    },
+    { "word": "Belize", "pronunciation": "/bəˈliːz/", "translation": "Belice" },
+    { "word": "Benin", "pronunciation": "/ˈbɛnɪn/", "translation": "Benín" },
+    { "word": "Bhutan", "pronunciation": "/buːˈtɑːn/", "translation": "Bután" },
+    {
+      "word": "Bolivia",
+      "pronunciation": "/bəˈlɪvɪə/",
+      "translation": "Bolivia"
+    },
+    {
+      "word": "Bosnia and Herzegovina",
+      "pronunciation": "/ˈbɒzniə ənd hɜːdʒəˈɡəʊvɪnə/",
+      "translation": "Bosnia y Herzegovina"
+    },
+    {
+      "word": "Botswana",
+      "pronunciation": "/bɒtˈswɑːnə/",
+      "translation": "Botsuana"
+    },
+    { "word": "Brazil", "pronunciation": "/brəˈzɪl/", "translation": "Brasil" },
+    {
+      "word": "Brunei",
+      "pronunciation": "/bruːˈnaɪ/",
+      "translation": "Brunéi"
+    },
+    {
+      "word": "Bulgaria",
+      "pronunciation": "/bʌlˈɡɛəɹɪə/",
+      "translation": "Bulgaria"
+    },
+    {
+      "word": "Burkina Faso",
+      "pronunciation": "/ˈbɜːrkɪnə ˈfɑːsəʊ/",
+      "translation": "Burkina Faso"
+    },
+    {
+      "word": "Burundi",
+      "pronunciation": "/buˈrʊndi/",
+      "translation": "Burundi"
+    },
+    {
+      "word": "Cambodia",
+      "pronunciation": "/kæmˈbəʊdɪə/",
+      "translation": "Camboya"
+    },
+    {
+      "word": "Cameroon",
+      "pronunciation": "/ˌkæməˈruːn/",
+      "translation": "Camerún"
+    },
+    { "word": "Canada", "pronunciation": "/ˈkænədə/", "translation": "Canadá" },
+    {
+      "word": "Cape Verde",
+      "pronunciation": "/keɪp vɜːd/",
+      "translation": "Cabo Verde"
+    },
+    {
+      "word": "Central African Republic",
+      "pronunciation": "/ˈsɛntrəl ˈæfrɪkən rɪˈpʌblɪk/",
+      "translation": "República Centroafricana"
+    },
+    { "word": "Chad", "pronunciation": "/tʃæd/", "translation": "Chad" },
+    { "word": "Chile", "pronunciation": "/ˈtʃɪli/", "translation": "Chile" },
+    { "word": "China", "pronunciation": "/ˈʧaɪnə/", "translation": "China" },
+    {
+      "word": "Colombia",
+      "pronunciation": "/kəˈlɒmbɪə/",
+      "translation": "Colombia"
+    },
+    {
+      "word": "Comoros",
+      "pronunciation": "/kəˈmɔːrɒs/",
+      "translation": "Comoras"
+    },
+    { "word": "Congo", "pronunciation": "/ˈkɒŋɡəʊ/", "translation": "Congo" },
+    {
+      "word": "Costa Rica",
+      "pronunciation": "/ˈkəʊstə ˈriːkə/",
+      "translation": "Costa Rica"
+    },
+    {
+      "word": "Croatia",
+      "pronunciation": "/krəʊˈeɪʃə/",
+      "translation": "Croacia"
+    },
+    { "word": "Cuba", "pronunciation": "/ˈkjuːbə/", "translation": "Cuba" },
+    {
+      "word": "Cyprus",
+      "pronunciation": "/ˈsaɪprəs/",
+      "translation": "Chipre"
+    },
+    {
+      "word": "Czech Republic",
+      "pronunciation": "/ʧɛk rɪˈpʌblɪk/",
+      "translation": "República Checa"
+    },
+    {
+      "word": "Denmark",
+      "pronunciation": "/ˈdɛnmɑːrk/",
+      "translation": "Dinamarca"
+    },
+    {
+      "word": "Djibouti",
+      "pronunciation": "/dʒɪˈbuːti/",
+      "translation": "Yibuti"
+    },
+    {
+      "word": "Dominica",
+      "pronunciation": "/ˌdɒmɪˈnɪkə/",
+      "translation": "Dominica"
+    },
+    {
+      "word": "Dominican Republic",
+      "pronunciation": "/dəˈmɪnɪkən rɪˈpʌblɪk/",
+      "translation": "República Dominicana"
+    },
+    {
+      "word": "Ecuador",
+      "pronunciation": "/ˈɛkwədɔːr/",
+      "translation": "Ecuador"
+    },
+    { "word": "Egypt", "pronunciation": "/ˈiːdʒɪpt/", "translation": "Egipto" },
+    {
+      "word": "El Salvador",
+      "pronunciation": "/ɛl ˈsælˌvɑːdɔːr/",
+      "translation": "El Salvador"
+    },
+    {
+      "word": "Equatorial Guinea",
+      "pronunciation": "/ˌekwəˈtɔːrɪəl ˈɡɪniə/",
+      "translation": "Guinea Ecuatorial"
+    },
+    {
+      "word": "Eritrea",
+      "pronunciation": "/ˌɛrɪˈtreɪə/",
+      "translation": "Eritrea"
+    },
+    {
+      "word": "Estonia",
+      "pronunciation": "/ɛsˈtəʊnɪə/",
+      "translation": "Estonia"
+    },
+    {
+      "word": "Eswatini",
+      "pronunciation": "/ˌɛswɑːˈtiːni/",
+      "translation": "Esuatini"
+    },
+    {
+      "word": "Ethiopia",
+      "pronunciation": "/ˌiːθiˈəʊpɪə/",
+      "translation": "Etiopía"
+    },
+    { "word": "Qatar", "pronunciation": "/ˈkætɑːr/", "translation": "Catar" },
+    {
+      "word": "Romania",
+      "pronunciation": "/rəʊˈmeɪnɪə/",
+      "translation": "Rumania"
+    },
+    { "word": "Russia", "pronunciation": "/ˈrʌʃə/", "translation": "Rusia" },
+    {
+      "word": "Rwanda",
+      "pronunciation": "/ruːˈɑːndə/",
+      "translation": "Ruanda"
+    },
+    {
+      "word": "Saint Kitts and Nevis",
+      "pronunciation": "/seɪnt ˈkɪts ənd ˈniːvɪs/",
+      "translation": "San Cristóbal y Nieves"
+    },
+    {
+      "word": "Saint Lucia",
+      "pronunciation": "/seɪnt ˈluːʃə/",
+      "translation": "Santa Lucía"
+    },
+    {
+      "word": "Saint Vincent and the Grenadines",
+      "pronunciation": "/seɪnt ˈvɪnsənt ənd ðə ˌɡrɛnəˈdiːnz/",
+      "translation": "San Vicente y las Granadinas"
+    },
+    { "word": "Samoa", "pronunciation": "/səˈməʊə/", "translation": "Samoa" },
+    {
+      "word": "San Marino",
+      "pronunciation": "/ˌsæn məˈriːnəʊ/",
+      "translation": "San Marino"
+    },
+    {
+      "word": "Sao Tome and Principe",
+      "pronunciation": "/ˈsaʊ təˈmeɪ ənd ˈprɪnsɪpeɪ/",
+      "translation": "Santo Tomé y Príncipe"
+    },
+    {
+      "word": "Saudi Arabia",
+      "pronunciation": "/ˈsaʊdi əˈreɪbiə/",
+      "translation": "Arabia Saudita"
+    },
+    {
+      "word": "Senegal",
+      "pronunciation": "/ˈsɛnɪɡɔːl/",
+      "translation": "Senegal"
+    },
+    {
+      "word": "Serbia",
+      "pronunciation": "/ˈsɜːrbiə/",
+      "translation": "Serbia"
+    },
+    {
+      "word": "Seychelles",
+      "pronunciation": "/ˈseɪʃɛlz/",
+      "translation": "Seychelles"
+    },
+    {
+      "word": "Sierra Leone",
+      "pronunciation": "/sɪˈɛrə lɪˈoʊn/",
+      "translation": "Sierra Leona"
+    },
+    {
+      "word": "Singapore",
+      "pronunciation": "/ˈsɪŋəpɔːr/",
+      "translation": "Singapur"
+    },
+    {
+      "word": "Slovakia",
+      "pronunciation": "/sləˈvækɪə/",
+      "translation": "Eslovaquia"
+    },
+    {
+      "word": "Slovenia",
+      "pronunciation": "/sləʊˈviːnɪə/",
+      "translation": "Eslovenia"
+    },
+    {
+      "word": "Solomon Islands",
+      "pronunciation": "/ˈsɒləmən ˈaɪləndz/",
+      "translation": "Islas Salomón"
+    },
+    {
+      "word": "Somalia",
+      "pronunciation": "/səˈmɑːliə/",
+      "translation": "Somalia"
+    },
+    {
+      "word": "South Africa",
+      "pronunciation": "/saʊθ ˈæfrɪkə/",
+      "translation": "Sudáfrica"
+    },
+    {
+      "word": "South Sudan",
+      "pronunciation": "/saʊθ suːˈdæn/",
+      "translation": "Sudán del Sur"
+    },
+    { "word": "Spain", "pronunciation": "/speɪn/", "translation": "España" },
+    {
+      "word": "Sri Lanka",
+      "pronunciation": "/ˈʃriː ˈlæŋkə/",
+      "translation": "Sri Lanka"
+    },
+    { "word": "Sudan", "pronunciation": "/suːˈdæn/", "translation": "Sudán" },
+    {
+      "word": "Suriname",
+      "pronunciation": "/ˈsʊrɪnæm/",
+      "translation": "Surinam"
+    },
+    {
+      "word": "Sweden",
+      "pronunciation": "/ˈswiːdən/",
+      "translation": "Suecia"
+    },
+    {
+      "word": "Switzerland",
+      "pronunciation": "/ˈswɪtsələnd/",
+      "translation": "Suiza"
+    },
+    { "word": "Syria", "pronunciation": "/ˈsɪrɪə/", "translation": "Siria" },
+    {
+      "word": "Taiwan",
+      "pronunciation": "/ˈtaɪwɑːn/",
+      "translation": "Taiwán"
+    },
+    {
+      "word": "Tajikistan",
+      "pronunciation": "/ˌtɑːdʒɪˈkɪstæn/",
+      "translation": "Tayikistán"
+    },
+    {
+      "word": "Tanzania",
+      "pronunciation": "/ˌtænzəˈniə/",
+      "translation": "Tanzania"
+    },
+    {
+      "word": "Thailand",
+      "pronunciation": "/ˈtaɪlænd/",
+      "translation": "Tailandia"
+    },
+    {
+      "word": "Timor-Leste",
+      "pronunciation": "/ˌtiːmɔːr ˈlɛsteɪ/",
+      "translation": "Timor Oriental"
+    },
+    { "word": "Togo", "pronunciation": "/ˈtoʊɡoʊ/", "translation": "Togo" },
+    { "word": "Tonga", "pronunciation": "/ˈtɒŋɡə/", "translation": "Tonga" },
+    {
+      "word": "Trinidad and Tobago",
+      "pronunciation": "/ˈtrɪnɪdæd ənd təˈbɑːɡəʊ/",
+      "translation": "Trinidad y Tobago"
+    },
+    {
+      "word": "Tunisia",
+      "pronunciation": "/tjuːˈnɪzɪə/",
+      "translation": "Túnez"
+    },
+    { "word": "Turkey", "pronunciation": "/ˈtɜːki/", "translation": "Turquía" },
+    {
+      "word": "Turkmenistan",
+      "pronunciation": "/ˌtɜːkməˈnɪstæn/",
+      "translation": "Turkmenistán"
+    },
+    {
+      "word": "Tuvalu",
+      "pronunciation": "/ˈtuːvəluː/",
+      "translation": "Tuvalu"
+    },
+    {
+      "word": "Uganda",
+      "pronunciation": "/juːˈɡændə/",
+      "translation": "Uganda"
+    },
+    {
+      "word": "Ukraine",
+      "pronunciation": "/juːˈkreɪn/",
+      "translation": "Ucrania"
+    },
+    {
+      "word": "United Arab Emirates",
+      "pronunciation": "/juːˈnaɪtɪd ˈærəb ˈɛmɪrətz/",
+      "translation": "Emiratos Árabes Unidos"
+    },
+    {
+      "word": "United Kingdom",
+      "pronunciation": "/juːˈnaɪtɪd ˈkɪŋdəm/",
+      "translation": "Reino Unido"
+    },
+    {
+      "word": "United States",
+      "pronunciation": "/juːˈnaɪtɪd steɪts/",
+      "translation": "Estados Unidos"
+    },
+    {
+      "word": "Uruguay",
+      "pronunciation": "/ˈʊərʊɡwaɪ/",
+      "translation": "Uruguay"
+    },
+    {
+      "word": "Uzbekistan",
+      "pronunciation": "/ʊzˈbɛkɪstæn/",
+      "translation": "Uzbekistán"
+    },
+    {
+      "word": "Vanuatu",
+      "pronunciation": "/ˌvænəˈuːətuː/",
+      "translation": "Vanuatu"
+    },
+    {
+      "word": "Vatican City",
+      "pronunciation": "/ˈvætɪkən ˈsɪti/",
+      "translation": "Ciudad del Vaticano"
+    },
+    {
+      "word": "Venezuela",
+      "pronunciation": "/ˌvɛnəˈzweɪlə/",
+      "translation": "Venezuela"
+    },
+    {
+      "word": "Vietnam",
+      "pronunciation": "/ˈvjetnæm/",
+      "translation": "Vietnam"
+    },
+    { "word": "Yemen", "pronunciation": "/ˈjɛmən/", "translation": "Yemen" },
+    { "word": "Zambia", "pronunciation": "/ˈzæmbɪə/", "translation": "Zambia" },
+    {
+      "word": "Zimbabwe",
+      "pronunciation": "/zɪmˈbɑːbweɪ/",
+      "translation": "Zimbabue"
+    },
+    { "word": "Guinea", "pronunciation": "/ˈɡɪniə/", "translation": "Guinea" },
+    {
+      "word": "Guinea-Bissau",
+      "pronunciation": "/ɡɪˈniːə bɪˈsaʊ/",
+      "translation": "Guinea-Bisáu"
+    },
+    {
+      "word": "Guyana",
+      "pronunciation": "/ɡʌɪˈɑːnə/",
+      "translation": "Guyana"
+    },
+    { "word": "Haiti", "pronunciation": "/ˈheɪti/", "translation": "Haití" },
+    {
+      "word": "Honduras",
+      "pronunciation": "/hɒnˈdjʊərəs/",
+      "translation": "Honduras"
+    },
+    {
+      "word": "Hungary",
+      "pronunciation": "/ˈhʌŋɡəri/",
+      "translation": "Hungría"
+    },
+    {
+      "word": "Iceland",
+      "pronunciation": "/ˈaɪslənd/",
+      "translation": "Islandia"
+    },
+    { "word": "India", "pronunciation": "/ˈɪndiə/", "translation": "India" },
+    {
+      "word": "Indonesia",
+      "pronunciation": "/ˌɪndəˈniːʒə/",
+      "translation": "Indonesia"
+    },
+    { "word": "Iran", "pronunciation": "/ɪˈrɑːn/", "translation": "Irán" },
+    { "word": "Iraq", "pronunciation": "/ɪˈræk/", "translation": "Irak" },
+    {
+      "word": "Ireland",
+      "pronunciation": "/ˈaɪərlənd/",
+      "translation": "Irlanda"
+    },
+    {
+      "word": "Israel",
+      "pronunciation": "/ˈɪzreɪəl/",
+      "translation": "Israel"
+    },
+    { "word": "Italy", "pronunciation": "/ˈɪtəli/", "translation": "Italia" },
+    {
+      "word": "Jamaica",
+      "pronunciation": "/dʒəˈmeɪkə/",
+      "translation": "Jamaica"
+    },
+    { "word": "Japan", "pronunciation": "/dʒəˈpæn/", "translation": "Japón" },
+    {
+      "word": "Jordan",
+      "pronunciation": "/ˈdʒɔːdən/",
+      "translation": "Jordania"
+    },
+    {
+      "word": "Kazakhstan",
+      "pronunciation": "/ˈkæzəkstæn/",
+      "translation": "Kazajistán"
+    },
+    { "word": "Kenya", "pronunciation": "/ˈkɛnjə/", "translation": "Kenia" },
+    {
+      "word": "Kiribati",
+      "pronunciation": "/ˈkɪrɪˌbɑːti/",
+      "translation": "Kiribati"
+    },
+    {
+      "word": "Korea, North",
+      "pronunciation": "/kəˈriːə nɔːθ/",
+      "translation": "Corea del Norte"
+    },
+    {
+      "word": "Korea, South",
+      "pronunciation": "/kəˈriːə saʊθ/",
+      "translation": "Corea del Sur"
+    },
+    {
+      "word": "Kuwait",
+      "pronunciation": "/kwəˈweɪt/",
+      "translation": "Kuwait"
+    },
+    {
+      "word": "Kyrgyzstan",
+      "pronunciation": "/ˈkɪrɡɪzstæn/",
+      "translation": "Kirguistán"
+    },
+    { "word": "Laos", "pronunciation": "/ˈlaʊɒs/", "translation": "Laos" },
+    {
+      "word": "Latvia",
+      "pronunciation": "/ˈlætvɪə/",
+      "translation": "Letonia"
+    },
+    {
+      "word": "Lebanon",
+      "pronunciation": "/ˈlɛbənən/",
+      "translation": "Líbano"
+    },
+    {
+      "word": "Lesotho",
+      "pronunciation": "/lɪˈsəʊθəʊ/",
+      "translation": "Lesoto"
+    },
+    {
+      "word": "Liberia",
+      "pronunciation": "/laɪˈbɪəɹɪə/",
+      "translation": "Liberia"
+    },
+    { "word": "Libya", "pronunciation": "/ˈlɪbiə/", "translation": "Libia" },
+    {
+      "word": "Liechtenstein",
+      "pronunciation": "/ˈlɪktənˌstaɪn/",
+      "translation": "Liechtenstein"
+    },
+    {
+      "word": "Lithuania",
+      "pronunciation": "/ˌlɪθjuˈeɪnɪə/",
+      "translation": "Lituania"
+    },
+    {
+      "word": "Luxembourg",
+      "pronunciation": "/ˈlʌksəmbɜːɡ/",
+      "translation": "Luxemburgo"
+    },
+    {
+      "word": "Madagascar",
+      "pronunciation": "/ˌmædæˈɡæskə/",
+      "translation": "Madagascar"
+    },
+    {
+      "word": "Malawi",
+      "pronunciation": "/məˈlɑːwi/",
+      "translation": "Malawi"
+    },
+    {
+      "word": "Malaysia",
+      "pronunciation": "/məˈleɪʒə/",
+      "translation": "Malasia"
+    },
+    {
+      "word": "Maldives",
+      "pronunciation": "/ˈmɑːldiːvz/",
+      "translation": "Maldivas"
+    },
+    { "word": "Mali", "pronunciation": "/ˈmɑːli/", "translation": "Mali" },
+    { "word": "Malta", "pronunciation": "/ˈmɔːltə/", "translation": "Malta" },
+    {
+      "word": "Marshall Islands",
+      "pronunciation": "/ˈmɑːrʃəl ˈaɪləndz/",
+      "translation": "Islas Marshall"
+    },
+    {
+      "word": "Mauritania",
+      "pronunciation": "/ˌmɔːrɪˈteɪnɪə/",
+      "translation": "Mauritania"
+    },
+    {
+      "word": "Mauritius",
+      "pronunciation": "/mɔːˈrɪʃəs/",
+      "translation": "Mauricio"
+    },
+    {
+      "word": "Mexico",
+      "pronunciation": "/ˈmɛksɪkəʊ/",
+      "translation": "México"
+    },
+    {
+      "word": "Micronesia",
+      "pronunciation": "/ˌmaɪkrəʊˈniːʒə/",
+      "translation": "Micronesia"
+    },
+    {
+      "word": "Moldova",
+      "pronunciation": "/mɒlˈdəʊvə/",
+      "translation": "Moldavia"
+    },
+    {
+      "word": "Monaco",
+      "pronunciation": "/ˈmɒnəkəʊ/",
+      "translation": "Mónaco"
+    },
+    {
+      "word": "Mongolia",
+      "pronunciation": "/mɒnˈɡəʊliə/",
+      "translation": "Mongolia"
+    },
+    {
+      "word": "Montenegro",
+      "pronunciation": "/ˌmɒntɪˈnɛɡrəʊ/",
+      "translation": "Montenegro"
+    },
+    {
+      "word": "Morocco",
+      "pronunciation": "/məˈrɒkəʊ/",
+      "translation": "Marruecos"
+    },
+    {
+      "word": "Mozambique",
+      "pronunciation": "/ˌməʊzæmˈbiːk/",
+      "translation": "Mozambique"
+    },
+    {
+      "word": "Myanmar",
+      "pronunciation": "/ˈmjænˌmɑː/",
+      "translation": "Birmania"
+    },
+    {
+      "word": "Namibia",
+      "pronunciation": "/nəˈmɪbiə/",
+      "translation": "Namibia"
+    },
+    { "word": "Nauru", "pronunciation": "/ˈnɔːruː/", "translation": "Naurú" },
+    { "word": "Nepal", "pronunciation": "/nɪˈpɔːl/", "translation": "Nepal" },
+    {
+      "word": "Netherlands",
+      "pronunciation": "/ˈnɛðələndz/",
+      "translation": "Países Bajos"
+    },
+    {
+      "word": "New Zealand",
+      "pronunciation": "/njuː ˈziːlənd/",
+      "translation": "Nueva Zelanda"
+    },
+    {
+      "word": "Nicaragua",
+      "pronunciation": "/ˌnɪkəˈræɡwə/",
+      "translation": "Nicaragua"
+    },
+    { "word": "Niger", "pronunciation": "/ˈniːdʒɛr/", "translation": "Níger" },
+    {
+      "word": "Nigeria",
+      "pronunciation": "/naɪˈdʒɪəɹɪə/",
+      "translation": "Nigeria"
+    },
+    {
+      "word": "North Macedonia",
+      "pronunciation": "/nɔːθ ˌmæsɪˈdəʊnɪə/",
+      "translation": "Macedonia del Norte"
+    },
+    {
+      "word": "Norway",
+      "pronunciation": "/ˈnɔːweɪ/",
+      "translation": "Noruega"
+    },
+    { "word": "Oman", "pronunciation": "/oʊˈmɑːn/", "translation": "Omán" },
+    {
+      "word": "Pakistan",
+      "pronunciation": "/ˈpækɪstæn/",
+      "translation": "Pakistán"
+    },
+    { "word": "Palau", "pronunciation": "/pəˈlaʊ/", "translation": "Palaos" },
+    {
+      "word": "Panama",
+      "pronunciation": "/ˈpænəˌmɑː/",
+      "translation": "Panamá"
+    },
+    {
+      "word": "Papua New Guinea",
+      "pronunciation": "/ˈpæpʊə nuː ˈɡɪniə/",
+      "translation": "Papúa Nueva Guinea"
+    },
+    {
+      "word": "Paraguay",
+      "pronunciation": "/ˈpærəɡweɪ/",
+      "translation": "Paraguay"
+    },
+    { "word": "Peru", "pronunciation": "/pəˈruː/", "translation": "Perú" },
+    {
+      "word": "Philippines",
+      "pronunciation": "/ˈfɪlɪpiːnz/",
+      "translation": "Filipinas"
+    },
+    {
+      "word": "Poland",
+      "pronunciation": "/ˈpəʊlənd/",
+      "translation": "Polonia"
+    },
+    {
+      "word": "Portugal",
+      "pronunciation": "/ˈpɔːtʃʊɡəl/",
+      "translation": "Portugal"
+    },
+    {
+      "word": "Afghanistan",
+      "pronunciation": "/æfˈɡænɪstæn/",
+      "translation": "Afganistán"
+    },
+    {
+      "word": "Albania",
+      "pronunciation": "/ælˈbeɪniə/",
+      "translation": "Albania"
+    },
+    {
+      "word": "Algeria",
+      "pronunciation": "/ælˈdʒɪəreə/",
+      "translation": "Argelia"
+    },
+    {
+      "word": "Andorra",
+      "pronunciation": "/ænˈdɔːrə/",
+      "translation": "Andorra"
+    },
+    {
+      "word": "Angola",
+      "pronunciation": "/æŋˈɡəʊlə/",
+      "translation": "Angola"
+    },
+    {
+      "word": "Antigua and Barbuda",
+      "pronunciation": "/ænˈtiɡʊə ənd bɑːrˈbjuːdə/",
+      "translation": "Antigua y Barbuda"
+    },
+    {
+      "word": "Argentina",
+      "pronunciation": "/ˌɑːdʒənˈtiːnə/",
+      "translation": "Argentina"
+    },
+    {
+      "word": "Armenia",
+      "pronunciation": "/ɑːˈmiːniə/",
+      "translation": "Armenia"
+    },
+    {
+      "word": "Australia",
+      "pronunciation": "/ɒsˈtreɪliə/",
+      "translation": "Australia"
+    },
+    {
+      "word": "Austria",
+      "pronunciation": "/ˈɒstrɪə/",
+      "translation": "Austria"
+    },
+    {
+      "word": "Azerbaijan",
+      "pronunciation": "/ˌæzəˈbaɪˈdʒɑːn/",
+      "translation": "Azerbaiyán"
+    },
+    {
+      "word": "Bahamas",
+      "pronunciation": "/bəˈhɑːməz/",
+      "translation": "Bahamas"
+    },
+    {
+      "word": "Bahrain",
+      "pronunciation": "/ˈbɑːreɪn/",
+      "translation": "Baréin"
+    },
+    {
+      "word": "Bangladesh",
+      "pronunciation": "/ˈbæŋɡlədɛʃ/",
+      "translation": "Bangladés"
+    },
+    {
+      "word": "Barbados",
+      "pronunciation": "/bɑːˈbeɪdəs/",
+      "translation": "Barbados"
+    },
+    {
+      "word": "Belarus",
+      "pronunciation": "/ˈbɛləˌrʊs/",
+      "translation": "Bielorrusia"
+    },
+    {
+      "word": "Belgium",
+      "pronunciation": "/ˈbɛldʒəm/",
+      "translation": "Bélgica"
+    },
+    { "word": "Belize", "pronunciation": "/bəˈliːz/", "translation": "Belice" },
+    { "word": "Benin", "pronunciation": "/ˈbɛnɪn/", "translation": "Benín" },
+    { "word": "Bhutan", "pronunciation": "/ˈbʊtɑːn/", "translation": "Bután" },
+    {
+      "word": "Bolivia",
+      "pronunciation": "/bəˈlɪviə/",
+      "translation": "Bolivia"
+    },
+    {
+      "word": "Bosnia and Herzegovina",
+      "pronunciation": "/ˈbɒzniə ənd hɛrdzəˈɡəvɪnə/",
+      "translation": "Bosnia y Herzegovina"
+    },
+    {
+      "word": "Botswana",
+      "pronunciation": "/bɒtsˈwɑːnə/",
+      "translation": "Botsuana"
+    },
+    { "word": "Brazil", "pronunciation": "/brəˈzɪl/", "translation": "Brasil" },
+    {
+      "word": "Brunei",
+      "pronunciation": "/bruːˈneɪ/",
+      "translation": "Brunéi"
+    },
+    {
+      "word": "Bulgaria",
+      "pronunciation": "/bʌlˈɡɛəɹɪə/",
+      "translation": "Bulgaria"
+    },
+    {
+      "word": "Burkina Faso",
+      "pronunciation": "/ˈbɜːrkɪnə ˈfɑːsəʊ/",
+      "translation": "Burkina Faso"
+    },
+    {
+      "word": "Burundi",
+      "pronunciation": "/bʊˈrʊndi/",
+      "translation": "Burundi"
+    },
+    {
+      "word": "Cabo Verde",
+      "pronunciation": "/ˈkɑːbəʊ ˈvɜːd/",
+      "translation": "Cabo Verde"
+    },
+    {
+      "word": "Cambodia",
+      "pronunciation": "/kæmˈbəʊdiə/",
+      "translation": "Camboya"
+    },
+    {
+      "word": "Cameroon",
+      "pronunciation": "/ˌkæməˈruːn/",
+      "translation": "Camerún"
+    },
+    { "word": "Canada", "pronunciation": "/ˈkænədə/", "translation": "Canadá" },
+    {
+      "word": "Central African Republic",
+      "pronunciation": "/ˈsɛntrəl ˈæfrɪkən rɪˈpʌblɪk/",
+      "translation": "República Centroafricana"
+    },
+    { "word": "Chad", "pronunciation": "/tʃæd/", "translation": "Chad" },
+    { "word": "Chile", "pronunciation": "/ˈtʃɪli/", "translation": "Chile" },
+    { "word": "China", "pronunciation": "/ˈtʃaɪnə/", "translation": "China" },
+    {
+      "word": "Colombia",
+      "pronunciation": "/kəˈlɒmbɪə/",
+      "translation": "Colombia"
+    },
+    {
+      "word": "Comoros",
+      "pronunciation": "/kəˈmɔːrɒs/",
+      "translation": "Comoras"
+    },
+    { "word": "Congo", "pronunciation": "/ˈkɒŋɡəʊ/", "translation": "Congo" },
+    {
+      "word": "Congo (Democratic Republic)",
+      "pronunciation": "/ˈkɒŋɡəʊ (ˌdɛməˈkrætɪk rɪˈpʌblɪk)/",
+      "translation": "República Democrática del Congo"
+    },
+    {
+      "word": "Costa Rica",
+      "pronunciation": "/ˈkəʊstə ˈriːkə/",
+      "translation": "Costa Rica"
+    },
+    {
+      "word": "Croatia",
+      "pronunciation": "/krəʊˈeɪʃə/",
+      "translation": "Croacia"
+    },
+    { "word": "Cuba", "pronunciation": "/ˈkjuːbə/", "translation": "Cuba" },
+    {
+      "word": "Cyprus",
+      "pronunciation": "/ˈsaɪprəs/",
+      "translation": "Chipre"
+    },
+    {
+      "word": "Czech Republic",
+      "pronunciation": "/ˈtʃɛk rɪˈpʌblɪk/",
+      "translation": "República Checa"
+    },
+    {
+      "word": "Denmark",
+      "pronunciation": "/ˈdɛnmɑːrk/",
+      "translation": "Dinamarca"
+    },
+    {
+      "word": "Djibouti",
+      "pronunciation": "/dʒɪˈbuːti/",
+      "translation": "Yibuti"
+    },
+    {
+      "word": "Dominica",
+      "pronunciation": "/ˌdɒmɪˈniːkə/",
+      "translation": "Dominica"
+    },
+    {
+      "word": "Dominican Republic",
+      "pronunciation": "/dəˈmɪnɪkən rɪˈpʌblɪk/",
+      "translation": "República Dominicana"
+    },
+    {
+      "word": "Ecuador",
+      "pronunciation": "/ˈekwədɔːr/",
+      "translation": "Ecuador"
+    },
+    { "word": "Egypt", "pronunciation": "/ˈiːdʒɪpt/", "translation": "Egipto" },
+    {
+      "word": "El Salvador",
+      "pronunciation": "/ɛl sælvəˈdɔːr/",
+      "translation": "El Salvador"
+    },
+    {
+      "word": "Equatorial Guinea",
+      "pronunciation": "/ˌekwəˈtɔːriəl ˈɡɪniə/",
+      "translation": "Guinea Ecuatorial"
+    },
+    {
+      "word": "Eritrea",
+      "pronunciation": "/ˌɛrɪˈtrɪə/",
+      "translation": "Eritrea"
+    },
+    {
+      "word": "Estonia",
+      "pronunciation": "/ɛsˈtəʊniə/",
+      "translation": "Estonia"
+    },
+    {
+      "word": "Eswatini",
+      "pronunciation": "/ɛsˈwɑːtɪni/",
+      "translation": "Esuatini"
+    },
+    {
+      "word": "Ethiopia",
+      "pronunciation": "/ˌiːθɪˈəʊpiə/",
+      "translation": "Etiopía"
+    },
+    { "word": "Fiji", "pronunciation": "/ˈfɪdʒi/", "translation": "Fiyi" },
+    {
+      "word": "Finland",
+      "pronunciation": "/ˈfɪnlənd/",
+      "translation": "Finlandia"
+    },
+    { "word": "France", "pronunciation": "/fræns/", "translation": "Francia" },
+    { "word": "Gabon", "pronunciation": "/ˈɡæbɒn/", "translation": "Gabón" },
+    { "word": "Gambia", "pronunciation": "/ˈɡæmbɪə/", "translation": "Gambia" },
+    {
+      "word": "Georgia",
+      "pronunciation": "/ˈdʒɔːdʒə/",
+      "translation": "Georgia"
+    },
+    {
+      "word": "Germany",
+      "pronunciation": "/ˈdʒɜːməni/",
+      "translation": "Alemania"
+    },
+    { "word": "Ghana", "pronunciation": "/ˈɡɑːnə/", "translation": "Ghana" },
+    { "word": "Greece", "pronunciation": "/ɡriːs/", "translation": "Grecia" },
+    {
+      "word": "Grenada",
+      "pronunciation": "/ɡrɪˈneɪdə/",
+      "translation": "Granada"
+    },
+    {
+      "word": "Guatemala",
+      "pronunciation": "/ˌɡwɑːtəˈmɑːlə/",
+      "translation": "Guatemala"
+    },
+    { "word": "Canada", "pronunciation": "/ˈkænədə/" },
+    { "word": "USA", "pronunciation": "/ˌjuːˌɛsˈeɪ/" },
+    { "word": "Mexico", "pronunciation": "/ˈmɛksɪkoʊ/" },
+    { "word": "Brazil", "pronunciation": "/brəˈzɪl/" },
+    { "word": "Argentina", "pronunciation": "/ˌɑːrdʒənˈtiːnə/" },
+    { "word": "China", "pronunciation": "/ˈtʃaɪnə/" },
+    { "word": "India", "pronunciation": "/ˈɪndiə/" },
+    { "word": "Russia", "pronunciation": "/ˈrʌʃə/" },
+    { "word": "Japan", "pronunciation": "/dʒəˈpæn/" },
+    { "word": "Australia", "pronunciation": "/ɔːˈstreɪliə/" },
+    { "word": "Germany", "pronunciation": "/ˈdʒɜːrməni/" },
+    { "word": "France", "pronunciation": "/fræns/" },
+    { "word": "Italy", "pronunciation": "/ˈɪtəli/" },
+    { "word": "Spain", "pronunciation": "/speɪn/" },
+    { "word": "England", "pronunciation": "/ˈɪŋɡlənd/" },
+    { "word": "Italy", "pronunciation": "/ˈɪtəli/" },
+    { "word": "Egypt", "pronunciation": "/ˈiːdʒɪpt/" },
+    { "word": "Turkey", "pronunciation": "/ˈtɜːrki/" },
+    { "word": "South Africa", "pronunciation": "/ˈsaʊθ ˈæfrɪkə/" },
+    { "word": "Sweden", "pronunciation": "/ˈswiːdən/" },
+    { "word": "Norway", "pronunciation": "/ˈnɔːrweɪ/" },
+    { "word": "Finland", "pronunciation": "/ˈfɪnlənd/" },
+    { "word": "Belgium", "pronunciation": "/ˈbɛldʒəm/" },
+    { "word": "Netherlands", "pronunciation": "/ˈnɛðərləndz/" },
+    { "word": "Switzerland", "pronunciation": "/ˈswɪtsərlənd/" },
+    { "word": "Poland", "pronunciation": "/ˈpoʊlənd/" }
   ],
   "Verbos": [
     {
@@ -2180,34 +3229,34 @@
     }
   ],
   "Instrumentos musicales": [
-    {"word": "guitar", "pronunciation": "/ɡɪˈtɑːr/"},
-    {"word": "piano", "pronunciation": "/piˈænoʊ/"},
-    {"word": "drums", "pronunciation": "/drʌmz/"},
-    {"word": "violin", "pronunciation": "/ˌvaɪəˈlɪn/"},
-    {"word": "flute", "pronunciation": "/fluːt/"},
-    {"word": "saxophone", "pronunciation": "/ˈsæksəfoʊn/"},
-    {"word": "trumpet", "pronunciation": "/ˈtrʌmpɪt/"},
-    {"word": "clarinet", "pronunciation": "/ˌklærɪˈnɛt/"},
-    {"word": "cello", "pronunciation": "/ˈtʃɛloʊ/"},
-    {"word": "harp", "pronunciation": "/hɑːrp/"},
-    {"word": "accordion", "pronunciation": "/əˈkɔːrdiən/"},
-    {"word": "trombone", "pronunciation": "/trɒmˈboʊn/"},
-    {"word": "keyboard", "pronunciation": "/ˈkiːbɔːrd/"},
-    {"word": "bass guitar", "pronunciation": "/beɪs ɡɪˈtɑːr/"},
-    {"word": "organ", "pronunciation": "/ˈɔːrɡən/"},
-    {"word": "ukulele", "pronunciation": "/ˌjuːkəˈleɪli/"},
-    {"word": "banjo", "pronunciation": "/ˈbændʒoʊ/"},
-    {"word": "double bass", "pronunciation": "/ˈdʌbəl beɪs/"},
-    {"word": "French horn", "pronunciation": "/frɛntʃ hɔːrn/"},
-    {"word": "oboe", "pronunciation": "/ˈoʊboʊ/"},
-    {"word": "mandolin", "pronunciation": "/ˈmændəlɪn/"},
-    {"word": "harpsichord", "pronunciation": "/ˈhɑːrpˌsɪkɔːrd/"},
-    {"word": "bagpipes", "pronunciation": "/ˈbæɡˌpaɪps/"},
-    {"word": "marimba", "pronunciation": "/məˈrɪmbə/"},
-    {"word": "steel drum", "pronunciation": "/stiːl drʌm/"},
-    {"word": "didgeridoo", "pronunciation": "/ˌdɪdʒəˈriːduː/"},
-    {"word": "conga", "pronunciation": "/ˈkɒŋɡə/"},
-    {"word": "tambourine", "pronunciation": "/ˌtæmbəˈriːn/"},
-    {"word": "xylophone", "pronunciation": "/ˈzaɪləfoʊn/"}
+    { "word": "guitar", "pronunciation": "/ɡɪˈtɑːr/" },
+    { "word": "piano", "pronunciation": "/piˈænoʊ/" },
+    { "word": "drums", "pronunciation": "/drʌmz/" },
+    { "word": "violin", "pronunciation": "/ˌvaɪəˈlɪn/" },
+    { "word": "flute", "pronunciation": "/fluːt/" },
+    { "word": "saxophone", "pronunciation": "/ˈsæksəfoʊn/" },
+    { "word": "trumpet", "pronunciation": "/ˈtrʌmpɪt/" },
+    { "word": "clarinet", "pronunciation": "/ˌklærɪˈnɛt/" },
+    { "word": "cello", "pronunciation": "/ˈtʃɛloʊ/" },
+    { "word": "harp", "pronunciation": "/hɑːrp/" },
+    { "word": "accordion", "pronunciation": "/əˈkɔːrdiən/" },
+    { "word": "trombone", "pronunciation": "/trɒmˈboʊn/" },
+    { "word": "keyboard", "pronunciation": "/ˈkiːbɔːrd/" },
+    { "word": "bass guitar", "pronunciation": "/beɪs ɡɪˈtɑːr/" },
+    { "word": "organ", "pronunciation": "/ˈɔːrɡən/" },
+    { "word": "ukulele", "pronunciation": "/ˌjuːkəˈleɪli/" },
+    { "word": "banjo", "pronunciation": "/ˈbændʒoʊ/" },
+    { "word": "double bass", "pronunciation": "/ˈdʌbəl beɪs/" },
+    { "word": "French horn", "pronunciation": "/frɛntʃ hɔːrn/" },
+    { "word": "oboe", "pronunciation": "/ˈoʊboʊ/" },
+    { "word": "mandolin", "pronunciation": "/ˈmændəlɪn/" },
+    { "word": "harpsichord", "pronunciation": "/ˈhɑːrpˌsɪkɔːrd/" },
+    { "word": "bagpipes", "pronunciation": "/ˈbæɡˌpaɪps/" },
+    { "word": "marimba", "pronunciation": "/məˈrɪmbə/" },
+    { "word": "steel drum", "pronunciation": "/stiːl drʌm/" },
+    { "word": "didgeridoo", "pronunciation": "/ˌdɪdʒəˈriːduː/" },
+    { "word": "conga", "pronunciation": "/ˈkɒŋɡə/" },
+    { "word": "tambourine", "pronunciation": "/ˌtæmbəˈriːn/" },
+    { "word": "xylophone", "pronunciation": "/ˈzaɪləfoʊn/" }
   ]
 }
