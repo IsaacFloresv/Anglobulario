@@ -96,7 +96,7 @@ body {
 /* Configuración del juego */
 .config-container {
     background: rgba(255, 255, 255, 0.98);
-    padding: 2rem;
+    padding: .2rem;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
@@ -104,27 +104,27 @@ body {
 .players-container {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .2rem;
 }
 
 .input-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: .5rem;
 }
 
 .input-group label {
     display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
+    margin-bottom: 0.2rem;
+    font-weight: 400;
     color: var(--text-dark);
 }
 
 .input-group input,
 .input-group select {
     width: 100%;
-    padding: 12px;
+    padding: 2px;
     border: 2px solid #dfe6e9;
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: .4rem;
     transition: border-color var(--transition-time);
 }
 
@@ -136,9 +136,9 @@ body {
 
 .button-group {
     display: flex;
-    gap: 1rem;
+    gap: .3rem;
     justify-content: center;
-    margin: 1.5rem 0;
+    margin: .5rem 0;
 }
 
 .circle-btn {
