@@ -38,13 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
     startWelcomeAnimation();
 
     // Animación de bienvenida
-function startWelcomeAnimation() {
+    function startWelcomeAnimation() {
     const welcomeText = "Bienvenido al reto!";
     const welcomeElement = document.getElementById('welcome-text');
-    
+
     // Mostrar texto inmediatamente
     welcomeElement.textContent = welcomeText;
     welcomeElement.style.opacity = 1;
+
+    // Verifica que el texto se muestra correctamente
+    console.log("Texto de bienvenida configurado:", welcomeElement.textContent);
 
     // Animación de revelado
     setTimeout(() => {
@@ -53,9 +56,11 @@ function startWelcomeAnimation() {
         setTimeout(() => {
             screens.welcome.classList.remove('active');
             screens.setup.classList.add('active');
+            console.log("Transición a la pantalla de configuración completada");
         }, 2000);
     }, 3000);
 }
+
 
     // Controles de jugadores
     function setupPlayerControls() {
