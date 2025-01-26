@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Pantalla de bienvenida -->
     <section id="welcome-screen" class="screen active">
@@ -29,7 +31,8 @@
                     <button type="button" id="add-player" class="circle-btn success" aria-label="Añadir jugador">
                         <i class="fas fa-plus"></i>
                     </button>
-                    <button type="button" id="remove-player" class="circle-btn danger" aria-label="Eliminar jugador" disabled>
+                    <button type="button" id="remove-player" class="circle-btn danger" aria-label="Eliminar jugador"
+                        disabled>
                         <i class="fas fa-minus"></i>
                     </button>
                 </div>
@@ -63,21 +66,24 @@
     <!-- Pantalla de juego -->
     <section id="game-screen" class="screen">
         <div class="game-header">
-            <div id="countdown"></div>
             <div id="current-player"></div>
+            <div id="countdown"></div>
         </div>
-        
+
         <div id="word-card">
             <h2 id="word"></h2>
             <p id="pronunciation"></p>
             <p id="translation"></p>
         </div>
 
+        
+
         <div class="score-display">
             <span class="score-item success"><i class="fas fa-check"></i> <span id="correct-count">0</span></span>
             <span class="score-item danger"><i class="fas fa-times"></i> <span id="wrong-count">0</span></span>
         </div>
     </section>
+
 
     <!-- Pantalla de resultados -->
     <section id="results-screen" class="screen">
@@ -115,4 +121,5 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
