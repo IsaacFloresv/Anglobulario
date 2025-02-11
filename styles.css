@@ -27,6 +27,20 @@ body {
     overflow-x: hidden;
 }
 
+#play-audio {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#play-audio i {
+    font-size: 1.5em;
+    color: #000;
+}
+
 .screen {
     width: 100%;
     max-width: 800px;
@@ -42,7 +56,8 @@ body {
 
 /* Pantalla de bienvenida */
 #welcome-screen {
-    display: none; /* Cambiar display: flex; a display: none; */
+    display: none;
+    /* Cambiar display: flex; a display: none; */
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -55,7 +70,8 @@ body {
 }
 
 #welcome-screen.active {
-    display: flex; /* Añadir display: flex; aquí */
+    display: flex;
+    /* Añadir display: flex; aquí */
 }
 
 #welcome-text {
@@ -68,7 +84,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Asegura que el texto esté centrado */
+    text-align: center;
+    /* Asegura que el texto esté centrado */
     height: 100vh;
     position: fixed;
     top: 0;
@@ -83,10 +100,12 @@ body {
         opacity: 0;
         letter-spacing: 50px;
     }
+
     50% {
         opacity: 1;
         letter-spacing: normal;
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -190,27 +209,59 @@ body {
 }
 
 @keyframes colorShift {
-    0% { filter: hue-rotate(0deg); }
-    100% { filter: hue-rotate(360deg); }
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
 
 /* Juego principal */
+#play-audio {
+    background-color: #f0f0f0;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    font-size: 1em;
+    font-weight: bold;
+    z-index: 10;
+}
+
+#play-audio i {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+#play-audio:hover {
+    background-color: #e0e0e0;
+}
+
+.score-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
 #word-card {
     background: white;
     border-radius: 20px;
     padding: 3rem;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    min-height: 400px; /* Tamaño aumentado */
-    min-width: 300px; /* Tamaño aumentado */
+    min-height: 400px;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     transition: all var(--transition-time);
     position: relative;
     overflow: hidden;
-    font-size: 2rem; /* Texto más grande */
-    margin-bottom: 1.5rem; /* Espacio debajo de la flash card */
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 #word-card::before {
@@ -235,29 +286,29 @@ body {
 }
 
 #current-player {
-    font-size: 2rem; /* Texto más grande */
-    text-align: center; /* Centrado */
+    font-size: 2rem;
+    text-align: center;
     margin-bottom: 1rem;
 }
 
 #countdown {
-    font-size: 2rem; /* Texto más grande */
-    text-align: center; /* Centrado */
+    font-size: 2rem;
+    text-align: center;
     margin-bottom: 1rem;
 }
 
 .game-header {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrado */
+    align-items: center;
     margin-bottom: 2rem;
 }
 
 .score-display {
     display: flex;
     justify-content: center;
-    margin-top: 1.5rem; /* Espacio entre flash card y contador */
-    font-size: 1.2rem; /* Texto más grande */
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .score-item {
@@ -269,6 +320,21 @@ body {
 
 .score-item i {
     margin-right: 5px;
+}
+
+#word-card h2,
+#word-card p {
+    margin: 0;
+    text-align: center;
+    flex: 1;
+}
+
+.score-item.success {
+    color: green;
+}
+
+.score-item.danger {
+    color: red;
 }
 
 #word {
@@ -319,20 +385,45 @@ body {
     padding: 1rem;
 }
 
-.gold { background: #ffd700; }
-.silver { background: #c0c0c0; }
-.bronze { background: #cd7f32; }
+.gold {
+    background: #ffd700;
+}
+
+.silver {
+    background: #c0c0c0;
+}
+
+.bronze {
+    background: #cd7f32;
+}
 
 /* Animaciones */
 @keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-10px); }
-    75% { transform: translateX(10px); }
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
 }
 
 @keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
 }
 
 .approved {
@@ -345,9 +436,17 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-    #word { font-size: 2rem; }
-    #translation { font-size: 1.5rem; }
-    .config-container { padding: 1rem; }
+    #word {
+        font-size: 2rem;
+    }
+
+    #translation {
+        font-size: 1.5rem;
+    }
+
+    .config-container {
+        padding: 1rem;
+    }
 }
 
 .main-btn {
@@ -385,19 +484,23 @@ body {
 }
 
 .section-title {
-    font-size: 2.4rem; /* Título más grande */
+    font-size: 2.4rem;
+    /* Título más grande */
     font-weight: bold;
     color: var(--primary-color);
     text-align: center;
     margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra en el título */
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en el título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Sombra en el título */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra en el título */
 }
 
 .input-group label {
     display: block;
     margin-bottom: 0.5rem;
-    font-weight: 700; /* Texto más grueso */
+    font-weight: 700;
+    /* Texto más grueso */
     color: var(--primary-color);
 }
 
@@ -408,13 +511,15 @@ body {
     border: 2px solid #dfe6e9;
     border-radius: 10px;
     font-size: 1rem;
-    font-weight: 600; /* Placeholder más grueso */
+    font-weight: 600;
+    /* Placeholder más grueso */
     transition: border-color var(--transition-time), background-color var(--transition-time);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .input-group input::placeholder {
-    font-weight: 600; /* Placeholder más grueso */
+    font-weight: 600;
+    /* Placeholder más grueso */
 }
 
 .input-group input:focus,
@@ -480,6 +585,11 @@ body {
 
 /* Animaciones */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

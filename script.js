@@ -404,3 +404,12 @@ document.addEventListener("DOMContentLoaded", () => {
     removePlayerBtn.disabled = playerCount <= 1;
   }
 });
+
+document.getElementById('play-audio').addEventListener('click', function(event) {
+  event.stopPropagation(); // Detiene la propagación del evento de clic
+  var word = document.getElementById('word').textContent;
+  var utterance = new SpeechSynthesisUtterance(word);
+  utterance.lang = 'en-US'; // Configura el idioma si es necesario
+  utterance.rate = 0.75; // Ajusta la velocidad del habla (1 es la velocidad normal)
+  speechSynthesis.speak(utterance);
+});
