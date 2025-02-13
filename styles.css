@@ -330,11 +330,12 @@ body {
 }
 
 .score-item.success {
-    color: green;
+    color: #000;
+    text-align: center;
 }
 
 .score-item.danger {
-    color: red;
+    color: black;
 }
 
 #word {
@@ -370,6 +371,7 @@ body {
 #podium {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     gap: 2rem;
     margin: 2rem 0;
 }
@@ -380,7 +382,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     border-radius: 10px;
     padding: 1rem;
 }
@@ -391,10 +393,12 @@ body {
 
 .silver {
     background: #c0c0c0;
+    height: 110px;
 }
 
 .bronze {
     background: #cd7f32;
+    height: 70px;
 }
 
 /* Animaciones */

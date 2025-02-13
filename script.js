@@ -73,7 +73,8 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     const playerCount = playerInputs.length;
 
-    if (playerCount >= 6) return; // Máximo 6 jugadores
+    // Máximo 6 jugadores
+    if (playerCount >= 6) return; 
 
     const newPlayer = document.createElement("div");
     newPlayer.className = "input-group";
@@ -92,6 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const playerInputs = document.querySelectorAll(
       ".players-container .input-group"
     );
+    console.log(playerInputs)
     if (playerInputs.length > 1) {
       playerInputs[playerInputs.length - 1].remove();
       updatePlayerButtons();
@@ -99,10 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function updatePlayerButtons() {
-    const playerInputs = document.querySelectorAll(
-      ".players-container .input-group"
-    );
-    const playerCount = playerInputs.length;
+    const playerCount = document.querySelectorAll(".players-container .input-group").length;
     addPlayerBtn.disabled = playerCount >= 6;
     removePlayerBtn.disabled = playerCount <= 1;
   }
@@ -368,7 +367,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("restart-game").addEventListener("click", resetGame);
 
   function resetGame() {
-    // Reinicia el estado del juego
     gameState = {
       players: [],
       currentPlayerIndex: 0,
@@ -396,12 +394,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updatePlayerButtons();
     initializeCategories();
-  }
-
-  function updatePlayerButtons() {
-    const playerCount = document.querySelectorAll(".input-group").length;
-    addPlayerBtn.disabled = playerCount >= 6;
-    removePlayerBtn.disabled = playerCount <= 1;
   }
 });
 
