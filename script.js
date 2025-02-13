@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const rect = wordCard.getBoundingClientRect();
-    const isCorrect = e.clientX - rect.left > rect.width / 2;
+    const isCorrect = e.clientY - rect.top > rect.height / 2;
     if (isCorrect) {
       handleCorrectAnswer();
       triggerConfetti();

@@ -297,6 +297,11 @@ body {
     margin-bottom: 1rem;
 }
 
+.msg {
+    font-size: 2rem; 
+    padding-left: .4rem;
+}
+
 .game-header {
     display: flex;
     flex-direction: column;
@@ -316,6 +321,7 @@ body {
     margin: 20px;
     padding: 2rem;
     border-radius: 2rem;
+    justify-content: center;
 }
 
 .score-item i {
