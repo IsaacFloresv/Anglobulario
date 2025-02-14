@@ -360,6 +360,8 @@ body {
 #translation {
     font-size: 3rem;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
     color: var(--text-light);
     margin-top: 1rem;
     opacity: 0;
