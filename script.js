@@ -46,17 +46,14 @@ document.addEventListener("DOMContentLoaded", () => {
     welcomeElement.textContent = welcomeText;
     welcomeElement.style.opacity = 1;
 
-    // Verifica que el texto se muestra correctamente
-    console.log("Texto de bienvenida configurado:", welcomeElement.textContent);
-
     // Animación de revelado
     setTimeout(() => {
       triggerConfetti();
+
       // Transición a la pantalla de configuración
       setTimeout(() => {
         screens.welcome.classList.remove("active");
         screens.setup.classList.add("active");
-        console.log("Transición a la pantalla de configuración completada");
       }, 1000);
     }, 2000);
   }
@@ -93,7 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const playerInputs = document.querySelectorAll(
       ".players-container .input-group"
     );
-    console.log(playerInputs);
     if (playerInputs.length > 1) {
       playerInputs[playerInputs.length - 1].remove();
       updatePlayerButtons();
@@ -146,7 +142,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Lógica principal del juego
   function startGame() {
-    console.log("startGame")
     gameState.scores = Object.fromEntries(
       gameState.players.map((player) => [player, { correct: 0, wrong: 0 }])
     );
@@ -157,7 +152,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function nextTurn() {
-    console.log("nextTurn")
     resetCardState();
     updatePlayerDisplay();
     startCountdown();
@@ -165,7 +159,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function updatePlayerDisplay() {
-    console.log("updatePlayerDisplay")
     currentPlayerElement.textContent = `Turno de: ${
       gameState.players[gameState.currentPlayerIndex]
     }`;
@@ -176,39 +169,30 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function startCountdown() {
-    console.log("startCountdown")
     let timeLeft = gameState.timePerTurn;
     updateCountdownDisplay(timeLeft);
 
     gameState.countdownInterval = setInterval(() => {
-      timeLeft--;
-      updateCountdownDisplay(timeLeft);
+      if (screens.game.classList.contains("active")) {
+        timeLeft--;
+        updateCountdownDisplay(timeLeft);
 
-      if (timeLeft <= 0) handleTimeout();
+        if (timeLeft <= 0) handleTimeout();
+      }
+      return;
     }, 1000);
   }
 
   function updateCountdownDisplay(time) {
-    console.log("updateCountdownDisplay")
     countdownElement.textContent = `Tiempo: ${time}s`;
     countdownElement.style.color =
       time <= 5 ? "var(--danger-color)" : "var(--text-dark)";
   }
 
-  /*function handleTimeout() {
-    console.log("handleTimeout")
-    gameState.isTimeout = true;
-    clearInterval(gameState.countdownInterval);
-    wordCard.classList.add("rejected");
-    showTranslation();
-    updateScore("wrong");
-  }*/
-
   // Interacción con la tarjeta
   wordCard.addEventListener("click", handleCardClick);
 
   function handleCardClick(e) {
-    console.log("handleCardClick")
     if (gameState.isTimeout) {
       gameState.isTimeout = false;
       nextPlayer();
@@ -217,7 +201,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const rect = wordCard.getBoundingClientRect();
     const isCorrect = e.clientY - rect.top > rect.height / 2;
-    console.log(isCorrect)
     if (isCorrect) {
       handleCorrectAnswer();
       triggerConfetti();
@@ -225,43 +208,35 @@ document.addEventListener("DOMContentLoaded", () => {
       showTranslation();
       handleWrongAnswer();
     }
-    console.log("Llego")
-    //setTimeout(nextPlayer, 1000); // Cambia de turno después de 1 segundo
   }
 
   function handleCorrectAnswer() {
-    console.log("handleCorrectAnswer")
     wordCard.classList.add("approved");
     updateScore("correct");
     setTimeout(nextPlayer, 1000);
   }
 
   function handleWrongAnswer() {
-    console.log("handleWrongAnswer")
     wordCard.classList.add("rejected");
     updateScore("wrong");
     setTimeout(nextPlayer, 3000);
   }
 
   function handleTimeout() {
-    console.log("handleTimeout")
     gameState.isTimeout = true;
     clearInterval(gameState.countdownInterval);
-    wordCard.classList.add("rejected"); 
+    wordCard.classList.add("rejected");
     showTranslation();
     updateScore("wrong");
     setTimeout(nextPlayer, 3000);
   }
 
   function nextPlayer() {
-    console.log("nextPlayer")
     gameState.currentPlayerIndex =
       (gameState.currentPlayerIndex + 1) % gameState.players.length;
     gameState.currentRound++;
 
     const totalGames = gameState.rounds * gameState.players.length;
-
-    console.log(gameState.currentRound, gameState.rounds)
 
     if (gameState.currentRound >= totalGames) {
       endGame();
@@ -281,28 +256,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showTranslation() {
     const currentWord = gameState.words[gameState.currentRound];
-    const translation = document.getElementById("translation");
-    translation.textContent = currentWord.translation;;
+    const translation = document.getElementById("translation") || "";
+    translation.textContent = currentWord.translation;
     translation.classList.add("show");
   }
 
   function resetCardState() {
-    console.log("resetCardState")
     wordCard.classList.remove("approved", "rejected");
     document.getElementById("translation").classList.remove("show");
     clearInterval(gameState.countdownInterval);
   }
 
   function showNextWord() {
-    console.log("showNextWord")
     const currentWord = gameState.words[gameState.currentRound];
-    console.log(gameState, currentWord.translation)
     document.getElementById("word").textContent = currentWord.word;
-    document.getElementById("pronunciation").textContent = currentWord.pronunciation;
+    document.getElementById("pronunciation").textContent =
+      currentWord.pronunciation;
   }
 
   function endGame() {
-    console.log("endGame")
     screens.game.classList.remove("active");
     showResults();
   }
@@ -311,6 +283,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const sortedPlayers = gameState.players.sort((a, b) => {
       return gameState.scores[b].correct - gameState.scores[a].correct;
     });
+
+    document.getElementById("podium-1").textContent = sortedPlayers[0] || "";
+    document.getElementById("podium-2").textContent = sortedPlayers[1] || "";
+    document.getElementById("podium-3").textContent = sortedPlayers[2] || "";
 
     const tbody = document.querySelector("#results-table tbody");
     tbody.innerHTML = sortedPlayers
@@ -341,6 +317,10 @@ document.addEventListener("DOMContentLoaded", () => {
         return "🥉";
       case 4:
         return "🐴";
+      case 5:
+        return "🐔";
+      case 6:
+        return "🥦";
       default:
         return "";
     }
