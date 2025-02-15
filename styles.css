@@ -660,3 +660,30 @@ body {
 #podium-1 {
     font-weight: bolder;
 }
+
+/* Estilos para el footer */
+#footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color:transparent;
+    color: #fff;
+    padding-bottom: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#footer a {
+    color: #f1eeee;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+.fab {
+    font-size: 1.5rem;
+    vertical-align: middle;
+    margin-left: 5px;
+}
